@@ -6,3 +6,5 @@ Thumbs.db
 *.tmp.png
 .env
 .env.*
+secrets.json
+.github-token
