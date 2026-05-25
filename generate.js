@@ -9,6 +9,7 @@ const AFFILIATE = `https://oopbuy.com/register?inviteCode=${INVITE}`;
 const DISCORD = "https://discord.gg/YOUR_INVITE";
 const EMAIL = "help@oopbuylookup.com";
 const OPEN_IN_NEW_TAB = true;
+const VIEW_PRODUCTS_URL = "https://streetstyle.maisonlooks.com/";
 /* ================================================= */
 
 function newTabAttrs() {
@@ -517,7 +518,7 @@ ${heroShell(`${nav("home")}
           Updated daily with the best OopBuy products — shoes, clothing, accessories and more.
         </p>
         <div class="hero-actions">
-          <a href="spreadsheet.html" class="btn btn-primary">View Products</a>
+          <a href="${VIEW_PRODUCTS_URL}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Products</a>
           <a href="${DISCORD}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Discord</a>
         </div>
         <div class="hero-stats">
