@@ -9,11 +9,45 @@ const AFFILIATE = `https://oopbuy.com/register?inviteCode=${INVITE}`;
 const DISCORD = "https://discord.gg/YOUR_INVITE";
 const EMAIL = "help@oopbuylookup.com";
 const OPEN_IN_NEW_TAB = true;
-const VIEW_PRODUCTS_URL = "https://streetstyle.maisonlooks.com/";
+const VIEW_PRODUCTS_URL = "https://streetstyle.maisonlooks.com/en/s/StreetStyle";
+const STREETSTYLE_BASE = "https://streetstyle.maisonlooks.com";
+const STREETSTYLE_SHOP = "StreetStyle";
+/* Slugs on oopbuylookup that differ from MaisonLooks category paths (invalid slugs 404 in their SPA). */
+const STREETSTYLE_CATEGORY_SLUGS = {
+  shoes: "shoes",
+  clothing: "clothing",
+  jackets: "jackets",
+  hoodies: "tops",
+  "t-shirts": "t-shirts",
+  pants: "bottoms",
+  bags: "accessories",
+  headwear: "headwear",
+  accessories: "accessories",
+  electronics: "electronics",
+  perfume: "beauty",
+  jersey: "tops",
+  other: null,
+};
 /* ================================================= */
 
 function newTabAttrs() {
   return OPEN_IN_NEW_TAB ? ' target="_blank" rel="noopener noreferrer"' : "";
+}
+
+function externalCategoryAttrs() {
+  return ' target="_blank" rel="noopener noreferrer"';
+}
+
+function streetstyleCategoryUrl(slug) {
+  const mapped =
+    Object.prototype.hasOwnProperty.call(STREETSTYLE_CATEGORY_SLUGS, slug)
+      ? STREETSTYLE_CATEGORY_SLUGS[slug]
+      : slug;
+  if (mapped === null) {
+    return `${STREETSTYLE_BASE}/en/s/${STREETSTYLE_SHOP}`;
+  }
+  const categorySlug = mapped ?? slug;
+  return `${STREETSTYLE_BASE}/en/s/${STREETSTYLE_SHOP}/c/${categorySlug}`;
 }
 
 function homeBtn(prefix = "", text = "Sign Up on OopBuy →") {
@@ -120,8 +154,8 @@ function nav(current, prefix = "") {
 
   const spreadsheetLinks = mainCategories
     .map((c) => {
-      if (c.isGroup) return `<a href="${p}categories.html#clothing">Clothing</a>`;
-      return `<a href="${cp}${c.slug}.html">${c.name}</a>`;
+      if (c.isGroup) return `<a href="${streetstyleCategoryUrl("clothing")}"${externalCategoryAttrs()}>Clothing</a>`;
+      return `<a href="${streetstyleCategoryUrl(c.slug)}"${externalCategoryAttrs()}>${c.name}</a>`;
     })
     .join("\n            ");
 
@@ -147,7 +181,7 @@ function nav(current, prefix = "") {
         <div class="nav-dropdown">
           ${dropdownBtn("Spreadsheet", spreadsheetActive)}
           <div class="nav-dropdown-menu nav-dropdown-menu--wide">
-            <a href="${p}spreadsheet.html"${activeClass("spreadsheet")}>All Products</a>
+            <a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}${activeClass("spreadsheet")}>All Products</a>
             ${spreadsheetLinks}
           </div>
         </div>
@@ -182,12 +216,12 @@ function footer(prefix = "") {
       <div class="footer-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="${p}spreadsheet.html">All Products</a></li>
-          <li><a href="${p}categories/shoes.html">Sneakers</a></li>
-          <li><a href="${p}categories.html">Clothing</a></li>
-          <li><a href="${p}categories/bags.html">Bags</a></li>
-          <li><a href="${p}categories/accessories.html">Accessories</a></li>
-          <li><a href="${p}categories/electronics.html">Electronics</a></li>
+          <li><a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}>All Products</a></li>
+          <li><a href="${streetstyleCategoryUrl("shoes")}"${externalCategoryAttrs()}>Sneakers</a></li>
+          <li><a href="${streetstyleCategoryUrl("clothing")}"${externalCategoryAttrs()}>Clothing</a></li>
+          <li><a href="${streetstyleCategoryUrl("bags")}"${externalCategoryAttrs()}>Bags</a></li>
+          <li><a href="${streetstyleCategoryUrl("accessories")}"${externalCategoryAttrs()}>Accessories</a></li>
+          <li><a href="${streetstyleCategoryUrl("electronics")}"${externalCategoryAttrs()}>Electronics</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -312,7 +346,7 @@ function aboutSeoBlock() {
         <div class="seo-content">
           <p>Searching for a dependable <strong>OopBuy Spreadsheet</strong>? This site brings together a hand-picked <strong>OopBuy Spreadsheet 2026</strong> with 3,000+ quality listings from reliable sellers — grouped into clear sections for shoes, apparel, bags, accessories, and other popular picks.</p>
           <p>We work to keep one of the most complete OopBuy lists available by refreshing entries every day and adding standout products as they appear. Before a link goes live, our team checks seller track record and listing quality so you see fewer risky options and more <strong>trusted OopBuy finds</strong>.</p>
-          <p>Shop by category: <a href="categories/shoes.html" class="text-link">Sneakers</a>, <a href="categories.html" class="text-link">Clothing</a>, <a href="categories/bags.html" class="text-link">Bags</a>, <a href="categories/accessories.html" class="text-link">Accessories</a>, and <a href="categories/electronics.html" class="text-link">Electronics</a>. New to the platform? Start with our guides on <a href="guides/what-is-oopbuy.html" class="text-link">What is OopBuy</a>, <a href="guides/shipping.html" class="text-link">Shipping</a>, and <a href="guides/coupons.html" class="text-link">Coupons</a>.</p>
+          <p>Shop by category: <a href="${streetstyleCategoryUrl("shoes")}" class="text-link"${externalCategoryAttrs()}>Sneakers</a>, <a href="${streetstyleCategoryUrl("clothing")}" class="text-link"${externalCategoryAttrs()}>Clothing</a>, <a href="${streetstyleCategoryUrl("bags")}" class="text-link"${externalCategoryAttrs()}>Bags</a>, <a href="${streetstyleCategoryUrl("accessories")}" class="text-link"${externalCategoryAttrs()}>Accessories</a>, and <a href="${streetstyleCategoryUrl("electronics")}" class="text-link"${externalCategoryAttrs()}>Electronics</a>. New to the platform? Start with our guides on <a href="guides/what-is-oopbuy.html" class="text-link">What is OopBuy</a>, <a href="guides/shipping.html" class="text-link">Shipping</a>, and <a href="guides/coupons.html" class="text-link">Coupons</a>.</p>
           <p>Choosing between shopping agents? See side-by-side write-ups: <a href="compare/vs-litbuy.html" class="text-link">OopBuy vs LitBuy</a>, <a href="compare/vs-hipobuy.html" class="text-link">OopBuy vs Hipobuy</a>, and <a href="compare/vs-kakobuy.html" class="text-link">OopBuy vs KakoBuy</a>.</p>
         </div>
       </div>
@@ -351,7 +385,7 @@ function homeCategoryGrid(prefix = "") {
       const iconHtml = cat
         ? renderCategoryIcon(cat, prefix, { wrapperClass: "category-sheet-icon", ariaHidden: true })
         : `<span class="category-sheet-icon" aria-hidden="true">✨</span>`;
-      return `          <a href="${p}categories/${slug}.html" class="category-sheet-card">
+      return `          <a href="${streetstyleCategoryUrl(slug)}" class="category-sheet-card"${externalCategoryAttrs()}>
             ${iconHtml}
             <span class="category-sheet-name">${label}</span>
           </a>`;
@@ -363,7 +397,7 @@ ${cards}
         </div>`;
 }
 
-function categoryCards(prefix = "", linkTarget = "local") {
+function categoryCards(prefix = "", linkTarget = "streetstyle") {
   const p = rel(prefix);
   const cats = linkTarget === "main" ? mainCategories.filter((c) => !c.isGroup) : allCategories;
 
@@ -372,8 +406,11 @@ function categoryCards(prefix = "", linkTarget = "local") {
       const href =
         linkTarget === "affiliate"
           ? AFFILIATE
-          : `${p}categories/${c.slug}.html`;
-      const ext = linkTarget === "affiliate" ? ' target="_blank" rel="noopener noreferrer"' : "";
+          : linkTarget === "local"
+            ? `${p}categories/${c.slug}.html`
+            : streetstyleCategoryUrl(c.slug);
+      const ext =
+        linkTarget === "affiliate" || linkTarget === "streetstyle" ? externalCategoryAttrs() : "";
       return `          <a href="${href}" class="category-card"${ext}>
             ${renderCategoryIcon(c, prefix)}
             <span class="category-name">${c.name}</span>
@@ -648,7 +685,7 @@ ${heroShell(`${nav("categories")}
         <div class="category-grid">
 ${clothingSlugs.map((slug) => {
   const c = allCategories.find((x) => x.slug === slug);
-  return `          <a href="categories/${c.slug}.html" class="category-card">
+  return `          <a href="${streetstyleCategoryUrl(c.slug)}" class="category-card"${externalCategoryAttrs()}>
             ${renderCategoryIcon(c)}
             <span class="category-name">${c.name}</span>
           </a>`;
@@ -1073,7 +1110,7 @@ ${heroShell(`${nav(`cat-${cat.slug}`, "../")}
       <div class="container">
         <h2 class="section-title">More Categories</h2>
         <div class="category-grid category-grid-sm">
-${related.map((c) => `          <a href="${c.slug}.html" class="category-card">
+${related.map((c) => `          <a href="${streetstyleCategoryUrl(c.slug)}" class="category-card"${externalCategoryAttrs()}>
             ${renderCategoryIcon(c, "../")}
             <span class="category-name">${c.name}</span>
           </a>`).join("\n")}
@@ -1116,7 +1153,7 @@ ${heroShell(`${nav("cat-clothing", "../")}
         <div class="category-grid">
 ${clothingSlugs.map((slug) => {
   const c = allCategories.find((x) => x.slug === slug);
-  return `          <a href="${slug}.html" class="category-card">
+  return `          <a href="${streetstyleCategoryUrl(slug)}" class="category-card"${externalCategoryAttrs()}>
             ${renderCategoryIcon(c, "../")}
             <span class="category-name">${c.name}</span>
           </a>`;
