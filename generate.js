@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 /* ========== CONFIG — edit before deploy ========== */
-const INVITE = "YOUR_CODE";
+const INVITE = "V5N3GJS25";
 const DOMAIN = "https://oopbuylookup.com";
 const SITE_NAME = "OopBuy Spreadsheet";
 const AFFILIATE = `https://oopbuy.com/register?inviteCode=${INVITE}`;
