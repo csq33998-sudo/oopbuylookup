@@ -176,7 +176,7 @@
       productGrid.innerHTML = products
         .map(
           (p) => `<a href="${AFFILIATE}" class="product-card" target="_blank" rel="noopener noreferrer" data-name="${p.name.toLowerCase()}">
-            <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy" width="400" height="400">
+            <img src="${p.image}" alt="${p.name} — OopBuy Spreadsheet" class="product-image" loading="lazy" width="400" height="400">
             <div class="product-body">
               <div class="product-options">${p.options} OPTIONS</div>
               <h3 class="product-name">${p.name}</h3>

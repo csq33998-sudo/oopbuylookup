@@ -89,6 +89,41 @@ const allCategories = [
 
 const clothingSlugs = ["jackets", "hoodies", "t-shirts", "pants"];
 
+const oopbuyProducts = [
+  { id: 1, name: "Jordan 1 Retro High OG", category: "shoes", price: 45, options: 12, image: "https://placehold.co/400x400/1a1a2e/fff?text=Shoes" },
+  { id: 2, name: "Dunk Low Panda", category: "shoes", price: 38, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Dunk" },
+  { id: 3, name: "Yeezy Slide Bone", category: "shoes", price: 22, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Slide" },
+  { id: 4, name: "North Face Puffer Jacket", category: "jackets", price: 55, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=Jacket" },
+  { id: 5, name: "Moncler Maya Down Jacket", category: "jackets", price: 120, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Moncler" },
+  { id: 6, name: "Essentials Hoodie", category: "hoodies", price: 28, options: 15, image: "https://placehold.co/400x400/1a1a2e/fff?text=Hoodie" },
+  { id: 7, name: "Stussy Basic Hoodie", category: "hoodies", price: 32, options: 9, image: "https://placehold.co/400x400/1a1a2e/fff?text=Stussy" },
+  { id: 8, name: "Chrome Hearts Tee", category: "t-shirts", price: 18, options: 20, image: "https://placehold.co/400x400/1a1a2e/fff?text=Tee" },
+  { id: 9, name: "Balenciaga Logo T-Shirt", category: "t-shirts", price: 25, options: 7, image: "https://placehold.co/400x400/1a1a2e/fff?text=Balenciaga" },
+  { id: 10, name: "Essentials Sweatpants", category: "pants", price: 26, options: 12, image: "https://placehold.co/400x400/1a1a2e/fff?text=Pants" },
+  { id: 11, name: "Arc'teryx Cargo Pants", category: "pants", price: 35, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Cargo" },
+  { id: 12, name: "Goyard Tote Bag", category: "bags", price: 48, options: 14, image: "https://placehold.co/400x400/1a1a2e/fff?text=Goyard" },
+  { id: 13, name: "Louis Vuitton Keepall", category: "bags", price: 85, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=LV" },
+  { id: 14, name: "Supreme Box Logo Cap", category: "headwear", price: 15, options: 18, image: "https://placehold.co/400x400/1a1a2e/fff?text=Cap" },
+  { id: 15, name: "New Era Yankees Hat", category: "headwear", price: 12, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=Hat" },
+  { id: 16, name: "Rolex Submariner Watch", category: "accessories", price: 65, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Watch" },
+  { id: 17, name: "Gucci Belt", category: "accessories", price: 22, options: 11, image: "https://placehold.co/400x400/1a1a2e/fff?text=Belt" },
+  { id: 18, name: "AirPods Pro Clone", category: "electronics", price: 30, options: 3, image: "https://placehold.co/400x400/1a1a2e/fff?text=AirPods" },
+  { id: 19, name: "Apple Watch Ultra", category: "electronics", price: 55, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Watch" },
+  { id: 20, name: "Creed Aventus Perfume", category: "perfume", price: 28, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=Perfume" },
+  { id: 21, name: "Real Madrid Home Jersey", category: "jersey", price: 20, options: 9, image: "https://placehold.co/400x400/1a1a2e/fff?text=Jersey" },
+  { id: 22, name: "Barcelona Away Jersey 24/25", category: "jersey", price: 22, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Barca" },
+  { id: 23, name: "Travis Scott x Jordan 4", category: "shoes", price: 58, options: 7, image: "https://placehold.co/400x400/1a1a2e/fff?text=Travis" },
+  { id: 24, name: "Stone Island Sweater", category: "hoodies", price: 42, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Stone" },
+  { id: 25, name: "Prada Re-Nylon Bag", category: "bags", price: 52, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Prada" },
+  { id: 26, name: "Casio G-Shock", category: "accessories", price: 18, options: 15, image: "https://placehold.co/400x400/1a1a2e/fff?text=G-Shock" },
+  { id: 27, name: "Dior Sauvage Perfume", category: "perfume", price: 24, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Dior" },
+  { id: 28, name: "Random Trending Find", category: "other", price: 15, options: 2, image: "https://placehold.co/400x400/1a1a2e/fff?text=Other" },
+  { id: 29, name: "New Balance 550", category: "shoes", price: 35, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=NB550" },
+  { id: 30, name: "CP Company Goggle Jacket", category: "jackets", price: 68, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=CP" },
+  { id: 31, name: "Fear of God Essentials Tee", category: "t-shirts", price: 20, options: 14, image: "https://placehold.co/400x400/1a1a2e/fff?text=FOG" },
+  { id: 32, name: "Off-White Industrial Belt", category: "accessories", price: 16, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Off-White" },
+];
+
 const guides = [
   { slug: "how-to-buy", navLabel: "How to Buy", title: "How to Buy on OopBuy", excerpt: "Step-by-step guide on how to purchase items using the OopBuy Spreadsheet and place your first order.", icon: "🛒" },
   { slug: "shipping", navLabel: "Shipping Guide", title: "OopBuy Shipping Guide", excerpt: "Explore Oopbuy shipping logistics with this comprehensive guide on lines, costs, and delivery times.", icon: "📦" },
@@ -258,9 +293,10 @@ function footer(prefix = "") {
   </footer>`;
 }
 
-function head(title, description, urlPath, prefix = "") {
+function head(title, description, urlPath, prefix = "", extraHead = "") {
   const p = rel(prefix);
-  const url = `${DOMAIN}${urlPath}`;
+  const url = `${DOMAIN}${urlPath === "/" ? "" : urlPath}`;
+  const ogImage = `${DOMAIN}/images/favicon.png`;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -277,10 +313,16 @@ function head(title, description, urlPath, prefix = "") {
   <meta property="og:description" content="${description}">
   <meta property="og:url" content="${url}">
   <meta property="og:site_name" content="${SITE_NAME}">
+  <meta property="og:image" content="${ogImage}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:image" content="${ogImage}">
 
   <link rel="icon" href="${p}images/favicon.png" type="image/png" sizes="32x32">
   <link rel="shortcut icon" href="${p}images/favicon.png">
-  <link rel="stylesheet" href="${p}style.css">${urlPath === "/" ? `\n${faqJsonLd()}` : ""}
+  <link rel="stylesheet" href="${p}style.css">${extraHead ? `\n${extraHead}` : ""}
 </head>
 <body>`;
 }
@@ -530,6 +572,84 @@ function faqJsonLd() {
   return `  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
 }
 
+function siteJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: DOMAIN,
+        description:
+          "Browse the biggest OopBuy Spreadsheet with curated finds from trusted sellers, updated daily.",
+      },
+      {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: DOMAIN,
+        email: EMAIL,
+      },
+    ],
+  };
+  return `  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
+function breadcrumbJsonLd(items) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+  return `  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
+function itemListJsonLd(products) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "OopBuy Spreadsheet Products",
+    numberOfItems: products.length,
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: product.name,
+      url: `${DOMAIN}/spreadsheet.html?category=${product.category}`,
+    })),
+  };
+  return `  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderProductCard(product) {
+  const name = escapeHtml(product.name);
+  const category = escapeHtml(product.category);
+  const dataName = escapeHtml(product.name.toLowerCase());
+  return `          <a href="${AFFILIATE}" class="product-card" target="_blank" rel="noopener noreferrer" data-name="${dataName}" data-category="${category}">
+            <img src="${product.image}" alt="${name} — OopBuy Spreadsheet" class="product-image" loading="lazy" width="400" height="400">
+            <div class="product-body">
+              <div class="product-options">${product.options} OPTIONS</div>
+              <h3 class="product-name">${name}</h3>
+              <div class="product-price">¥${product.price}</div>
+            </div>
+          </a>`;
+}
+
+function renderProductGrid(products) {
+  return products.map((product) => renderProductCard(product)).join("\n");
+}
+
 function writeFile(filePath, content) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, content, "utf8");
@@ -543,7 +663,9 @@ writeFile(
   `${head(
     "OopBuy Spreadsheet 2026 – Best Finds & Trusted Sellers",
     "Browse the biggest OopBuy Spreadsheet with 3000+ high quality finds from trusted sellers. Updated daily with shoes, clothing, bags, accessories and more.",
-    "/"
+    "/",
+    "",
+    `${siteJsonLd()}\n${faqJsonLd()}`
   )}
 ${heroShell(`${nav("home")}
     <section class="hero">
@@ -618,7 +740,9 @@ writeFile(
   `${head(
     "OopBuy Spreadsheet 2026 - Browse 3000+ Best Finds",
     "Browse the biggest OopBuy Spreadsheet online. 3000+ curated products from trusted OopBuy sellers with search, filters, and direct purchase links.",
-    "/spreadsheet.html"
+    "/spreadsheet.html",
+    "",
+    `${siteJsonLd()}\n${itemListJsonLd(oopbuyProducts)}`
   )}
 ${heroShell(`${nav("spreadsheet")}
     <section class="page-hero page-hero-compact">
@@ -643,8 +767,10 @@ ${heroShell(`${nav("spreadsheet")}
             <option value="name-asc">Name: A to Z</option>
           </select>
         </div>
-        <p class="results-count" id="resultsCount"></p>
-        <div class="product-grid" id="productGrid"></div>
+        <p class="results-count" id="resultsCount">Showing ${oopbuyProducts.length} product${oopbuyProducts.length !== 1 ? "s" : ""}</p>
+        <div class="product-grid" id="productGrid">
+${renderProductGrid(oopbuyProducts)}
+        </div>
         <div class="empty-state" id="emptyState" hidden>
           <p>No products match your search. Try a different keyword or category.</p>
         </div>
@@ -668,7 +794,12 @@ writeFile(
   `${head(
     "All Categories | OopBuy Spreadsheet",
     "Browse all OopBuy Spreadsheet categories — sneakers, clothing, bags, electronics, and more from trusted sellers.",
-    "/categories.html"
+    "/categories.html",
+    "",
+    breadcrumbJsonLd([
+      { name: "Home", url: `${DOMAIN}/` },
+      { name: "Categories", url: `${DOMAIN}/categories.html` },
+    ])
   )}
 ${heroShell(`${nav("categories")}
     <section class="page-hero">
@@ -718,7 +849,12 @@ writeFile(
   `${head(
     "OopBuy Guides | How to Buy, Ship & Save",
     "Complete OopBuy guides — how to buy, shipping, customs declaration, QC photos, and coupons for the OopBuy Spreadsheet.",
-    "/guides.html"
+    "/guides.html",
+    "",
+    breadcrumbJsonLd([
+      { name: "Home", url: `${DOMAIN}/` },
+      { name: "Guides", url: `${DOMAIN}/guides.html` },
+    ])
   )}
 ${heroShell(`${nav("guides")}
     <section class="page-hero">
@@ -808,7 +944,12 @@ for (const [slug, content] of Object.entries(guideContent)) {
       `${content.title} | OopBuy Spreadsheet Guide`,
       `${guide.excerpt}`,
       `/guides/${slug}.html`,
-      "../"
+      "../",
+      breadcrumbJsonLd([
+        { name: "Home", url: `${DOMAIN}/` },
+        { name: "Guides", url: `${DOMAIN}/guides.html` },
+        { name: content.title, url: `${DOMAIN}/guides/${slug}.html` },
+      ])
     )}
 ${heroShell(`${nav(`guide-${slug}`, "../")}
     <section class="page-hero">
@@ -1081,7 +1222,12 @@ for (const cat of allCategories) {
       `${cat.name} | OopBuy Spreadsheet`,
       cat.desc,
       `/categories/${cat.slug}.html`,
-      "../"
+      "../",
+      breadcrumbJsonLd([
+        { name: "Home", url: `${DOMAIN}/` },
+        { name: "Categories", url: `${DOMAIN}/categories.html` },
+        { name: cat.name, url: `${DOMAIN}/categories/${cat.slug}.html` },
+      ])
     )}
 ${heroShell(`${nav(`cat-${cat.slug}`, "../")}
     <section class="page-hero">
@@ -1136,7 +1282,12 @@ writeFile(
     "Clothing | OopBuy Spreadsheet",
     "Browse clothing finds in the OopBuy Spreadsheet — jackets, hoodies, t-shirts, pants from trusted OopBuy sellers.",
     "/categories/clothing.html",
-    "../"
+    "../",
+    breadcrumbJsonLd([
+      { name: "Home", url: `${DOMAIN}/` },
+      { name: "Categories", url: `${DOMAIN}/categories.html` },
+      { name: "Clothing", url: `${DOMAIN}/categories/clothing.html` },
+    ])
   )}
 ${heroShell(`${nav("cat-clothing", "../")}
     <section class="page-hero">
@@ -1181,11 +1332,13 @@ const sitemapUrls = [
   ...comparisons.map((c) => `/compare/vs-${c.slug}.html`),
 ];
 
+const sitemapLastmod = new Date().toISOString().slice(0, 10);
+
 writeFile(
   path.join(root, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapUrls.map((u) => `  <url><loc>${DOMAIN}${u === "/" ? "" : u}</loc><changefreq>weekly</changefreq><priority>${u === "/" ? "1.0" : "0.8"}</priority></url>`).join("\n")}
+${sitemapUrls.map((u) => `  <url><loc>${DOMAIN}${u === "/" ? "" : u}</loc><lastmod>${sitemapLastmod}</lastmod><changefreq>weekly</changefreq><priority>${u === "/" ? "1.0" : "0.8"}</priority></url>`).join("\n")}
 </urlset>`
 );
 
@@ -1196,6 +1349,11 @@ Allow: /
 
 Sitemap: ${DOMAIN}/sitemap.xml
 `
+);
+
+writeFile(
+  path.join(root, "products.js"),
+  `window.OOPBUY_PRODUCTS = ${JSON.stringify(oopbuyProducts, null, 2)};\n`
 );
 
 writeFile(
@@ -1210,7 +1368,7 @@ console.log("  guides.html + guides/*.html (6 pages)");
 console.log("  compare.html + compare/*.html (4 pages)");
 console.log("  deals.html, review.html, about.html, contact.html");
 console.log(`  categories/*.html (${allCategories.length + 1} pages)`);
-console.log("  sitemap.xml, robots.txt, config.js");
+console.log("  sitemap.xml, robots.txt, config.js, products.js");
 console.log("\n⚙ Edit CONFIG at top of generate.js before deploy:");
 console.log(`  INVITE, DOMAIN, DISCORD, EMAIL`);
 console.log("\n▶ Preview: node serve.js  →  http://localhost:3000");

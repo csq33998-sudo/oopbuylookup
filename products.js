@@ -1,34 +1,258 @@
 window.OOPBUY_PRODUCTS = [
-  { id: 1, name: "Jordan 1 Retro High OG", category: "shoes", price: 45, options: 12, image: "https://placehold.co/400x400/1a1a2e/fff?text=Shoes" },
-  { id: 2, name: "Dunk Low Panda", category: "shoes", price: 38, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Dunk" },
-  { id: 3, name: "Yeezy Slide Bone", category: "shoes", price: 22, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Slide" },
-  { id: 4, name: "North Face Puffer Jacket", category: "jackets", price: 55, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=Jacket" },
-  { id: 5, name: "Moncler Maya Down Jacket", category: "jackets", price: 120, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Moncler" },
-  { id: 6, name: "Essentials Hoodie", category: "hoodies", price: 28, options: 15, image: "https://placehold.co/400x400/1a1a2e/fff?text=Hoodie" },
-  { id: 7, name: "Stussy Basic Hoodie", category: "hoodies", price: 32, options: 9, image: "https://placehold.co/400x400/1a1a2e/fff?text=Stussy" },
-  { id: 8, name: "Chrome Hearts Tee", category: "t-shirts", price: 18, options: 20, image: "https://placehold.co/400x400/1a1a2e/fff?text=Tee" },
-  { id: 9, name: "Balenciaga Logo T-Shirt", category: "t-shirts", price: 25, options: 7, image: "https://placehold.co/400x400/1a1a2e/fff?text=Balenciaga" },
-  { id: 10, name: "Essentials Sweatpants", category: "pants", price: 26, options: 12, image: "https://placehold.co/400x400/1a1a2e/fff?text=Pants" },
-  { id: 11, name: "Arc'teryx Cargo Pants", category: "pants", price: 35, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Cargo" },
-  { id: 12, name: "Goyard Tote Bag", category: "bags", price: 48, options: 14, image: "https://placehold.co/400x400/1a1a2e/fff?text=Goyard" },
-  { id: 13, name: "Louis Vuitton Keepall", category: "bags", price: 85, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=LV" },
-  { id: 14, name: "Supreme Box Logo Cap", category: "headwear", price: 15, options: 18, image: "https://placehold.co/400x400/1a1a2e/fff?text=Cap" },
-  { id: 15, name: "New Era Yankees Hat", category: "headwear", price: 12, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=Hat" },
-  { id: 16, name: "Rolex Submariner Watch", category: "accessories", price: 65, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Watch" },
-  { id: 17, name: "Gucci Belt", category: "accessories", price: 22, options: 11, image: "https://placehold.co/400x400/1a1a2e/fff?text=Belt" },
-  { id: 18, name: "AirPods Pro Clone", category: "electronics", price: 30, options: 3, image: "https://placehold.co/400x400/1a1a2e/fff?text=AirPods" },
-  { id: 19, name: "Apple Watch Ultra", category: "electronics", price: 55, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Watch" },
-  { id: 20, name: "Creed Aventus Perfume", category: "perfume", price: 28, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=Perfume" },
-  { id: 21, name: "Real Madrid Home Jersey", category: "jersey", price: 20, options: 9, image: "https://placehold.co/400x400/1a1a2e/fff?text=Jersey" },
-  { id: 22, name: "Barcelona Away Jersey 24/25", category: "jersey", price: 22, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Barca" },
-  { id: 23, name: "Travis Scott x Jordan 4", category: "shoes", price: 58, options: 7, image: "https://placehold.co/400x400/1a1a2e/fff?text=Travis" },
-  { id: 24, name: "Stone Island Sweater", category: "hoodies", price: 42, options: 6, image: "https://placehold.co/400x400/1a1a2e/fff?text=Stone" },
-  { id: 25, name: "Prada Re-Nylon Bag", category: "bags", price: 52, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Prada" },
-  { id: 26, name: "Casio G-Shock", category: "accessories", price: 18, options: 15, image: "https://placehold.co/400x400/1a1a2e/fff?text=G-Shock" },
-  { id: 27, name: "Dior Sauvage Perfume", category: "perfume", price: 24, options: 4, image: "https://placehold.co/400x400/1a1a2e/fff?text=Dior" },
-  { id: 28, name: "Random Trending Find", category: "other", price: 15, options: 2, image: "https://placehold.co/400x400/1a1a2e/fff?text=Other" },
-  { id: 29, name: "New Balance 550", category: "shoes", price: 35, options: 10, image: "https://placehold.co/400x400/1a1a2e/fff?text=NB550" },
-  { id: 30, name: "CP Company Goggle Jacket", category: "jackets", price: 68, options: 5, image: "https://placehold.co/400x400/1a1a2e/fff?text=CP" },
-  { id: 31, name: "Fear of God Essentials Tee", category: "t-shirts", price: 20, options: 14, image: "https://placehold.co/400x400/1a1a2e/fff?text=FOG" },
-  { id: 32, name: "Off-White Industrial Belt", category: "accessories", price: 16, options: 8, image: "https://placehold.co/400x400/1a1a2e/fff?text=Off-White" },
+  {
+    "id": 1,
+    "name": "Jordan 1 Retro High OG",
+    "category": "shoes",
+    "price": 45,
+    "options": 12,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Shoes"
+  },
+  {
+    "id": 2,
+    "name": "Dunk Low Panda",
+    "category": "shoes",
+    "price": 38,
+    "options": 8,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Dunk"
+  },
+  {
+    "id": 3,
+    "name": "Yeezy Slide Bone",
+    "category": "shoes",
+    "price": 22,
+    "options": 6,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Slide"
+  },
+  {
+    "id": 4,
+    "name": "North Face Puffer Jacket",
+    "category": "jackets",
+    "price": 55,
+    "options": 10,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Jacket"
+  },
+  {
+    "id": 5,
+    "name": "Moncler Maya Down Jacket",
+    "category": "jackets",
+    "price": 120,
+    "options": 6,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Moncler"
+  },
+  {
+    "id": 6,
+    "name": "Essentials Hoodie",
+    "category": "hoodies",
+    "price": 28,
+    "options": 15,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Hoodie"
+  },
+  {
+    "id": 7,
+    "name": "Stussy Basic Hoodie",
+    "category": "hoodies",
+    "price": 32,
+    "options": 9,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Stussy"
+  },
+  {
+    "id": 8,
+    "name": "Chrome Hearts Tee",
+    "category": "t-shirts",
+    "price": 18,
+    "options": 20,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Tee"
+  },
+  {
+    "id": 9,
+    "name": "Balenciaga Logo T-Shirt",
+    "category": "t-shirts",
+    "price": 25,
+    "options": 7,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Balenciaga"
+  },
+  {
+    "id": 10,
+    "name": "Essentials Sweatpants",
+    "category": "pants",
+    "price": 26,
+    "options": 12,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Pants"
+  },
+  {
+    "id": 11,
+    "name": "Arc'teryx Cargo Pants",
+    "category": "pants",
+    "price": 35,
+    "options": 8,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Cargo"
+  },
+  {
+    "id": 12,
+    "name": "Goyard Tote Bag",
+    "category": "bags",
+    "price": 48,
+    "options": 14,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Goyard"
+  },
+  {
+    "id": 13,
+    "name": "Louis Vuitton Keepall",
+    "category": "bags",
+    "price": 85,
+    "options": 5,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=LV"
+  },
+  {
+    "id": 14,
+    "name": "Supreme Box Logo Cap",
+    "category": "headwear",
+    "price": 15,
+    "options": 18,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Cap"
+  },
+  {
+    "id": 15,
+    "name": "New Era Yankees Hat",
+    "category": "headwear",
+    "price": 12,
+    "options": 10,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Hat"
+  },
+  {
+    "id": 16,
+    "name": "Rolex Submariner Watch",
+    "category": "accessories",
+    "price": 65,
+    "options": 4,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Watch"
+  },
+  {
+    "id": 17,
+    "name": "Gucci Belt",
+    "category": "accessories",
+    "price": 22,
+    "options": 11,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Belt"
+  },
+  {
+    "id": 18,
+    "name": "AirPods Pro Clone",
+    "category": "electronics",
+    "price": 30,
+    "options": 3,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=AirPods"
+  },
+  {
+    "id": 19,
+    "name": "Apple Watch Ultra",
+    "category": "electronics",
+    "price": 55,
+    "options": 6,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Watch"
+  },
+  {
+    "id": 20,
+    "name": "Creed Aventus Perfume",
+    "category": "perfume",
+    "price": 28,
+    "options": 5,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Perfume"
+  },
+  {
+    "id": 21,
+    "name": "Real Madrid Home Jersey",
+    "category": "jersey",
+    "price": 20,
+    "options": 9,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Jersey"
+  },
+  {
+    "id": 22,
+    "name": "Barcelona Away Jersey 24/25",
+    "category": "jersey",
+    "price": 22,
+    "options": 8,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Barca"
+  },
+  {
+    "id": 23,
+    "name": "Travis Scott x Jordan 4",
+    "category": "shoes",
+    "price": 58,
+    "options": 7,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Travis"
+  },
+  {
+    "id": 24,
+    "name": "Stone Island Sweater",
+    "category": "hoodies",
+    "price": 42,
+    "options": 6,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Stone"
+  },
+  {
+    "id": 25,
+    "name": "Prada Re-Nylon Bag",
+    "category": "bags",
+    "price": 52,
+    "options": 4,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Prada"
+  },
+  {
+    "id": 26,
+    "name": "Casio G-Shock",
+    "category": "accessories",
+    "price": 18,
+    "options": 15,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=G-Shock"
+  },
+  {
+    "id": 27,
+    "name": "Dior Sauvage Perfume",
+    "category": "perfume",
+    "price": 24,
+    "options": 4,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Dior"
+  },
+  {
+    "id": 28,
+    "name": "Random Trending Find",
+    "category": "other",
+    "price": 15,
+    "options": 2,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Other"
+  },
+  {
+    "id": 29,
+    "name": "New Balance 550",
+    "category": "shoes",
+    "price": 35,
+    "options": 10,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=NB550"
+  },
+  {
+    "id": 30,
+    "name": "CP Company Goggle Jacket",
+    "category": "jackets",
+    "price": 68,
+    "options": 5,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=CP"
+  },
+  {
+    "id": 31,
+    "name": "Fear of God Essentials Tee",
+    "category": "t-shirts",
+    "price": 20,
+    "options": 14,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=FOG"
+  },
+  {
+    "id": 32,
+    "name": "Off-White Industrial Belt",
+    "category": "accessories",
+    "price": 16,
+    "options": 8,
+    "image": "https://placehold.co/400x400/1a1a2e/fff?text=Off-White"
+  }
 ];
