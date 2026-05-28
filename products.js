@@ -5,7 +5,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 45,
     "options": 12,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Jordan%201%20Retro%20High%20OG"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Jordan%201%20Retro%20High%20OG%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EJordan%201%20Retro%20High%20OG%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 38,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Dunk%20Low%20Panda"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Dunk%20Low%20Panda%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EDunk%20Low%20Panda%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 22,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Yeezy%20Slide%20Bone"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Yeezy%20Slide%20Bone%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EYeezy%20Slide%20Bone%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 58,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Travis%20Scott%20x%20Jordan%204"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Travis%20Scott%20x%20Jordan%20%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ETravis%20Scott%20x%20Jordan%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 35,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=New%20Balance%20550"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22New%20Balance%20550%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENew%20Balance%20550%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 52,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Air%20Jordan%204%20Military%20Black"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Air%20Jordan%204%20Military%20%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAir%20Jordan%204%20Military%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 48,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Jordan%204%20Retro%20Bred"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Jordan%204%20Retro%20Bred%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EJordan%204%20Retro%20Bred%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 42,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20SB%20Dunk%20Low"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20SB%20Dunk%20Low%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20SB%20Dunk%20Low%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 36,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Adidas%20Samba%20OG"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Adidas%20Samba%20OG%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAdidas%20Samba%20OG%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 40,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Yeezy%20350%20V2%20Zebra"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Yeezy%20350%20V2%20Zebra%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EYeezy%20350%20V2%20Zebra%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 39,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=New%20Balance%202002R"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22New%20Balance%202002R%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENew%20Balance%202002R%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 44,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Asics%20Gel-Kayano%2014"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Asics%20Gel-Kayano%2014%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAsics%20Gel-Kayano%2014%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 46,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Salomon%20XT-6"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Salomon%20XT-6%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESalomon%20XT-6%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 55,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Golden%20Goose%20Super-Star"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Golden%20Goose%20Super-Sta%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EGolden%20Goose%20Super-Sta%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 50,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=BAPE%20STA%20Low"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22BAPE%20STA%20Low%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBAPE%20STA%20Low%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 32,
     "options": 14,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Air%20Force%201%20Low%20White"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Air%20Force%201%20Low%20W%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Air%20Force%201%20Low%20W%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 34,
     "options": 12,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Air%20Max%2090"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Air%20Max%2090%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Air%20Max%2090%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 78,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Louis%20Vuitton%20Trainer"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Louis%20Vuitton%20Trainer%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ELouis%20Vuitton%20Trainer%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 62,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Off-White%20x%20Nike%20Dunk"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Off-White%20x%20Nike%20Dunk%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EOff-White%20x%20Nike%20Dunk%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "shoes",
     "price": 58,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Maison%20Margiela%20Replica%20Snea"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Maison%20Margiela%20Replic%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9F%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EMaison%20Margiela%20Replic%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 55,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=North%20Face%20Puffer%20Jacket"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22North%20Face%20Puffer%20Jack%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENorth%20Face%20Puffer%20Jack%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 120,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Moncler%20Maya%20Down%20Jacket"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Moncler%20Maya%20Down%20Jack%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EMoncler%20Maya%20Down%20Jack%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 68,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=CP%20Company%20Goggle%20Jacket"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22CP%20Company%20Goggle%20Jack%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECP%20Company%20Goggle%20Jack%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 135,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Canada%20Goose%20Expedition%20Park"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Canada%20Goose%20Expeditio%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECanada%20Goose%20Expeditio%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 72,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stone%20Island%20Hooded%20Jacket"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stone%20Island%20Hooded%20Ja%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStone%20Island%20Hooded%20Ja%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 48,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Carhartt%20Detroit%20Jacket"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Carhartt%20Detroit%20Jacke%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECarhartt%20Detroit%20Jacke%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 27,
@@ -213,7 +213,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 95,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Arc'teryx%20Beta%20LT%20Shell"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Arc%26apos%3Bteryx%20Beta%20LT%20Shel%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EArc%26apos%3Bteryx%20Beta%20LT%20Shel%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 42,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Tech%20Fleece%20Windrunner"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Tech%20Fleece%20Windr%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Tech%20Fleece%20Windr%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 29,
@@ -229,7 +229,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 65,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Ralph%20Lauren%20Down%20Puffer"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Ralph%20Lauren%20Down%20Puff%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERalph%20Lauren%20Down%20Puff%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 30,
@@ -237,7 +237,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jackets",
     "price": 88,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Burberry%20Vintage%20Check%20Jacke"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Burberry%20Vintage%20Check%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBurberry%20Vintage%20Check%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 28,
     "options": 15,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Essentials%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Essentials%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EEssentials%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 32,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stussy%20Basic%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stussy%20Basic%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStussy%20Basic%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 33,
@@ -261,7 +261,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 42,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stone%20Island%20Crewneck%20Sweate"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stone%20Island%20Crewneck%20%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStone%20Island%20Crewneck%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 34,
@@ -269,7 +269,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 55,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Supreme%20Box%20Logo%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Supreme%20Box%20Logo%20Hoodi%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESupreme%20Box%20Logo%20Hoodi%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 35,
@@ -277,7 +277,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 38,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Broken%20Planet%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Broken%20Planet%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBroken%20Planet%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 36,
@@ -285,7 +285,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 45,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Corteiz%20Alcatraz%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Corteiz%20Alcatraz%20Hoodi%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECorteiz%20Alcatraz%20Hoodi%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 37,
@@ -293,7 +293,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 48,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Palm%20Angels%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Palm%20Angels%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPalm%20Angels%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 38,
@@ -301,7 +301,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 52,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Ami%20Paris%20Heart%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Ami%20Paris%20Heart%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAmi%20Paris%20Heart%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 39,
@@ -309,7 +309,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 36,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Tech%20Fleece%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Tech%20Fleece%20Hoodi%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Tech%20Fleece%20Hoodi%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 40,
@@ -317,7 +317,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 44,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Trapstar%20Irongate%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Trapstar%20Irongate%20Hood%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ETrapstar%20Irongate%20Hood%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 41,
@@ -325,7 +325,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 46,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Represent%20Owners%20Club%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Represent%20Owners%20Club%20%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERepresent%20Owners%20Club%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 42,
@@ -333,7 +333,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "hoodies",
     "price": 58,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Balenciaga%20Logo%20Hoodie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Balenciaga%20Logo%20Hoodie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A5%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBalenciaga%20Logo%20Hoodie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 43,
@@ -341,7 +341,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 18,
     "options": 20,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Chrome%20Hearts%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Chrome%20Hearts%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EChrome%20Hearts%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 44,
@@ -349,7 +349,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 25,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Balenciaga%20Logo%20T-Shirt"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Balenciaga%20Logo%20T-Shir%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBalenciaga%20Logo%20T-Shir%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 45,
@@ -357,7 +357,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 20,
     "options": 14,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Fear%20of%20God%20Essentials%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Fear%20of%20God%20Essentials%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EFear%20of%20God%20Essentials%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 46,
@@ -365,7 +365,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 22,
     "options": 12,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Gallery%20Dept%20Vintage%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Gallery%20Dept%20Vintage%20T%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EGallery%20Dept%20Vintage%20T%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 47,
@@ -373,7 +373,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 19,
     "options": 15,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stussy%208%20Ball%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stussy%208%20Ball%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStussy%208%20Ball%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 48,
@@ -381,7 +381,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 24,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Supreme%20Band%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Supreme%20Band%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESupreme%20Band%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 49,
@@ -389,7 +389,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 28,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Burberry%20Logo%20T-Shirt"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Burberry%20Logo%20T-Shirt%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBurberry%20Logo%20T-Shirt%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 50,
@@ -397,7 +397,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 21,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Nocta%20Drake%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Nocta%20Drake%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Nocta%20Drake%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 30,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Maison%20Margiela%20Logo%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Maison%20Margiela%20Logo%20T%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EMaison%20Margiela%20Logo%20T%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 52,
@@ -413,7 +413,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 23,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Rhude%20Logo%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Rhude%20Logo%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERhude%20Logo%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 53,
@@ -421,7 +421,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 20,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Kenzo%20Tiger%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Kenzo%20Tiger%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EKenzo%20Tiger%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 54,
@@ -429,7 +429,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "t-shirts",
     "price": 26,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Vlone%20Friends%20Tee"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Vlone%20Friends%20Tee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%95%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EVlone%20Friends%20Tee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 55,
@@ -437,7 +437,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 26,
     "options": 12,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Essentials%20Sweatpants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Essentials%20Sweatpants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EEssentials%20Sweatpants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 56,
@@ -445,7 +445,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 35,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Arc'teryx%20Cargo%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Arc%26apos%3Bteryx%20Cargo%20Pants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EArc%26apos%3Bteryx%20Cargo%20Pants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 57,
@@ -453,7 +453,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 32,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20Tech%20Fleece%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20Tech%20Fleece%20Pants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20Tech%20Fleece%20Pants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 58,
@@ -461,7 +461,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 38,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Corteiz%20Cargo%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Corteiz%20Cargo%20Pants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECorteiz%20Cargo%20Pants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 59,
@@ -469,7 +469,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 40,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Carhartt%20Double%20Knee%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Carhartt%20Double%20Knee%20P%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECarhartt%20Double%20Knee%20P%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 60,
@@ -477,7 +477,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 28,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Jordan%20Essentials%20Fleece%20Pan"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Jordan%20Essentials%20Flee%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EJordan%20Essentials%20Flee%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 61,
@@ -485,7 +485,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 42,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Represent%20Cargo%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Represent%20Cargo%20Pants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERepresent%20Cargo%20Pants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 62,
@@ -493,7 +493,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 36,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Palace%20Track%20Pants"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Palace%20Track%20Pants%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPalace%20Track%20Pants%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 63,
@@ -501,7 +501,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 44,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Trapstar%20Shooters%20Track%20Pant"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Trapstar%20Shooters%20Trac%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ETrapstar%20Shooters%20Trac%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 64,
@@ -509,7 +509,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "pants",
     "price": 55,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Amiri%20MX1%20Jeans"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Amiri%20MX1%20Jeans%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%96%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAmiri%20MX1%20Jeans%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 65,
@@ -517,7 +517,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 48,
     "options": 14,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Goyard%20Tote%20Bag"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Goyard%20Tote%20Bag%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EGoyard%20Tote%20Bag%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 66,
@@ -525,7 +525,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 85,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Louis%20Vuitton%20Keepall"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Louis%20Vuitton%20Keepall%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ELouis%20Vuitton%20Keepall%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 67,
@@ -533,7 +533,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 52,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Prada%20Re-Nylon%20Bag"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Prada%20Re-Nylon%20Bag%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPrada%20Re-Nylon%20Bag%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 68,
@@ -541,7 +541,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 95,
     "options": 3,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Chanel%20Classic%20Flap%20Bag"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Chanel%20Classic%20Flap%20Ba%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EChanel%20Classic%20Flap%20Ba%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 69,
@@ -549,7 +549,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 72,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Dior%20Saddle%20Bag"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Dior%20Saddle%20Bag%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EDior%20Saddle%20Bag%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 70,
@@ -557,7 +557,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 68,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Balenciaga%20City%20Bag"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Balenciaga%20City%20Bag%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBalenciaga%20City%20Bag%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 71,
@@ -565,7 +565,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 38,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Supreme%20Backpack"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Supreme%20Backpack%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESupreme%20Backpack%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 72,
@@ -573,7 +573,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "bags",
     "price": 32,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Jordan%20Brand%20Backpack"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Jordan%20Brand%20Backpack%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%91%9C%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EJordan%20Brand%20Backpack%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 73,
@@ -581,7 +581,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 15,
     "options": 18,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Supreme%20Box%20Logo%20Cap"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Supreme%20Box%20Logo%20Cap%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESupreme%20Box%20Logo%20Cap%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 74,
@@ -589,7 +589,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 12,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=New%20Era%20Yankees%20Hat"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22New%20Era%20Yankees%20Hat%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENew%20Era%20Yankees%20Hat%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 75,
@@ -597,7 +597,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 18,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stone%20Island%20Compass%20Cap"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stone%20Island%20Compass%20C%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStone%20Island%20Compass%20C%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 76,
@@ -605,7 +605,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 14,
     "options": 12,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Carhartt%20WIP%20Beanie"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Carhartt%20WIP%20Beanie%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECarhartt%20WIP%20Beanie%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 77,
@@ -613,7 +613,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 16,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Nike%20ACG%20Cap"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Nike%20ACG%20Cap%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ENike%20ACG%20Cap%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 78,
@@ -621,7 +621,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 17,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Ami%20Paris%20Cap"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Ami%20Paris%20Cap%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAmi%20Paris%20Cap%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 79,
@@ -629,7 +629,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "headwear",
     "price": 15,
     "options": 14,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Goorin%20Bros%20Animal%20Cap"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Goorin%20Bros%20Animal%20Cap%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%A7%A2%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EGoorin%20Bros%20Animal%20Cap%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 80,
@@ -637,7 +637,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 65,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Rolex%20Submariner%20Watch"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Rolex%20Submariner%20Watch%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERolex%20Submariner%20Watch%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 81,
@@ -645,7 +645,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 22,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Gucci%20Belt"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Gucci%20Belt%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EGucci%20Belt%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 82,
@@ -653,7 +653,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 16,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Off-White%20Industrial%20Belt"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Off-White%20Industrial%20B%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EOff-White%20Industrial%20B%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 83,
@@ -661,7 +661,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 18,
     "options": 15,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Casio%20G-Shock"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Casio%20G-Shock%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECasio%20G-Shock%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 84,
@@ -669,7 +669,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 28,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Cartier%20Love%20Bracelet"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Cartier%20Love%20Bracelet%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECartier%20Love%20Bracelet%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 85,
@@ -677,7 +677,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 32,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Van%20Cleef%20Alhambra%20Necklace"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Van%20Cleef%20Alhambra%20Nec%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EVan%20Cleef%20Alhambra%20Nec%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 86,
@@ -685,7 +685,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 20,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Ray-Ban%20Sunglasses"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Ray-Ban%20Sunglasses%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERay-Ban%20Sunglasses%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 87,
@@ -693,7 +693,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 35,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Louis%20Vuitton%20Wallet"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Louis%20Vuitton%20Wallet%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ELouis%20Vuitton%20Wallet%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 88,
@@ -701,7 +701,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 26,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Burberry%20Scarf"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Burberry%20Scarf%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBurberry%20Scarf%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 89,
@@ -709,7 +709,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "accessories",
     "price": 24,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Chrome%20Hearts%20Ring"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Chrome%20Hearts%20Ring%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%8C%9A%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EChrome%20Hearts%20Ring%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 90,
@@ -717,7 +717,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 30,
     "options": 3,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=AirPods%20Pro%20Clone"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22AirPods%20Pro%20Clone%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EAirPods%20Pro%20Clone%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 91,
@@ -725,7 +725,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 55,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Apple%20Watch%20Ultra%20Clone"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Apple%20Watch%20Ultra%20Clon%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EApple%20Watch%20Ultra%20Clon%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 92,
@@ -733,7 +733,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 49,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Apple%20AirPods%20Max"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Apple%20AirPods%20Max%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EApple%20AirPods%20Max%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 93,
@@ -741,7 +741,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 28,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Samsung%20Galaxy%20Buds"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Samsung%20Galaxy%20Buds%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ESamsung%20Galaxy%20Buds%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 94,
@@ -749,7 +749,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 25,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=JBL%20Flip%20Speaker"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22JBL%20Flip%20Speaker%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EJBL%20Flip%20Speaker%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 95,
@@ -757,7 +757,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "electronics",
     "price": 22,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=PS5%20Controller"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22PS5%20Controller%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%93%B1%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPS5%20Controller%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 96,
@@ -765,7 +765,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "perfume",
     "price": 28,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Creed%20Aventus%20Perfume"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Creed%20Aventus%20Perfume%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8C%B8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ECreed%20Aventus%20Perfume%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 97,
@@ -773,7 +773,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "perfume",
     "price": 24,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Dior%20Sauvage%20Perfume"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Dior%20Sauvage%20Perfume%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8C%B8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EDior%20Sauvage%20Perfume%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 98,
@@ -781,7 +781,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "perfume",
     "price": 32,
     "options": 3,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Tom%20Ford%20Oud%20Wood"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Tom%20Ford%20Oud%20Wood%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8C%B8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ETom%20Ford%20Oud%20Wood%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 99,
@@ -789,7 +789,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "perfume",
     "price": 30,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Chanel%20Bleu%20de%20Chanel"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Chanel%20Bleu%20de%20Chanel%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8C%B8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EChanel%20Bleu%20de%20Chanel%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 100,
@@ -797,7 +797,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "perfume",
     "price": 26,
     "options": 5,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=YSL%20Y%20Eau%20de%20Parfum"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22YSL%20Y%20Eau%20de%20Parfum%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8C%B8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EYSL%20Y%20Eau%20de%20Parfum%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 101,
@@ -805,7 +805,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 20,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Real%20Madrid%20Home%20Jersey"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Real%20Madrid%20Home%20Jerse%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EReal%20Madrid%20Home%20Jerse%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 102,
@@ -813,7 +813,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 22,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Barcelona%20Away%20Jersey%2024%2F25"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Barcelona%20Away%20Jersey%20%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBarcelona%20Away%20Jersey%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 103,
@@ -821,7 +821,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 21,
     "options": 10,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Manchester%20United%20Home%20Jerse"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Manchester%20United%20Home%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EManchester%20United%20Home%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 104,
@@ -829,7 +829,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 23,
     "options": 9,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=PSG%20Home%20Jersey%2024%2F25"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22PSG%20Home%20Jersey%2024%2F25%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPSG%20Home%20Jersey%2024%2F25%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 105,
@@ -837,7 +837,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 24,
     "options": 8,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Lakers%20LeBron%20James%20Jersey"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Lakers%20LeBron%20James%20Je%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ELakers%20LeBron%20James%20Je%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 106,
@@ -845,7 +845,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 19,
     "options": 11,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Brazil%20National%20Team%20Jersey"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Brazil%20National%20Team%20J%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EBrazil%20National%20Team%20J%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 107,
@@ -853,7 +853,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "jersey",
     "price": 22,
     "options": 7,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Warriors%20Stephen%20Curry%20Jerse"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Warriors%20Stephen%20Curry%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%F0%9F%8F%80%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EWarriors%20Stephen%20Curry%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 108,
@@ -861,7 +861,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "other",
     "price": 18,
     "options": 4,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Pop%20Mart%20Labubu%20Figure"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Pop%20Mart%20Labubu%20Figure%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%9C%A8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EPop%20Mart%20Labubu%20Figure%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 109,
@@ -869,7 +869,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "other",
     "price": 15,
     "options": 6,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Stanley%20Cup%20Tumbler%20Dupe"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Stanley%20Cup%20Tumbler%20Du%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%9C%A8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3EStanley%20Cup%20Tumbler%20Du%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 110,
@@ -877,7 +877,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "other",
     "price": 12,
     "options": 3,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Ring%20Light%20Tripod%20Stand"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Ring%20Light%20Tripod%20Stan%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%9C%A8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERing%20Light%20Tripod%20Stan%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 111,
@@ -885,7 +885,7 @@ window.OOPBUY_PRODUCTS = [
     "category": "other",
     "price": 28,
     "options": 2,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Lego%20Star%20Wars%20Set"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Lego%20Star%20Wars%20Set%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%9C%A8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ELego%20Star%20Wars%20Set%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   },
   {
     "id": 112,
@@ -893,6 +893,6 @@ window.OOPBUY_PRODUCTS = [
     "category": "other",
     "price": 15,
     "options": 2,
-    "image": "https://placehold.co/400x400/1a1a2e/ffffff?text=Random%20Trending%20Find"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%20role%3D%22img%22%20aria-label%3D%22Random%20Trending%20Find%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a5f%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22168%22%20r%3D%2256%22%20fill%3D%22rgba(255%2C255%2C255%2C0.08)%22%2F%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22188%22%20text-anchor%3D%22middle%22%20font-size%3D%2264%22%3E%E2%9C%A8%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22200%22%20y%3D%22268%22%20text-anchor%3D%22middle%22%20fill%3D%22%23cbd5e1%22%20font-size%3D%2215%22%20font-family%3D%22system-ui%2C-apple-system%2Csans-serif%22%3ERandom%20Trending%20Find%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
   }
 ];

@@ -89,13 +89,57 @@ const allCategories = [
 
 const clothingSlugs = ["jackets", "hoodies", "t-shirts", "pants"];
 
-function productImage(label) {
-  const text = encodeURIComponent(String(label).slice(0, 28));
-  return `https://placehold.co/400x400/1a1a2e/ffffff?text=${text}`;
+const categoryIcons = {
+  shoes: "👟",
+  jackets: "🧥",
+  hoodies: "🧥",
+  "t-shirts": "👕",
+  pants: "👖",
+  bags: "👜",
+  headwear: "🧢",
+  accessories: "⌚",
+  electronics: "📱",
+  perfume: "🌸",
+  jersey: "🏀",
+  other: "✨",
+};
+
+function escapeXml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
 }
 
-function product(id, name, category, price, options) {
-  return { id, name, category, price, options, image: productImage(name) };
+function productImage(name, category) {
+  const icon = categoryIcons[category] || "✨";
+  const label = escapeXml(String(name).slice(0, 22));
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="${label}">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="168" r="56" fill="rgba(255,255,255,0.08)"/>
+  <text x="200" y="188" text-anchor="middle" font-size="64">${icon}</text>
+  <text x="200" y="268" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="system-ui,-apple-system,sans-serif">${label}</text>
+</svg>`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+}
+
+function product(id, name, category, price, options, image) {
+  return {
+    id,
+    name,
+    category,
+    price,
+    options,
+    image: image || productImage(name, category),
+  };
 }
 
 const oopbuyProducts = [
