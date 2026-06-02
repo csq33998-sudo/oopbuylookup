@@ -370,7 +370,6 @@ function nav(current, prefix = "") {
         <a href="${p}deals.html"${activeClass("deals")}>Deals</a>
         <a href="${p}review.html"${activeClass("review")}>Review</a>
         <a href="${p}about.html"${activeClass("about")}>About</a>
-        <a href="${DISCORD}" class="nav-discord" target="_blank" rel="noopener noreferrer">Discord</a>
         <a href="${AFFILIATE}" class="btn btn-nav-signup" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
       </nav>
     </div>
