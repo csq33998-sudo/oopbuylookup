@@ -1050,18 +1050,23 @@ const guideContent = {
   shipping: {
     title: "OopBuy Shipping Guide",
     sections: [
-      { h: "Shipping Lines", p: "OopBuy offers multiple international shipping lines including EMS, DHL, FedEx, and budget-friendly options. Choose based on speed vs. cost for your country." },
-      { h: "Consolidation", p: "Items stored at the warehouse can be consolidated into one package to save on shipping. Wait for all items to arrive, then submit a single shipment request." },
-      { h: "Estimated Delivery", p: "Most international shipments arrive within 7–20 business days depending on the line and destination. Track your package through OopBuy's dashboard." },
-      { h: "Shipping Costs", p: "Costs depend on weight, dimensions, and shipping line. Use OopBuy's shipping estimator before submitting. New users get 15% off shipping on their first order." },
+      { h: "OopBuy Shipping Basics", p: "After your items arrive at the OopBuy warehouse, you can combine them into one parcel and choose an international shipping line. The best option depends on your destination country, parcel weight, item type, delivery expectations, and budget." },
+      { h: "Why Tracking May Not Update", p: "Tracking can stay quiet for several days after a parcel is marked as shipped. This usually happens while the parcel is waiting for carrier scanning, export processing, airline handoff, or customs movement. Check again periodically instead of resubmitting the same question right away." },
+      { h: "When Customs Causes Delays", p: "If a parcel reaches domestic customs and stops updating, it may simply be waiting for inspection. Returned parcels usually involve sensitive goods, route restrictions, declaration problems, or local import checks. Choosing the right route and declaration reduces this risk." },
+      { h: "Recommended Routes by Region", p: "For the UK, Royal Mail-style or UK tax-friendly routes are usually practical. For many EU countries, tariff-free DHL-style lines are often preferred. USA buyers often choose stable air routes, while Australia and New Zealand buyers commonly compare EMS-style options. For Asia and the Middle East, prioritize routes with insurance and clear declaration rules." },
+      { h: "How to Lower Shipping Cost", p: "Consolidate items into one parcel when possible, remove unnecessary packaging, compare actual and volumetric weight, and avoid oversized boxes. Heavy shoes, jackets, and boxed accessories can increase shipping cost quickly, so plan your haul before submitting." },
+      { h: "Final Shipping Checklist", p: "Before paying for shipping, review QC photos, confirm your address, check route restrictions, choose a realistic declaration, and decide whether insurance is worth it. A little preparation before submission can prevent most shipping problems later." },
     ],
   },
   declaration: {
     title: "How to Declare on OopBuy",
     sections: [
-      { h: "What is Customs Declaration?", p: "When shipping internationally, you must declare the contents and value of your package for customs. Accurate declaration prevents delays and seizures." },
-      { h: "How to Declare on OopBuy", p: "During the shipping submission step, OopBuy asks you to declare item names and values. Use generic descriptions (e.g., 'clothing', 'shoes') and reasonable declared values." },
-      { h: "Tips for Smooth Clearance", p: "Don't over-declare or under-declare significantly. Research your country's import limits and tax thresholds. When in doubt, ask in our Discord community." },
+      { h: "What is Declaration?", p: "Declaration is the parcel information used by customs to understand what you are importing and what value you are declaring. A clear declaration helps customs process your package and lowers the chance of avoidable delays." },
+      { h: "Why Accurate Declaration Matters", p: "A declaration that looks unrealistic can create problems. Very low values on large parcels, branded item descriptions, or mismatched quantities may increase inspection risk. The goal is to keep the declaration simple, believable, and consistent with the parcel." },
+      { h: "Country Rules Are Different", p: "Declaration expectations vary by country. Some regions have higher tax thresholds, while others inspect certain item types more closely. Before shipping, check your local import rules and choose a shipping line that matches your country." },
+      { h: "Simple Item Names Work Best", p: "Use broad item names such as shoes, hoodie, pants, jacket, bag, accessories, or electronics. Avoid unnecessary brand names or detailed product descriptions unless the shipping line specifically requires more detail." },
+      { h: "Extra Declaration Tips", p: "If your parcel is close to a local tax threshold, avoid declaring right at the limit. Watches and sensitive accessories are often better shipped separately. Large mixed hauls should be split when the value, weight, or item mix looks risky." },
+      { h: "Before You Submit", p: "Check parcel weight, item categories, destination rules, and the shipping route before confirming. A good declaration will not guarantee customs clearance, but it gives your parcel a cleaner and more consistent profile." },
     ],
   },
   "qc-photos": {
@@ -1075,17 +1080,23 @@ const guideContent = {
   coupons: {
     title: "All About OopBuy Coupons",
     sections: [
-      { h: "What is a Coupon on OopBuy?", p: "Coupons are promotional discounts on OopBuy. New users receive a ¥3,000 coupon bundle plus 15% off shipping on their first order when signing up through our link." },
-      { h: "How to Redeem", p: "Sign up for OopBuy, verify your email, and coupons are automatically added to your account. Apply them at checkout when placing orders or paying for shipping." },
-      { h: "Ongoing Deals", p: "Check our Deals page for active coupon codes and seasonal promotions. We update it regularly with the latest OopBuy offers." },
+      { h: "What is an OopBuy Coupon?", p: "An OopBuy coupon is a discount you can apply to eligible purchases, service fees, or shipping payments depending on the coupon type. Some coupons reduce a fixed amount, while others work only after a minimum spend." },
+      { h: "Where to Find Coupons", p: "Coupons usually appear in the wallet or coupon area of your OopBuy account. New users may receive a bundle after registration, and active promotions can also appear during seasonal campaigns or on our Deals page." },
+      { h: "How to Get New Coupons", p: "The easiest way to start is by creating an OopBuy account through the invite link and checking your coupon wallet after signup. For later orders, review active promotions before you pay for products or submit international shipping." },
+      { h: "Coupon Terms and Expiration", p: "Always check expiration dates, minimum spend, eligible order type, and whether the coupon applies to product payment or shipping. If a coupon does not appear at checkout, the order probably does not meet one of those requirements." },
+      { h: "How to Use Coupons Effectively", p: "Save larger shipping coupons for bigger parcels, use product coupons when the minimum spend is already met, and avoid splitting orders in a way that makes you lose eligibility. Planning the order around coupon rules can produce better savings." },
+      { h: "Before You Checkout", p: "Review your available coupon list, compare route prices, and check the final total before paying. A coupon is only useful when it actually lowers the complete cost of the haul, not just one line item." },
     ],
   },
   "what-is-oopbuy": {
     title: "What is OopBuy?",
     sections: [
-      { h: "Overview", p: "OopBuy is a Chinese shopping agent that helps international buyers purchase from Taobao, Weidian, 1688, and other Chinese marketplaces. They handle payment, QC inspection, warehouse storage, and international shipping." },
-      { h: "Why OopBuy?", p: "Competitive shipping rates, reliable QC photos, PayPal support, responsive customer service, and generous new-user coupons make OopBuy a top choice among shopping agents." },
-      { h: "OopBuy Spreadsheet", p: "Our OopBuy Spreadsheet curates the best finds from trusted sellers into an easy-to-browse format — saving you hours of searching Chinese marketplaces manually." },
+      { h: "Understanding OopBuy", p: "OopBuy is a shopping agent that helps international buyers purchase products from Chinese sellers and marketplaces. Instead of dealing with each seller directly, you order through OopBuy and let the agent handle payment, warehouse receiving, inspection, and international shipping." },
+      { h: "Does OopBuy Sell Products Directly?", p: "OopBuy mainly works as an intermediary. It helps you buy from sellers on platforms such as Taobao, Weidian, 1688, and similar marketplaces, then stores the items in a warehouse until you are ready to ship them." },
+      { h: "What Can You Order?", p: "Most shoppers use OopBuy for clothing, sneakers, bags, accessories, electronics, and other Chinese marketplace finds. Product quality still depends on the seller, so checking listings and QC photos remains important." },
+      { h: "How the Order Process Works", p: "You paste or open a product link, choose item options, pay through OopBuy, and wait for the seller to ship to the warehouse. Once the item arrives, OopBuy takes QC photos so you can inspect it before international shipping." },
+      { h: "Why the Spreadsheet Helps", p: "The OopBuy Spreadsheet saves time by organizing popular finds and trusted seller links into clear categories. It helps beginners avoid random searching and gives experienced buyers a faster way to compare products." },
+      { h: "Why Buyers Choose OopBuy", p: "OopBuy is useful for buyers who want QC photos, parcel consolidation, multiple shipping lines, coupon opportunities, and a more guided buying process. It is especially helpful when you are building a haul from several different sellers." },
     ],
   },
 };
