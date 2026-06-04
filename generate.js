@@ -51,13 +51,11 @@ function streetstyleCategoryUrl(slug) {
 }
 
 function homeBtn(prefix = "", text = "Sign Up on OopBuy →") {
-  const p = rel(prefix);
-  return `<a href="${p}index.html" class="btn btn-primary link-home" data-same-tab="true">${text}</a>`;
+  return `<a href="/" class="btn btn-primary link-home" data-same-tab="true">${text}</a>`;
 }
 
 function homeAnchor(prefix = "", label = "Home") {
-  const p = rel(prefix);
-  return `<a href="${p}index.html" class="link-home" data-same-tab="true">${label}</a>`;
+  return `<a href="/" class="link-home" data-same-tab="true">${label}</a>`;
 }
 
 function dropdownBtn(label, activeSuffix = "") {
@@ -268,6 +266,29 @@ const guides = [
 
 const homeGuideSlugs = ["declaration", "shipping", "what-is-oopbuy", "coupons"];
 
+const homeGuideDetails = {
+  declaration: {
+    kicker: "Customs Guide",
+    excerpt:
+      "Learn how to set a realistic parcel declaration, avoid common customs mistakes, and keep your OopBuy shipment moving smoothly from warehouse to delivery.",
+  },
+  shipping: {
+    kicker: "Shipping Routes",
+    excerpt:
+      "Compare shipping lines, delivery speed, parcel weight, and risk level before you ship. This guide helps you choose the route that fits your budget and timeline.",
+  },
+  "what-is-oopbuy": {
+    kicker: "Beginner Basics",
+    excerpt:
+      "New to OopBuy? Start here for a clear breakdown of how the agent works, how the spreadsheet fits into buying, and what to check before placing your first order.",
+  },
+  coupons: {
+    kicker: "Savings Tips",
+    excerpt:
+      "Understand how OopBuy coupons work, where discounts apply, and how to combine sign-up rewards with smarter shipping choices to reduce your total cost.",
+  },
+};
+
 const comparisons = [
   { slug: "kakobuy", name: "KakoBuy", title: "OopBuy vs KakoBuy" },
   { slug: "litbuy", name: "LitBuy", title: "OopBuy vs LitBuy" },
@@ -304,7 +325,7 @@ function promoBar(prefix = "") {
 
 function siteLogo(prefix = "") {
   const p = rel(prefix);
-  return `      <a href="${p}index.html" class="logo logo--brand link-home" data-same-tab="true">
+  return `      <a href="/" class="logo logo--brand link-home" data-same-tab="true">
         <span class="logo-wordmark" aria-label="${SITE_NAME}">
           <span class="logo-line logo-line-top">
             <img src="${p}images/logo/oopbuy-mark.png" alt="oopbuy spreadsheet 2026" class="logo-icon" width="46" height="44">
@@ -345,7 +366,7 @@ function nav(current, prefix = "") {
       </button>
 
       <nav class="site-nav" id="siteNav">
-        <a href="${p}index.html" class="link-home" data-same-tab="true"${activeClass("home")}>Home</a>
+        <a href="/" class="link-home" data-same-tab="true"${activeClass("home")}>Home</a>
         <div class="nav-dropdown">
           ${dropdownBtn("Spreadsheet", spreadsheetActive)}
           <div class="nav-dropdown-menu nav-dropdown-menu--wide">
@@ -427,7 +448,7 @@ function footer(prefix = "") {
 
 function head(title, description, urlPath, prefix = "", extraHead = "") {
   const p = rel(prefix);
-  const url = `${DOMAIN}${urlPath === "/" ? "" : urlPath}`;
+  const url = `${DOMAIN}${urlPath === "/" ? "/" : urlPath}`;
   const ogImage = `${DOMAIN}/images/favicon.png`;
   return `<!DOCTYPE html>
 <html lang="en">
@@ -683,8 +704,9 @@ function guideCards(prefix = "", slugs = homeGuideSlugs) {
     .map(
       (g) => `          <a href="${p}guides/${g.slug}.html" class="guide-card${g.slug === "declaration" ? " guide-card--featured" : ""}">
             ${guideCardVisual(g, prefix)}
+            ${homeGuideDetails[g.slug] ? `<span class="guide-card-kicker">${homeGuideDetails[g.slug].kicker}</span>` : ""}
             <h3>${g.title}</h3>
-            <p>${g.excerpt}</p>
+            <p>${homeGuideDetails[g.slug]?.excerpt || g.excerpt}</p>
             <span class="text-link">Read more →</span>
           </a>`
     )
@@ -1470,7 +1492,7 @@ writeFile(
   path.join(root, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapUrls.map((u) => `  <url><loc>${DOMAIN}${u === "/" ? "" : u}</loc><lastmod>${sitemapLastmod}</lastmod><changefreq>weekly</changefreq><priority>${u === "/" ? "1.0" : "0.8"}</priority></url>`).join("\n")}
+${sitemapUrls.map((u) => `  <url><loc>${DOMAIN}${u === "/" ? "/" : u}</loc><lastmod>${sitemapLastmod}</lastmod><changefreq>weekly</changefreq><priority>${u === "/" ? "1.0" : "0.8"}</priority></url>`).join("\n")}
 </urlset>`
 );
 
