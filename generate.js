@@ -921,10 +921,10 @@ ${heroShell(`${nav("home")}
           Browse the biggest <strong>OopBuy Spreadsheet</strong> with 30,000+ high quality finds from trusted sellers.
           Updated daily with the best OopBuy products — shoes, clothing, accessories and more.
         </p>
-        <div class="hero-actions">
-          <a href="${VIEW_PRODUCTS_URL}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Products</a>
-          <a href="${DISCORD}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Discord</a>
-        </div>
+        <form class="hero-search-form" action="https://streetstyle.maisonlooks.com/en/search" method="get" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="hero-search-input" placeholder="Search products..." aria-label="Search products on StreetStyle">
+          <button type="submit" class="btn btn-primary hero-search-btn">Search</button>
+        </form>
         <div class="hero-stats">
           <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="30000" data-format="number">0+</span><span class="hero-stat-label">Products</span></div>
           <div class="hero-stat"><span class="hero-stat-num">Daily</span><span class="hero-stat-label">Updated</span></div>
