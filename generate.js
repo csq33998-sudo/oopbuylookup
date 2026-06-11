@@ -62,6 +62,31 @@ function dropdownBtn(label, activeSuffix = "") {
   return `<button class="nav-dropdown-btn${activeSuffix}" aria-expanded="false">${label}<span class="nav-chevron" aria-hidden="true"></span></button>`;
 }
 
+const languages = [
+  { code: "en", label: "English", flag: "US" },
+  { code: "zh-CN", label: "中文", flag: "CN" },
+  { code: "pl", label: "Polski", flag: "PL" },
+  { code: "de", label: "Deutsch", flag: "DE" },
+  { code: "fr", label: "Francais", flag: "FR" },
+  { code: "it", label: "Italiano", flag: "IT" },
+  { code: "pt", label: "Portugues", flag: "PT" },
+  { code: "es", label: "Espanol", flag: "ES" },
+  { code: "nl", label: "Nederlands", flag: "NL" },
+  { code: "da", label: "Dansk", flag: "DK" },
+  { code: "sv", label: "Svenska", flag: "SE" },
+  { code: "ar", label: "Arabic", flag: "SA" },
+  { code: "cs", label: "Cestina", flag: "CZ" },
+];
+
+function languageDropdown() {
+  return `<div class="nav-dropdown nav-language notranslate" translate="no">
+          <button class="nav-dropdown-btn nav-language-btn" aria-expanded="false" aria-label="Select language"><span class="language-globe" aria-hidden="true">◎</span><span class="language-current">Language</span><span class="nav-chevron" aria-hidden="true"></span></button>
+          <div class="nav-dropdown-menu nav-language-menu">
+            ${languages.map((lang) => `<button type="button" class="language-option" data-lang="${lang.code}"><span class="language-flag">${lang.flag}</span><span>${lang.label}</span></button>`).join("\n            ")}
+          </div>
+        </div>`;
+}
+
 const mainCategories = [
   { slug: "shoes", name: "Sneakers", icon: "👟", group: "products" },
   { slug: "clothing", name: "Clothing", icon: "👕", group: "products", isGroup: true },
@@ -256,7 +281,7 @@ const oopbuyProducts = [
 ];
 
 const guides = [
-  { slug: "how-to-buy", navLabel: "How to Buy", title: "How to Buy on OopBuy", excerpt: "Step-by-step guide on how to purchase items using the OopBuy Spreadsheet and place your first order.", icon: "🛒" },
+  { slug: "how-to-buy", navLabel: "How to Buy", title: "How to Buy on OopBuy", excerpt: "Official-style OopBuy buying guide covering product links, options, payment, warehouse QC, parcel submission, and tracking.", icon: "🛒" },
   { slug: "shipping", navLabel: "Shipping Guide", title: "OopBuy Shipping Guide", excerpt: "Explore Oopbuy shipping logistics with this comprehensive guide on lines, costs, and delivery times.", icon: "📦" },
   { slug: "declaration", navLabel: "Declaration Guide", title: "How to Declare on OopBuy", excerpt: "Get a detailed guide on how to correctly declare items on Oopbuy for smooth customs clearance.", icon: "📋" },
   { slug: "qc-photos", navLabel: "QC Photos Guide", title: "QC Photos Guide", excerpt: "Learn how to review quality control photos at the OopBuy warehouse before shipping.", icon: "📸" },
@@ -288,6 +313,68 @@ const homeGuideDetails = {
       "Understand how OopBuy coupons work, where discounts apply, and how to combine sign-up rewards with smarter shipping choices to reduce your total cost.",
   },
 };
+
+const blogPosts = [
+  {
+    tag: "Guide",
+    title: "The Complete OOPBUY Spreadsheet Guide for 2025",
+    excerpt:
+      "A full starting point for shoppers who want to use an OopBuy spreadsheet to find products, place orders, review QC photos, and prepare a parcel.",
+    readTime: "8 min read",
+    href: "guides/how-to-buy.html",
+    cta: "Read guide",
+  },
+  {
+    tag: "Jackets",
+    title: "Top Jackets Spreadsheet",
+    excerpt:
+      "A curated jacket-focused roundup for puffer jackets, shells, windbreakers, and cold-weather outerwear worth checking before your next haul.",
+    readTime: "5 min read",
+    href: streetstyleCategoryUrl("jackets"),
+    cta: "Browse jackets",
+    external: true,
+  },
+  {
+    tag: "Sneakers",
+    title: "Sneaker Finds",
+    excerpt:
+      "A sneaker-focused guide for browsing popular OopBuy shoe finds, comparing options, checking seller details, and reviewing QC before shipping.",
+    readTime: "6 min read",
+    href: streetstyleCategoryUrl("shoes"),
+    cta: "Browse sneakers",
+    external: true,
+  },
+  {
+    tag: "Accessories",
+    title: "Accessories Finds",
+    excerpt:
+      "Watches, belts, bags, small goods, and other accessories need extra listing checks. Use this as a practical checklist before adding them to a parcel.",
+    readTime: "4 min read",
+    href: streetstyleCategoryUrl("accessories"),
+    cta: "Browse accessories",
+    external: true,
+  },
+  {
+    tag: "Hoodies",
+    title: "Hoodies & Sweaters Spreadsheet",
+    excerpt:
+      "A sweatshirt and knitwear roundup covering hoodies, crewnecks, sweaters, sizing notes, and the QC details that matter most for apparel.",
+    readTime: "5 min read",
+    href: streetstyleCategoryUrl("hoodies"),
+    cta: "Browse hoodies",
+    external: true,
+  },
+  {
+    tag: "Pants",
+    title: "Pants & Shorts Finds",
+    excerpt:
+      "A focused pants and shorts guide for comparing fits, fabric, sizing, seller photos, and warehouse images before building a clothing haul.",
+    readTime: "5 min read",
+    href: streetstyleCategoryUrl("pants"),
+    cta: "Browse pants",
+    external: true,
+  },
+];
 
 const comparisons = [
   { slug: "kakobuy", name: "KakoBuy", title: "OopBuy vs KakoBuy" },
@@ -390,7 +477,9 @@ function nav(current, prefix = "") {
         </div>
         <a href="${p}deals.html"${activeClass("deals")}>Deals</a>
         <a href="${p}review.html"${activeClass("review")}>Review</a>
+        <a href="${p}blog.html"${activeClass("blog")}>Blog</a>
         <a href="${p}about.html"${activeClass("about")}>About</a>
+        ${languageDropdown()}
         <a href="${AFFILIATE}" class="btn btn-nav-signup" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
       </nav>
     </div>
@@ -422,6 +511,7 @@ function footer(prefix = "") {
         <h4>Resources</h4>
         <ul>
           <li><a href="${p}review.html">OopBuy Review</a></li>
+          <li><a href="${p}blog.html">Blog</a></li>
           <li><a href="${p}spreadsheet.html">Best Finds 2026</a></li>
           <li><a href="${p}deals.html">Deals &amp; Coupons</a></li>
           <li><a href="${p}compare.html">Compare Agents</a></li>
@@ -480,10 +570,11 @@ function head(title, description, urlPath, prefix = "", extraHead = "") {
 <body>`;
 }
 
-function pageEnd(prefix = "", extraScripts = "") {
+function pageEnd(prefix = "", extraScripts = "", beforeMainScripts = "") {
   const p = rel(prefix);
   return `
-  <script src="${p}config.js"></script>
+  <div id="google_translate_element" class="translate-mount notranslate" translate="no"></div>
+  <script src="${p}config.js"></script>${beforeMainScripts}
   <script src="${p}main.js"></script>${extraScripts}
 </body>
 </html>
@@ -939,7 +1030,7 @@ ${renderProductGrid(oopbuyProducts)}
       </div>
     </section>
   </main>
-${footer()}${pageEnd("", '\n  <script src="products.js"></script>')}`
+${footer()}${pageEnd("", "", '\n  <script src="products.js"></script>')}`
 );
 
 /* ========== CATEGORIES INDEX ========== */
@@ -1041,10 +1132,14 @@ const guideContent = {
   "how-to-buy": {
     title: "How to Buy on OopBuy",
     sections: [
-      { h: "Step 1: Browse the OopBuy Spreadsheet", p: "Start on our OopBuy Spreadsheet page. Use search and category filters to find sneakers, clothing, bags, or accessories from trusted sellers." },
-      { h: "Step 2: Click Through to OopBuy", p: "Each product links directly to OopBuy. Click the product card, select your size and color variant, then add the item to your cart." },
-      { h: "Step 3: Complete Payment", p: "OopBuy supports PayPal and balance top-up. Fill in your shipping details and complete checkout. New users can redeem the ¥3,000 coupon bundle for extra savings." },
-      { h: "Step 4: Track Your Order", p: "Monitor order status: Process Pending → Purchased → Seller Send. Once items arrive at the OopBuy warehouse, you'll receive QC photos to review before shipping internationally." },
+      { h: "Step 1: Find a Product Link", p: "Start from the OopBuy Spreadsheet or another trusted marketplace source. Open the item you want, review the seller, price, photos, size chart, and recent feedback, then copy the original product link if you are not already on OopBuy." },
+      { h: "Step 2: Paste the Link into OopBuy", p: "Paste the Taobao, Weidian, 1688, or other supported product link into the OopBuy search bar. OopBuy will load the item page so you can choose the correct color, size, version, quantity, and any seller notes before adding it to your cart." },
+      { h: "Step 3: Submit and Pay for the Item Order", p: "Check the product options carefully, then submit the order and pay the item cost plus any domestic shipping shown by the seller. After payment, the order normally moves through statuses such as processing, purchased, seller shipped, and warehouse received." },
+      { h: "Step 4: Wait for Warehouse Arrival", p: "OopBuy purchases from the seller on your behalf and receives the product at its warehouse. Domestic delivery time depends on the seller and local courier, so do not submit an international parcel until the item is marked as received and the warehouse photos are available." },
+      { h: "Step 5: Review QC Photos", p: "After warehouse arrival, check the QC photos for color, size tag, logo placement, stitching, defects, stains, missing parts, and packaging condition. If something is wrong, request a return or exchange before the item is packed for international shipping." },
+      { h: "Step 6: Submit Your Parcel", p: "When all items are ready, select the products you want to ship together, confirm your address, choose packaging options, and compare shipping lines. Pay attention to route restrictions, estimated delivery time, volumetric weight, insurance, and whether the route is suitable for your item type." },
+      { h: "Step 7: Declare and Pay International Shipping", p: "Enter a simple, realistic customs declaration that matches the parcel contents, then apply any available coupons before paying international shipping. New users should also check their OopBuy coupon wallet before checkout so eligible shipping discounts are not missed." },
+      { h: "Step 8: Track Delivery and Handle After-Sales", p: "After dispatch, follow the tracking updates from OopBuy and the destination carrier. Tracking can pause during export, airline handoff, or customs. If a parcel is delayed, returned, damaged, or missing items, contact OopBuy support with the order number, parcel number, QC photos, and tracking details." },
     ],
   },
   shipping: {
@@ -1257,6 +1352,80 @@ ${heroShell(`${nav("deals")}
             <a href="spreadsheet.html" class="btn btn-secondary">Browse Finds →</a>
           </article>
         </div>
+      </div>
+    </section>
+${signupCta()}
+  </main>
+${footer()}${pageEnd()}`
+);
+
+writeFile(
+  path.join(root, "blog.html"),
+  `${head(
+    "OopBuy Blog | Spreadsheet Tips, Shipping & Coupons",
+    "Read OopBuy blog posts about the OopBuy Spreadsheet guide, jackets, sneaker finds, accessories, hoodies, sweaters, pants, and shorts.",
+    "/blog.html",
+    "",
+    breadcrumbJsonLd([
+      { name: "Home", url: `${DOMAIN}/` },
+      { name: "Blog", url: `${DOMAIN}/blog.html` },
+    ])
+  )}
+${heroShell(`${nav("blog")}
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">${homeAnchor()} / Blog</p>
+        <h1>OopBuy Blog</h1>
+        <p class="page-hero-desc">Spreadsheet guides and product roundups for OopBuy shoppers: jackets, sneakers, accessories, hoodies, sweaters, pants, and shorts.</p>
+      </div>
+    </section>`)}
+  <main>
+    <section class="section blog-feature">
+      <div class="container blog-feature-grid">
+        <article class="blog-feature-card">
+          <span class="blog-tag">Featured</span>
+          <h2>Complete OOPBUY Spreadsheet Guide and Finds Roundups</h2>
+          <p>Use this blog as a compact hub for the main OopBuy spreadsheet topics: how the spreadsheet works, which product categories are worth browsing, and what to check before shipping a haul internationally.</p>
+          <a href="guides/how-to-buy.html" class="btn btn-primary">Read Buying Guide</a>
+        </article>
+        <div class="blog-side-panel">
+          <h3>Popular Topics</h3>
+          <a href="${streetstyleCategoryUrl("jackets")}"${externalCategoryAttrs()}>Top jackets spreadsheet</a>
+          <a href="${streetstyleCategoryUrl("shoes")}"${externalCategoryAttrs()}>Sneaker finds</a>
+          <a href="${streetstyleCategoryUrl("accessories")}"${externalCategoryAttrs()}>Accessories finds</a>
+          <a href="${streetstyleCategoryUrl("hoodies")}"${externalCategoryAttrs()}>Hoodies and sweaters</a>
+          <a href="${streetstyleCategoryUrl("pants")}"${externalCategoryAttrs()}>Pants and shorts</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Blog Articles</p>
+        <h2 class="section-title section-title-left">OopBuy Spreadsheet Guides and Product Finds</h2>
+        <div class="blog-grid">
+${blogPosts.map((post) => `          <article class="blog-card">
+            <span class="blog-tag">${post.tag}</span>
+            <h3>${post.title}</h3>
+            <p>${post.excerpt}</p>
+            <div class="blog-card-footer">
+              <span class="blog-meta">${post.readTime}</span>
+              <a href="${post.href}" class="text-link"${post.external ? externalCategoryAttrs() : ""}>${post.cta}</a>
+            </div>
+          </article>`).join("\n")}
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-block">
+        <h2>What This Blog Covers</h2>
+        <p>This blog is written for shoppers who use an <strong>OopBuy Spreadsheet</strong> as their starting point. It now mirrors the main reference topics: the complete spreadsheet guide, jacket finds, sneaker finds, accessories, hoodies and sweaters, plus pants and shorts.</p>
+        <p>Use these articles together with our product categories, guide pages, and comparison pages. When a product looks promising, still review the live listing, available options, size notes, seller history, and QC photos before shipping internationally.</p>
+        <ul class="check-list">
+          <li>Spreadsheet browsing tips for jackets, sneakers, accessories, hoodies, sweaters, pants, and shorts</li>
+          <li>Beginner-friendly explanations of OopBuy ordering and warehouse steps</li>
+          <li>Shipping, declaration, and coupon notes for planning a full haul</li>
+          <li>Independent advice for comparing OopBuy with other shopping agents</li>
+        </ul>
       </div>
     </section>
 ${signupCta()}
@@ -1489,6 +1658,7 @@ const sitemapUrls = [
   "/compare.html",
   "/deals.html",
   "/review.html",
+  "/blog.html",
   "/about.html",
   "/contact.html",
   ...allCategories.map((c) => `/categories/${c.slug}.html`),
@@ -1531,7 +1701,7 @@ console.log("✓ Generated OopBuy Spreadsheet site:");
 console.log("  index.html, spreadsheet.html, categories.html");
 console.log("  guides.html + guides/*.html (6 pages)");
 console.log("  compare.html + compare/*.html (4 pages)");
-console.log("  deals.html, review.html, about.html, contact.html");
+console.log("  deals.html, review.html, blog.html, about.html, contact.html");
 console.log(`  categories/*.html (${allCategories.length + 1} pages)`);
 console.log("  sitemap.xml, robots.txt, config.js, products.js");
 console.log("\n⚙ Edit CONFIG at top of generate.js before deploy:");

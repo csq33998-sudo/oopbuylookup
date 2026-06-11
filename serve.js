@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const PORT = Number(process.env.PORT) || 3000;
-const ROOT = __dirname;
+const ROOT = path.resolve(__dirname);
 
 const types = {
   ".html": "text/html; charset=utf-8",
@@ -17,10 +17,21 @@ const types = {
 
 http
   .createServer((req, res) => {
-    const urlPath = decodeURIComponent((req.url.split("?")[0] || "/").replace(/^\//, "") || "index.html");
-    const file = path.join(ROOT, urlPath);
+    let urlPath;
 
-    if (!file.startsWith(ROOT)) {
+    try {
+      urlPath = decodeURIComponent((req.url.split("?")[0] || "/").replace(/^\/+/, "") || "index.html");
+    } catch {
+      res.writeHead(400, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("400 Bad Request");
+      return;
+    }
+
+    const file = path.resolve(ROOT, urlPath);
+    const relative = path.relative(ROOT, file);
+    const parts = relative.split(path.sep);
+
+    if (relative.startsWith("..") || path.isAbsolute(relative) || parts.some((part) => part.startsWith("."))) {
       res.writeHead(403);
       res.end("Forbidden");
       return;
