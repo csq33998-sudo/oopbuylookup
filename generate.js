@@ -393,7 +393,7 @@ const faqs = [
   { q: "How do I place an order with Oopbuy?", a: "Using the Oopbuy spreadsheet to place an order is simple. Browse the spreadsheet for products, click the image link to go directly to the product page on Oopbuy, select size and color options, add items to your cart, fill in the details, and complete payment. OopBuy supports PayPal and balance top-up. Track your order through stages like Process Pending, Purchased, and Seller Send. Once items arrive at the warehouse, review QC photos and choose your shipping method." },
   { q: "Can you help me find a specific product?", a: "Absolutely! Share an image and the name of the product you're looking for in our Discord Channel, and we'll assist you in finding it quickly. We can also add it to the OopBuy spreadsheet for easy access." },
   { q: "Why should I use Oopbuy instead of other shipping agents?", a: "OopBuy stands out among shopping agents thanks to competitive shipping rates, a user-friendly interface, reliable quality check photos, and responsive customer service. Their platform supports multiple payment methods including PayPal, and they offer generous coupon bundles for new users. Combined with our OopBuy spreadsheet that pre-screens products for quality, you get a seamless and trustworthy shopping experience." },
-  { q: "What is an OopBuy spreadsheet?", a: `An OopBuy spreadsheet is a curated list of the best products available through the OopBuy shopping agent. Our OopBuy spreadsheet at ${siteHost} is the biggest and most up-to-date version, featuring over 3000 items from trusted sellers. We organize products by category and update the spreadsheet daily with new high quality finds.` },
+  { q: "What is an OopBuy spreadsheet?", a: `An OopBuy spreadsheet is a curated list of the best products available through the OopBuy shopping agent. Our OopBuy spreadsheet at ${siteHost} is the biggest and most up-to-date version, featuring over 30000 items from trusted sellers. We organize products by category and update the spreadsheet daily with new high quality finds.` },
 ];
 
 function rel(prefix) {
@@ -630,7 +630,7 @@ function aboutSeoBlock() {
         <p class="section-label">About Our Spreadsheet</p>
         <h2 class="section-title section-title-left">A Large OopBuy Spreadsheet Built to Help You Shop Smarter</h2>
         <div class="seo-content">
-          <p>Searching for a dependable <strong>OopBuy Spreadsheet</strong>? This site brings together a hand-picked <strong>OopBuy Spreadsheet 2026</strong> with 3,000+ quality listings from reliable sellers — grouped into clear sections for shoes, apparel, bags, accessories, and other popular picks.</p>
+          <p>Searching for a dependable <strong>OopBuy Spreadsheet</strong>? This site brings together a hand-picked <strong>OopBuy Spreadsheet 2026</strong> with 30,000+ quality listings from reliable sellers — grouped into clear sections for shoes, apparel, bags, accessories, and other popular picks.</p>
           <p>We work to keep one of the most complete OopBuy lists available by refreshing entries every day and adding standout products as they appear. Before a link goes live, our team checks seller track record and listing quality so you see fewer risky options and more <strong>trusted OopBuy finds</strong>.</p>
           <p>Shop by category: <a href="${streetstyleCategoryUrl("shoes")}" class="text-link"${externalCategoryAttrs()}>Sneakers</a>, <a href="${streetstyleCategoryUrl("clothing")}" class="text-link"${externalCategoryAttrs()}>Clothing</a>, <a href="${streetstyleCategoryUrl("bags")}" class="text-link"${externalCategoryAttrs()}>Bags</a>, <a href="${streetstyleCategoryUrl("accessories")}" class="text-link"${externalCategoryAttrs()}>Accessories</a>, and <a href="${streetstyleCategoryUrl("electronics")}" class="text-link"${externalCategoryAttrs()}>Electronics</a>. New to the platform? Start with our guides on <a href="guides/what-is-oopbuy.html" class="text-link">What is OopBuy</a>, <a href="guides/shipping.html" class="text-link">Shipping</a>, and <a href="guides/coupons.html" class="text-link">Coupons</a>.</p>
           <p>Choosing between shopping agents? See side-by-side write-ups: <a href="compare/vs-litbuy.html" class="text-link">OopBuy vs LitBuy</a>, <a href="compare/vs-hipobuy.html" class="text-link">OopBuy vs Hipobuy</a>, and <a href="compare/vs-kakobuy.html" class="text-link">OopBuy vs KakoBuy</a>.</p>
@@ -907,7 +907,7 @@ writeFile(
   path.join(root, "index.html"),
   `${head(
     "OopBuy Spreadsheet 2026 – Best Finds & Trusted Sellers",
-    "Browse the biggest OopBuy Spreadsheet with 3000+ high quality finds from trusted sellers. Updated daily with shoes, clothing, bags, accessories and more.",
+    "Browse the biggest OopBuy Spreadsheet with 30000+ high quality finds from trusted sellers. Updated daily with shoes, clothing, bags, accessories and more.",
     "/",
     "",
     `${siteJsonLd()}\n${faqJsonLd()}`
@@ -918,7 +918,7 @@ ${heroShell(`${nav("home")}
         <p class="hero-badge">Updated Daily · 2026</p>
         <h1>Best OopBuy<br><span class="hero-title-accent">Spreadsheet</span></h1>
         <p class="hero-desc">
-          Browse the biggest <strong>OopBuy Spreadsheet</strong> with 3,000+ high quality finds from trusted sellers.
+          Browse the biggest <strong>OopBuy Spreadsheet</strong> with 30,000+ high quality finds from trusted sellers.
           Updated daily with the best OopBuy products — shoes, clothing, accessories and more.
         </p>
         <div class="hero-actions">
@@ -926,7 +926,7 @@ ${heroShell(`${nav("home")}
           <a href="${DISCORD}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Discord</a>
         </div>
         <div class="hero-stats">
-          <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="3000" data-format="number">0+</span><span class="hero-stat-label">Products</span></div>
+          <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="30000" data-format="number">0+</span><span class="hero-stat-label">Products</span></div>
           <div class="hero-stat"><span class="hero-stat-num">Daily</span><span class="hero-stat-label">Updated</span></div>
           <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="200" data-format="k">0k+</span><span class="hero-stat-label">Shoppers</span></div>
         </div>
@@ -968,7 +968,7 @@ ${faqSection()}
     <section class="section cta">
       <div class="container cta-inner">
         <h2>Ready to find the best deals?</h2>
-        <p>Browse 3,000+ curated products from trusted sellers. Free to use, updated daily.</p>
+        <p>Browse 30,000+ curated products from trusted sellers. Free to use, updated daily.</p>
         <div class="cta-actions">
           <a href="spreadsheet.html" class="btn btn-primary btn-lg">Browse Spreadsheet</a>
           <a href="${AFFILIATE}" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
@@ -983,8 +983,8 @@ ${footer()}${pageEnd()}`
 writeFile(
   path.join(root, "spreadsheet.html"),
   `${head(
-    "OopBuy Spreadsheet 2026 - Browse 3000+ Best Finds",
-    "Browse the biggest OopBuy Spreadsheet online. 3000+ curated products from trusted OopBuy sellers with search, filters, and direct purchase links.",
+    "OopBuy Spreadsheet 2026 - Browse 30000+ Best Finds",
+    "Browse the biggest OopBuy Spreadsheet online. 30000+ curated products from trusted OopBuy sellers with search, filters, and direct purchase links.",
     "/spreadsheet.html",
     "",
     `${siteJsonLd()}\n${itemListJsonLd(oopbuyProducts)}`
@@ -993,7 +993,7 @@ ${heroShell(`${nav("spreadsheet")}
     <section class="page-hero page-hero-compact">
       <div class="container">
         <h1>Browse the Biggest OopBuy Spreadsheet 2026</h1>
-        <p class="page-hero-desc">Over 3,000 hand-picked products from trusted OopBuy sellers. Search, filter by category, and click through to purchase on OopBuy.</p>
+        <p class="page-hero-desc">Over 30,000 hand-picked products from trusted OopBuy sellers. Search, filter by category, and click through to purchase on OopBuy.</p>
       </div>
     </section>`)}
   <main>
@@ -1080,7 +1080,7 @@ ${categoryCards()}
     <section class="section cta">
       <div class="container cta-inner">
         <h2>Browse the Full Spreadsheet</h2>
-        <p>Search and filter 3,000+ products from trusted OopBuy sellers.</p>
+        <p>Search and filter 30,000+ products from trusted OopBuy sellers.</p>
         <a href="spreadsheet.html" class="btn btn-primary btn-lg">Open Spreadsheet →</a>
       </div>
     </section>
@@ -1300,7 +1300,7 @@ ${heroShell(`${nav(`compare-${comp.slug}`, "../")}
           </table>
         </div>
         <h2>Why We Recommend OopBuy</h2>
-        <p>For most international buyers using an <strong>OopBuy Spreadsheet</strong>, OopBuy offers the best balance of shipping cost, QC quality, and ease of use. Combined with our curated spreadsheet of 3,000+ verified finds, you get a seamless shopping experience from discovery to delivery.</p>
+        <p>For most international buyers using an <strong>OopBuy Spreadsheet</strong>, OopBuy offers the best balance of shipping cost, QC quality, and ease of use. Combined with our curated spreadsheet of 30,000+ verified finds, you get a seamless shopping experience from discovery to delivery.</p>
         <p>That said, ${comp.name} may suit specific use cases. We encourage comparing both before committing — and browsing our OopBuy Spreadsheet regardless of which agent you choose.</p>
         <div class="hero-actions" style="margin-top:24px">
           <a href="${AFFILIATE}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try OopBuy Free →</a>
@@ -1469,7 +1469,7 @@ ${heroShell(`${nav("review")}
           <li>Customs declaration requires user input</li>
         </ul>
         <h2>Verdict</h2>
-        <p>For buyers using an OopBuy Spreadsheet, OopBuy is our top recommendation. Pair our curated 3,000+ finds with OopBuy's reliable service for the best experience.</p>
+        <p>For buyers using an OopBuy Spreadsheet, OopBuy is our top recommendation. Pair our curated 30,000+ finds with OopBuy's reliable service for the best experience.</p>
         ${homeBtn()}
       </div>
     </section>
