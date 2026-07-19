@@ -13,6 +13,8 @@ const types = {
   ".jpg": "image/jpeg",
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
+  ".txt": "text/plain; charset=utf-8",
+  ".xml": "application/xml; charset=utf-8",
 };
 
 http
@@ -30,8 +32,9 @@ http
     const file = path.resolve(ROOT, urlPath);
     const relative = path.relative(ROOT, file);
     const parts = relative.split(path.sep);
+    const hiddenPathSegment = parts.find((part, index) => part.startsWith(".") && !(index === 0 && part === ".well-known"));
 
-    if (relative.startsWith("..") || path.isAbsolute(relative) || parts.some((part) => part.startsWith("."))) {
+    if (relative.startsWith("..") || path.isAbsolute(relative) || hiddenPathSegment) {
       res.writeHead(403);
       res.end("Forbidden");
       return;

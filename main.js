@@ -8,20 +8,22 @@
   const OPEN_IN_NEW_TAB =
     !window.SITE_CONFIG || window.SITE_CONFIG.openInNewTab !== false;
 
+  const CNY_PER_USD = 6.7784;
+
   const LANGUAGES = [
     { code: "en", label: "English" },
-    { code: "zh-CN", label: "涓枃" },
+    { code: "zh-CN", label: "Chinese" },
     { code: "pl", label: "Polski" },
     { code: "de", label: "Deutsch" },
-    { code: "fr", label: "Francais" },
+    { code: "fr", label: "French" },
     { code: "it", label: "Italiano" },
-    { code: "pt", label: "Portugues" },
-    { code: "es", label: "Espanol" },
+    { code: "pt", label: "Portuguese" },
+    { code: "es", label: "Spanish" },
     { code: "nl", label: "Nederlands" },
     { code: "da", label: "Dansk" },
     { code: "sv", label: "Svenska" },
     { code: "ar", label: "Arabic" },
-    { code: "cs", label: "Cestina" },
+    { code: "cs", label: "Czech" },
   ];
 
   function isHomeLink(link) {
@@ -53,6 +55,28 @@
 
   normalizeHomeLinks();
   applyNewTabLinks();
+
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  function resetScrollToTop() {
+    if (location.hash) return;
+    try {
+      sessionStorage.removeItem(`oopbuyScroll:${location.pathname}${location.search}`);
+    } catch {}
+
+    const top = () => window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    top();
+    requestAnimationFrame(() => {
+      top();
+      setTimeout(top, 120);
+      setTimeout(top, 450);
+      setTimeout(top, 1000);
+    });
+  }
+
+  window.addEventListener("load", resetScrollToTop);
 
   function getCookie(name) {
     const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
@@ -332,11 +356,12 @@
       products.forEach((p) => {
         const productName = p.name || "Product";
         const card = document.createElement("a");
-        card.href = AFFILIATE;
+        card.href = p.href || AFFILIATE;
         card.className = "product-card";
         card.target = "_blank";
         card.rel = "noopener noreferrer";
         card.dataset.name = String(productName).toLowerCase();
+        card.dataset.category = p.category || "";
 
         const image = document.createElement("img");
         image.src = p.image || "";
@@ -351,7 +376,7 @@
 
         const options = document.createElement("div");
         options.className = "product-options";
-        options.textContent = `${p.options} OPTIONS`;
+        options.textContent = p.meta || p.brand || "MaisonLooks product";
 
         const name = document.createElement("h3");
         name.className = "product-name";
@@ -359,7 +384,7 @@
 
         const price = document.createElement("div");
         price.className = "product-price";
-        price.textContent = `¥${p.price}`;
+        price.textContent = `$${(Number(p.price) / CNY_PER_USD).toFixed(2)}`;
 
         body.append(options, name, price);
         card.append(image, body);

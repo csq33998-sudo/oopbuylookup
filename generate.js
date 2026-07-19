@@ -1,17 +1,20 @@
 const fs = require("fs");
 const path = require("path");
 
-/* ========== CONFIG — edit before deploy ========== */
+/* ========== CONFIG - edit before deploy ========== */
 const INVITE = "V5N3GJS25";
 const DOMAIN = "https://oopbuylookup.com";
 const SITE_NAME = "OopBuy Spreadsheet";
+const ASSET_VERSION = "20260719-top";
 const AFFILIATE = `https://oopbuy.com/register?inviteCode=${INVITE}`;
-const DISCORD = "https://discord.gg/YOUR_INVITE";
+const DISCORD = "";
 const EMAIL = "help@oopbuylookup.com";
 const OPEN_IN_NEW_TAB = true;
 const VIEW_PRODUCTS_URL = "https://streetstyle.maisonlooks.com/en/s/StreetStyle";
 const STREETSTYLE_BASE = "https://streetstyle.maisonlooks.com";
+const STREETSTYLE_HOME = "https://streetstyle.maisonlooks.com/";
 const STREETSTYLE_SHOP = "StreetStyle";
+const CNY_PER_USD = 6.7784;
 /* Slugs on oopbuylookup that differ from MaisonLooks category paths (invalid slugs 404 in their SPA). */
 const STREETSTYLE_CATEGORY_SLUGS = {
   shoes: "shoes",
@@ -50,8 +53,8 @@ function streetstyleCategoryUrl(slug) {
   return `${STREETSTYLE_BASE}/en/s/${STREETSTYLE_SHOP}/c/${categorySlug}`;
 }
 
-function homeBtn(prefix = "", text = "Sign Up on OopBuy →") {
-  return `<a href="/" class="btn btn-primary link-home" data-same-tab="true">${text}</a>`;
+function homeBtn(prefix = "", text = "Sign Up on OopBuy ->") {
+  return `<a href="${AFFILIATE}" class="btn btn-primary"${newTabAttrs()}>${text}</a>`;
 }
 
 function homeAnchor(prefix = "", label = "Home") {
@@ -64,23 +67,23 @@ function dropdownBtn(label, activeSuffix = "") {
 
 const languages = [
   { code: "en", label: "English", flag: "US" },
-  { code: "zh-CN", label: "中文", flag: "CN" },
+  { code: "zh-CN", label: "Chinese", flag: "CN" },
   { code: "pl", label: "Polski", flag: "PL" },
   { code: "de", label: "Deutsch", flag: "DE" },
-  { code: "fr", label: "Francais", flag: "FR" },
+  { code: "fr", label: "French", flag: "FR" },
   { code: "it", label: "Italiano", flag: "IT" },
-  { code: "pt", label: "Portugues", flag: "PT" },
-  { code: "es", label: "Espanol", flag: "ES" },
+  { code: "pt", label: "Portuguese", flag: "PT" },
+  { code: "es", label: "Spanish", flag: "ES" },
   { code: "nl", label: "Nederlands", flag: "NL" },
   { code: "da", label: "Dansk", flag: "DK" },
   { code: "sv", label: "Svenska", flag: "SE" },
   { code: "ar", label: "Arabic", flag: "SA" },
-  { code: "cs", label: "Cestina", flag: "CZ" },
+  { code: "cs", label: "Czech", flag: "CZ" },
 ];
 
 function languageDropdown() {
   return `<div class="nav-dropdown nav-language notranslate" translate="no">
-          <button class="nav-dropdown-btn nav-language-btn" aria-expanded="false" aria-label="Select language"><span class="language-globe" aria-hidden="true">◎</span><span class="language-current">Language</span><span class="nav-chevron" aria-hidden="true"></span></button>
+          <button class="nav-dropdown-btn nav-language-btn" aria-expanded="false" aria-label="Select language"><span class="language-globe" aria-hidden="true">O</span><span class="language-current">Language</span><span class="nav-chevron" aria-hidden="true"></span></button>
           <div class="nav-dropdown-menu nav-language-menu">
             ${languages.map((lang) => `<button type="button" class="language-option" data-lang="${lang.code}"><span class="language-flag">${lang.flag}</span><span>${lang.label}</span></button>`).join("\n            ")}
           </div>
@@ -88,43 +91,43 @@ function languageDropdown() {
 }
 
 const mainCategories = [
-  { slug: "shoes", name: "Sneakers", icon: "👟", group: "products" },
-  { slug: "clothing", name: "Clothing", icon: "👕", group: "products", isGroup: true },
-  { slug: "bags", name: "Bags", icon: "👜", group: "products" },
-  { slug: "accessories", name: "Accessories", icon: "⌨️", group: "products" },
-  { slug: "electronics", name: "Electronics", icon: "🔌", group: "products" },
+  { slug: "shoes", name: "Sneakers", icon: "SH", group: "products" },
+  { slug: "clothing", name: "Clothing", icon: "CL", group: "products", isGroup: true },
+  { slug: "bags", name: "Bags", icon: "BG", group: "products" },
+  { slug: "accessories", name: "Accessories", icon: "AC", group: "products" },
+  { slug: "electronics", name: "Electronics", icon: "EL", group: "products" },
 ];
 
 const allCategories = [
-  { slug: "shoes", name: "Shoes", icon: "👟", desc: "Browse sneakers, running shoes, and streetwear footwear in the OopBuy Spreadsheet from trusted sellers." },
-  { slug: "jackets", name: "Jackets", icon: "🧥", desc: "Find puffer jackets, windbreakers, and designer outerwear in the OopBuy Spreadsheet with QC-reviewed listings." },
-  { slug: "hoodies", name: "Hoodies", icon: "🧥", iconImg: "icons/hoodie.svg", desc: "Discover hoodies and crewnecks curated in the OopBuy Spreadsheet from verified OopBuy sellers." },
-  { slug: "t-shirts", name: "T-Shirts", icon: "👕", desc: "Explore graphic tees and streetwear tops listed in the OopBuy Spreadsheet with trusted seller links." },
-  { slug: "pants", name: "Pants", icon: "👖", desc: "Shop pants, joggers, and shorts from the OopBuy Spreadsheet with daily updated finds." },
-  { slug: "bags", name: "Bags", icon: "👜", desc: "Browse backpacks, crossbody bags, and luxury-inspired styles in the OopBuy Spreadsheet." },
-  { slug: "headwear", name: "Headwear", icon: "🧢", desc: "Find caps, beanies, and hats in the OopBuy Spreadsheet from verified sellers." },
-  { slug: "accessories", name: "Accessories", icon: "⌚", desc: "Watches, belts, jewelry, and more — organized in the OopBuy Spreadsheet." },
-  { slug: "electronics", name: "Electronics", icon: "📱", desc: "Discover gadgets and tech accessories in the OopBuy Spreadsheet with community-verified listings." },
-  { slug: "perfume", name: "Perfume", icon: "🌸", desc: "Browse fragrance finds in the OopBuy Spreadsheet from trusted OopBuy sellers." },
-  { slug: "jersey", name: "Jersey", icon: "🏀", desc: "Football, basketball, and sports jerseys curated in the OopBuy Spreadsheet." },
-  { slug: "other", name: "Other", icon: "✨", desc: "Miscellaneous trending finds and unique items from the OopBuy Spreadsheet." },
+  { slug: "shoes", name: "Shoes", icon: "SH", desc: "Browse sneakers, running shoes, and streetwear footwear in the OopBuy Spreadsheet from trusted sellers." },
+  { slug: "jackets", name: "Jackets", icon: "JK", desc: "Find puffer jackets, windbreakers, and designer outerwear in the OopBuy Spreadsheet with QC-reviewed listings." },
+  { slug: "hoodies", name: "Hoodies", icon: "HD", iconImg: "icons/hoodie.svg", desc: "Discover hoodies and crewnecks curated in the OopBuy Spreadsheet from verified OopBuy sellers." },
+  { slug: "t-shirts", name: "T-Shirts", icon: "TS", desc: "Explore graphic tees and streetwear tops listed in the OopBuy Spreadsheet with trusted seller links." },
+  { slug: "pants", name: "Pants", icon: "PT", desc: "Shop pants, joggers, and shorts from the OopBuy Spreadsheet with daily updated finds." },
+  { slug: "bags", name: "Bags", icon: "BG", desc: "Browse backpacks, crossbody bags, and luxury-inspired styles in the OopBuy Spreadsheet." },
+  { slug: "headwear", name: "Headwear", icon: "HW", desc: "Find caps, beanies, and hats in the OopBuy Spreadsheet from verified sellers." },
+  { slug: "accessories", name: "Accessories", icon: "AC", desc: "Watches, belts, jewelry, and more - organized in the OopBuy Spreadsheet." },
+  { slug: "electronics", name: "Electronics", icon: "EL", desc: "Discover gadgets and tech accessories in the OopBuy Spreadsheet with community-verified listings." },
+  { slug: "perfume", name: "Perfume", icon: "PF", desc: "Browse fragrance finds in the OopBuy Spreadsheet from trusted OopBuy sellers." },
+  { slug: "jersey", name: "Jersey", icon: "JS", desc: "Football, basketball, and sports jerseys curated in the OopBuy Spreadsheet." },
+  { slug: "other", name: "Other", icon: "OT", desc: "Miscellaneous trending finds and unique items from the OopBuy Spreadsheet." },
 ];
 
 const clothingSlugs = ["jackets", "hoodies", "t-shirts", "pants"];
 
 const categoryIcons = {
-  shoes: "👟",
-  jackets: "🧥",
-  hoodies: "🧥",
-  "t-shirts": "👕",
-  pants: "👖",
-  bags: "👜",
-  headwear: "🧢",
-  accessories: "⌚",
-  electronics: "📱",
-  perfume: "🌸",
-  jersey: "🏀",
-  other: "✨",
+  shoes: "SH",
+  jackets: "JK",
+  hoodies: "HD",
+  "t-shirts": "TS",
+  pants: "PT",
+  bags: "BG",
+  headwear: "HW",
+  accessories: "AC",
+  electronics: "EL",
+  perfume: "PF",
+  jersey: "JS",
+  other: "OT",
 };
 
 function escapeXml(value) {
@@ -137,7 +140,7 @@ function escapeXml(value) {
 }
 
 function productImage(name, category) {
-  const icon = categoryIcons[category] || "✨";
+  const icon = categoryIcons[category] || "OT";
   const label = escapeXml(String(name).slice(0, 22));
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="${label}">
   <defs>
@@ -165,128 +168,15 @@ function product(id, name, category, price, options, image) {
   };
 }
 
-const oopbuyProducts = [
-  product(1, "Jordan 1 Retro High OG", "shoes", 45, 12),
-  product(2, "Dunk Low Panda", "shoes", 38, 8),
-  product(3, "Yeezy Slide Bone", "shoes", 22, 6),
-  product(4, "Travis Scott x Jordan 4", "shoes", 58, 7),
-  product(5, "New Balance 550", "shoes", 35, 10),
-  product(6, "Air Jordan 4 Military Black", "shoes", 52, 9),
-  product(7, "Jordan 4 Retro Bred", "shoes", 48, 8),
-  product(8, "Nike SB Dunk Low", "shoes", 42, 11),
-  product(9, "Adidas Samba OG", "shoes", 36, 10),
-  product(10, "Yeezy 350 V2 Zebra", "shoes", 40, 7),
-  product(11, "New Balance 2002R", "shoes", 39, 9),
-  product(12, "Asics Gel-Kayano 14", "shoes", 44, 8),
-  product(13, "Salomon XT-6", "shoes", 46, 6),
-  product(14, "Golden Goose Super-Star", "shoes", 55, 5),
-  product(15, "BAPE STA Low", "shoes", 50, 7),
-  product(16, "Nike Air Force 1 Low White", "shoes", 32, 14),
-  product(17, "Nike Air Max 90", "shoes", 34, 12),
-  product(18, "Louis Vuitton Trainer", "shoes", 78, 6),
-  product(19, "Off-White x Nike Dunk", "shoes", 62, 5),
-  product(20, "Maison Margiela Replica Sneaker", "shoes", 58, 4),
-  product(21, "North Face Puffer Jacket", "jackets", 55, 10),
-  product(22, "Moncler Maya Down Jacket", "jackets", 120, 6),
-  product(23, "CP Company Goggle Jacket", "jackets", 68, 5),
-  product(24, "Canada Goose Expedition Parka", "jackets", 135, 4),
-  product(25, "Stone Island Hooded Jacket", "jackets", 72, 6),
-  product(26, "Carhartt Detroit Jacket", "jackets", 48, 8),
-  product(27, "Arc'teryx Beta LT Shell", "jackets", 95, 5),
-  product(28, "Nike Tech Fleece Windrunner", "jackets", 42, 9),
-  product(29, "Ralph Lauren Down Puffer", "jackets", 65, 7),
-  product(30, "Burberry Vintage Check Jacket", "jackets", 88, 4),
-  product(31, "Essentials Hoodie", "hoodies", 28, 15),
-  product(32, "Stussy Basic Hoodie", "hoodies", 32, 9),
-  product(33, "Stone Island Crewneck Sweater", "hoodies", 42, 6),
-  product(34, "Supreme Box Logo Hoodie", "hoodies", 55, 8),
-  product(35, "Broken Planet Hoodie", "hoodies", 38, 10),
-  product(36, "Corteiz Alcatraz Hoodie", "hoodies", 45, 7),
-  product(37, "Palm Angels Hoodie", "hoodies", 48, 6),
-  product(38, "Ami Paris Heart Hoodie", "hoodies", 52, 8),
-  product(39, "Nike Tech Fleece Hoodie", "hoodies", 36, 11),
-  product(40, "Trapstar Irongate Hoodie", "hoodies", 44, 9),
-  product(41, "Represent Owners Club Hoodie", "hoodies", 46, 7),
-  product(42, "Balenciaga Logo Hoodie", "hoodies", 58, 5),
-  product(43, "Chrome Hearts Tee", "t-shirts", 18, 20),
-  product(44, "Balenciaga Logo T-Shirt", "t-shirts", 25, 7),
-  product(45, "Fear of God Essentials Tee", "t-shirts", 20, 14),
-  product(46, "Gallery Dept Vintage Tee", "t-shirts", 22, 12),
-  product(47, "Stussy 8 Ball Tee", "t-shirts", 19, 15),
-  product(48, "Supreme Band Tee", "t-shirts", 24, 10),
-  product(49, "Burberry Logo T-Shirt", "t-shirts", 28, 8),
-  product(50, "Nike Nocta Drake Tee", "t-shirts", 21, 9),
-  product(51, "Maison Margiela Logo Tee", "t-shirts", 30, 6),
-  product(52, "Rhude Logo Tee", "t-shirts", 23, 7),
-  product(53, "Kenzo Tiger Tee", "t-shirts", 20, 11),
-  product(54, "Vlone Friends Tee", "t-shirts", 26, 6),
-  product(55, "Essentials Sweatpants", "pants", 26, 12),
-  product(56, "Arc'teryx Cargo Pants", "pants", 35, 8),
-  product(57, "Nike Tech Fleece Pants", "pants", 32, 10),
-  product(58, "Corteiz Cargo Pants", "pants", 38, 9),
-  product(59, "Carhartt Double Knee Pants", "pants", 40, 7),
-  product(60, "Jordan Essentials Fleece Pants", "pants", 28, 11),
-  product(61, "Represent Cargo Pants", "pants", 42, 6),
-  product(62, "Palace Track Pants", "pants", 36, 8),
-  product(63, "Trapstar Shooters Track Pants", "pants", 44, 7),
-  product(64, "Amiri MX1 Jeans", "pants", 55, 5),
-  product(65, "Goyard Tote Bag", "bags", 48, 14),
-  product(66, "Louis Vuitton Keepall", "bags", 85, 5),
-  product(67, "Prada Re-Nylon Bag", "bags", 52, 4),
-  product(68, "Chanel Classic Flap Bag", "bags", 95, 3),
-  product(69, "Dior Saddle Bag", "bags", 72, 4),
-  product(70, "Balenciaga City Bag", "bags", 68, 4),
-  product(71, "Supreme Backpack", "bags", 38, 6),
-  product(72, "Jordan Brand Backpack", "bags", 32, 8),
-  product(73, "Supreme Box Logo Cap", "headwear", 15, 18),
-  product(74, "New Era Yankees Hat", "headwear", 12, 10),
-  product(75, "Stone Island Compass Cap", "headwear", 18, 9),
-  product(76, "Carhartt WIP Beanie", "headwear", 14, 12),
-  product(77, "Nike ACG Cap", "headwear", 16, 11),
-  product(78, "Ami Paris Cap", "headwear", 17, 8),
-  product(79, "Goorin Bros Animal Cap", "headwear", 15, 14),
-  product(80, "Rolex Submariner Watch", "accessories", 65, 4),
-  product(81, "Gucci Belt", "accessories", 22, 11),
-  product(82, "Off-White Industrial Belt", "accessories", 16, 8),
-  product(83, "Casio G-Shock", "accessories", 18, 15),
-  product(84, "Cartier Love Bracelet", "accessories", 28, 5),
-  product(85, "Van Cleef Alhambra Necklace", "accessories", 32, 4),
-  product(86, "Ray-Ban Sunglasses", "accessories", 20, 9),
-  product(87, "Louis Vuitton Wallet", "accessories", 35, 6),
-  product(88, "Burberry Scarf", "accessories", 26, 7),
-  product(89, "Chrome Hearts Ring", "accessories", 24, 5),
-  product(90, "AirPods Pro Clone", "electronics", 30, 3),
-  product(91, "Apple Watch Ultra Clone", "electronics", 55, 6),
-  product(92, "Apple AirPods Max", "electronics", 49, 4),
-  product(93, "Samsung Galaxy Buds", "electronics", 28, 5),
-  product(94, "JBL Flip Speaker", "electronics", 25, 4),
-  product(95, "PS5 Controller", "electronics", 22, 6),
-  product(96, "Creed Aventus Perfume", "perfume", 28, 5),
-  product(97, "Dior Sauvage Perfume", "perfume", 24, 4),
-  product(98, "Tom Ford Oud Wood", "perfume", 32, 3),
-  product(99, "Chanel Bleu de Chanel", "perfume", 30, 4),
-  product(100, "YSL Y Eau de Parfum", "perfume", 26, 5),
-  product(101, "Real Madrid Home Jersey", "jersey", 20, 9),
-  product(102, "Barcelona Away Jersey 24/25", "jersey", 22, 8),
-  product(103, "Manchester United Home Jersey", "jersey", 21, 10),
-  product(104, "PSG Home Jersey 24/25", "jersey", 23, 9),
-  product(105, "Lakers LeBron James Jersey", "jersey", 24, 8),
-  product(106, "Brazil National Team Jersey", "jersey", 19, 11),
-  product(107, "Warriors Stephen Curry Jersey", "jersey", 22, 7),
-  product(108, "Pop Mart Labubu Figure", "other", 18, 4),
-  product(109, "Stanley Cup Tumbler Dupe", "other", 15, 6),
-  product(110, "Ring Light Tripod Stand", "other", 12, 3),
-  product(111, "Lego Star Wars Set", "other", 28, 2),
-  product(112, "Random Trending Find", "other", 15, 2),
-];
+const oopbuyProducts = require("./products-data.json");
 
 const guides = [
-  { slug: "how-to-buy", navLabel: "How to Buy", title: "How to Buy on OopBuy", excerpt: "Official-style OopBuy buying guide covering product links, options, payment, warehouse QC, parcel submission, and tracking.", icon: "🛒" },
-  { slug: "shipping", navLabel: "Shipping Guide", title: "OopBuy Shipping Guide", excerpt: "Explore Oopbuy shipping logistics with this comprehensive guide on lines, costs, and delivery times.", icon: "📦" },
-  { slug: "declaration", navLabel: "Declaration Guide", title: "How to Declare on OopBuy", excerpt: "Get a detailed guide on how to correctly declare items on Oopbuy for smooth customs clearance.", icon: "📋" },
-  { slug: "qc-photos", navLabel: "QC Photos Guide", title: "QC Photos Guide", excerpt: "Learn how to review quality control photos at the OopBuy warehouse before shipping.", icon: "📸" },
-  { slug: "coupons", navLabel: "Coupons Guide", title: "All You Need to Know About Coupons", excerpt: "What is a Coupon on Oopbuy? A coupon is a promotional tool to save on orders and shipping.", icon: "🎟️" },
-  { slug: "what-is-oopbuy", navLabel: "What is OopBuy?", title: "What is OopBuy?", excerpt: "Oopbuy is a Chinese shopping agent renowned for its quality, affordability, and extensive selection.", icon: "ℹ️" },
+  { slug: "how-to-buy", navLabel: "How to Buy", title: "How to Buy on OopBuy", excerpt: "Official-style OopBuy buying guide covering product links, options, payment, warehouse QC, parcel submission, and tracking.", icon: "BUY" },
+  { slug: "shipping", navLabel: "Shipping Guide", title: "OopBuy Shipping Guide", excerpt: "Explore Oopbuy shipping logistics with this comprehensive guide on lines, costs, and delivery times.", icon: "SHIP" },
+  { slug: "declaration", navLabel: "Declaration Guide", title: "How to Declare on OopBuy", excerpt: "Get a detailed guide on how to correctly declare items on Oopbuy for smooth customs clearance.", icon: "DEC" },
+  { slug: "qc-photos", navLabel: "QC Photos Guide", title: "QC Photos Guide", excerpt: "Learn how to review quality control photos at the OopBuy warehouse before shipping.", icon: "QC" },
+  { slug: "coupons", navLabel: "Coupons Guide", title: "All You Need to Know About Coupons", excerpt: "What is a Coupon on Oopbuy? A coupon is a promotional tool to save on orders and shipping.", icon: "SAVE" },
+  { slug: "what-is-oopbuy", navLabel: "What is OopBuy?", title: "What is OopBuy?", excerpt: "Oopbuy is a Chinese shopping agent renowned for its quality, affordability, and extensive selection.", icon: "INFO" },
 ];
 
 const homeGuideSlugs = ["declaration", "shipping", "what-is-oopbuy", "coupons"];
@@ -317,83 +207,254 @@ const homeGuideDetails = {
 const blogPosts = [
   {
     tag: "Guide",
-    title: "The Complete OOPBUY Spreadsheet Guide for 2025",
+    title: "The Complete OOPBUY Spreadsheet Guide for 2026",
     excerpt:
-      "A full starting point for shoppers who want to use an OopBuy spreadsheet to find products, place orders, review QC photos, and prepare a parcel.",
+      "A researched starting point based on OopBuy's live proxy-shopping flow: pay for goods first, wait for warehouse receipt and QC photos, then submit the international parcel.",
     readTime: "8 min read",
     href: "guides/how-to-buy.html",
     cta: "Read guide",
+    referenceHref: "https://oopbuylist.com/oopbuy-3",
+    referenceCta: "Reference workflow article",
   },
   {
     tag: "Jackets",
     title: "Top Jackets Spreadsheet",
     excerpt:
-      "A curated jacket-focused roundup for puffer jackets, shells, windbreakers, and cold-weather outerwear worth checking before your next haul.",
+      "Outerwear belongs to the MaisonLooks official category tree, which sits inside a shop page showing 67,127 total product results at the time checked.",
     readTime: "5 min read",
     href: streetstyleCategoryUrl("jackets"),
     cta: "Browse jackets",
     external: true,
+    referenceHref: "https://oopbuylist.com/oopbuy-7",
+    referenceCta: "Reference viral-products article",
   },
   {
     tag: "Sneakers",
     title: "Sneaker Finds",
     excerpt:
-      "A sneaker-focused guide for browsing popular OopBuy shoe finds, comparing options, checking seller details, and reviewing QC before shipping.",
+      "Sneakers are listed under the MaisonLooks shoes category tree; examples on the official shop page include Air Jordan, Air Force 1, Air Max, and Shox TL listings with CNY prices.",
     readTime: "6 min read",
     href: streetstyleCategoryUrl("shoes"),
     cta: "Browse sneakers",
     external: true,
+    referenceHref: "https://oopbuylist.com/oopbuy-8",
+    referenceCta: "Reference trending-products article",
   },
   {
     tag: "Accessories",
     title: "Accessories Finds",
     excerpt:
-      "Watches, belts, bags, small goods, and other accessories need extra listing checks. Use this as a practical checklist before adding them to a parcel.",
+      "The MaisonLooks accessories category showed 10,273 results when checked, including jewelry, watches, belts, socks, scarves, ties, headwear, and bags.",
     readTime: "4 min read",
     href: streetstyleCategoryUrl("accessories"),
     cta: "Browse accessories",
     external: true,
+    referenceHref: "https://oopbuylist.com/oopbuy-7",
+    referenceCta: "Reference category article",
   },
   {
     tag: "Hoodies",
     title: "Hoodies & Sweaters Spreadsheet",
     excerpt:
-      "A sweatshirt and knitwear roundup covering hoodies, crewnecks, sweaters, sizing notes, and the QC details that matter most for apparel.",
+      "Tops and clothing appear as first-level browse paths on MaisonLooks; OopBuy's QC step is where buyers should verify labels, colors, sizing tags, and visible defects before shipping.",
     readTime: "5 min read",
     href: streetstyleCategoryUrl("hoodies"),
     cta: "Browse hoodies",
     external: true,
+    referenceHref: "https://oopbuylist.com/oopbuy-5",
+    referenceCta: "Reference winning-products article",
   },
   {
     tag: "Pants",
     title: "Pants & Shorts Finds",
     excerpt:
-      "A focused pants and shorts guide for comparing fits, fabric, sizing, seller photos, and warehouse images before building a clothing haul.",
+      "Bottoms are part of the MaisonLooks category tree, and the live OopBuy flow separates seller-to-warehouse delivery from warehouse-to-address international shipping.",
     readTime: "5 min read",
     href: streetstyleCategoryUrl("pants"),
     cta: "Browse pants",
     external: true,
+    referenceHref: "https://oopbuylist.com/oopbuy-6",
+    referenceCta: "Reference shopper-confidence article",
+  },
+];
+
+function seoClosingBlock(slug, prefix = "") {
+  const guideHref = `${prefix}guides/shipping.html`;
+  const qcHref = `${prefix}guides/qc-photos.html`;
+  const spreadsheetHref = `${prefix}spreadsheet.html`;
+  const compareHref = `${prefix}compare.html`;
+  const copy = {
+    "how-to-buy": {
+      h: "Final OopBuy Buying Checklist",
+      p: `Use the <a href="${spreadsheetHref}" class="text-link">OopBuy spreadsheet</a> to compare OopBuy finds, open live source links, review <a href="${qcHref}" class="text-link">QC photos</a>, and follow the <a href="${guideHref}" class="text-link">shipping checklist</a> before paying for international delivery. This keeps product discovery, warehouse inspection, and parcel submission connected in one workflow.`,
+    },
+    shipping: {
+      h: "Shipping Checklist for Spreadsheet Finds",
+      p: `Before submitting a parcel, save this OopBuy shipping checklist: verify QC photos, source links, item categories, destination restrictions, declaration value, insurance, and route price. The best OopBuy finds are still only worth shipping when the live listing, warehouse photos, and final parcel cost all make sense together.`,
+    },
+    declaration: {
+      h: "Declaration Notes for OopBuy Finds",
+      p: `When a product comes from an OopBuy spreadsheet or other OopBuy finds list, check the source links and QC photos before declaring the parcel. Your shipping checklist should match the actual item categories, weight, destination rules, and declared value so the package profile looks consistent.`,
+    },
+    "qc-photos": {
+      h: "QC Photos Before Shipping",
+      p: `For better OopBuy finds, compare the live source links with warehouse QC photos before adding the item to your shipping checklist. If the color, size tag, material, or visible finish does not match the product page, resolve it before the item is packed for international shipping.`,
+    },
+    coupons: {
+      h: "Coupons and Shipping Checklist",
+      p: `Coupons work best after you already know which OopBuy finds are worth shipping. Build the parcel from source links you trust, review QC photos, then use the shipping checklist to compare route price, coupon eligibility, insurance, and final cost before checkout.`,
+    },
+    "what-is-oopbuy": {
+      h: "How the Spreadsheet Fits",
+      p: `The practical flow is simple: start with an OopBuy spreadsheet, shortlist OopBuy finds, open the source links, purchase through OopBuy, inspect QC photos, then complete a shipping checklist before international delivery. That is the search path this site is built to support.`,
+    },
+    spreadsheet: {
+      h: "How to Use These OopBuy Finds",
+      p: `Treat this OopBuy spreadsheet as the start of research, not the final decision. Open each product source link, compare options and seller details, wait for warehouse QC photos, then use the shipping checklist before submitting a parcel. That workflow gives Google and shoppers a clear reason to connect this page with OopBuy finds, QC photos, source links, and shipping preparation.`,
+    },
+    blog: {
+      h: "Long-Tail Topics Covered Here",
+      p: `These OopBuy spreadsheet articles are organized around real shopper intent: finding OopBuy finds, checking source links, reviewing QC photos, and using a shipping checklist before a haul leaves the warehouse. Use the guides, product categories, and comparison pages together when planning a complete order.`,
+    },
+    compare: {
+      h: "Compare With Source Links",
+      p: `Each comparison should be read with live source links, current shipping details, QC photos, and a shipping checklist in mind. Agent pages change over time, so verify fees, payment methods, warehouse workflow, and parcel routes before choosing where to buy OopBuy finds.`,
+    },
+    qc: {
+      h: "QC Photos and Shipping Checklist",
+      p: `Use this page after you shortlist OopBuy finds from the spreadsheet. Open the source links, compare them with warehouse QC photos, and keep a shipping checklist for route restrictions, declaration value, insurance, and final parcel cost before submitting the haul.`,
+    },
+  };
+  const block = copy[slug];
+  if (!block) return "";
+  return `        <h2>${block.h}</h2>\n        <p>${block.p}</p>`;
+}
+
+const oopbuyListReferences = [
+  {
+    title: "Oopbuy Spreadsheet to Discover Trending Products Fast",
+    href: "https://oopbuylist.com/oopbuy-8",
+    date: "2026-07-03",
+  },
+  {
+    title: "Oopbuy Spreadsheet Strategy for Finding Viral Products",
+    href: "https://oopbuylist.com/oopbuy-7",
+    date: "2026-07-03",
+  },
+  {
+    title: "Find Winning Products with Oopbuy Spreadsheet",
+    href: "https://oopbuylist.com/oopbuy-5",
+    date: "2026-07-03",
+  },
+  {
+    title: "Why Every Dropshipper Needs Oopbuy Spreadsheet",
+    href: "https://oopbuylist.com/oopbuy-6",
+    date: "2026-07-03",
+  },
+  {
+    title: "Oopbuy Spreadsheet 2026: The Ultimate E-Commerce Optimization Tool",
+    href: "https://oopbuylist.com/oopbuy-1",
+    date: "2026-06-25",
+  },
+  {
+    title: "Oopbuy Spreadsheet Workflow for Efficient Product Research",
+    href: "https://oopbuylist.com/oopbuy-3",
+    date: "2026-06-25",
+  },
+  {
+    title: "Advanced Oopbuy Spreadsheet Techniques for Scaling E-Commerce",
+    href: "https://oopbuylist.com/oopbuy-4",
+    date: "2026-06-25",
+  },
+  {
+    title: "Beginner's Guide to Oopbuy Spreadsheet for Online Sellers",
+    href: "https://oopbuylist.com/oopbuy-2",
+    date: "2026-06-25",
   },
 ];
 
 const comparisons = [
-  { slug: "kakobuy", name: "KakoBuy", title: "OopBuy vs KakoBuy" },
-  { slug: "litbuy", name: "LitBuy", title: "OopBuy vs LitBuy" },
-  { slug: "hipobuy", name: "Hipobuy", title: "OopBuy vs Hipobuy" },
-  { slug: "cnfans", name: "CNFans", title: "OopBuy vs CNFans" },
+  {
+    slug: "kakobuy",
+    name: "KakoBuy",
+    title: "OopBuy vs KakoBuy",
+    nav: true,
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-kakobuy",
+    summary: "Pricing, shipping, QC photos, customer support, payment methods, warehouse processing, and platform UX.",
+    sourceAngle: "The reference article frames this as a value comparison between two active Chinese shopping agents.",
+  },
+  {
+    slug: "litbuy",
+    name: "LitBuy",
+    title: "OopBuy vs LitBuy",
+    nav: true,
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-litbuy",
+    summary: "Track record, trust, service fees, shipping-line depth, QC consistency, support channels, and payment coverage.",
+    sourceAngle: "The reference article focuses on the risk of choosing a newer agent with less long-term buyer history.",
+  },
+  {
+    slug: "hipobuy",
+    name: "Hipobuy",
+    title: "OopBuy vs Hipobuy",
+    nav: true,
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-hipobuy",
+    summary: "Reliability, introductory pricing, carrier access, QC-photo maturity, support experience, and dispute handling.",
+    sourceAngle: "The reference article positions Hipobuy as a new entrant and compares it against OopBuy's longer operating record.",
+  },
+  {
+    slug: "cnfans",
+    name: "CNFans",
+    title: "OopBuy vs CNFans",
+    nav: true,
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-cnfans",
+    summary: "Safety, operational stability, data-security concerns, shipping reliability, QC predictability, and support response.",
+    sourceAngle: "The reference article centers the comparison on platform safety and reliability risk.",
+  },
+  {
+    slug: "acbuy",
+    name: "AcBuy",
+    title: "OopBuy vs AcBuy",
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-acbuy",
+    summary: "Service fees, shipping-network age, QC-photo quality, support speed, payment options, and mobile usability.",
+    sourceAngle: "The reference article describes AcBuy as an older agent and compares it with newer OopBuy workflow features.",
+  },
+  {
+    slug: "joyagoo",
+    name: "Joyagoo",
+    title: "OopBuy vs Joyagoo",
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-joyagoo",
+    summary: "Legacy-agent trust, fee structure, route availability, warehouse processing, QC turnaround, and interface quality.",
+    sourceAngle: "The reference article treats Joyagoo as a legacy platform that has not modernized its buyer experience.",
+  },
+  {
+    slug: "mulebuy",
+    name: "MuleBuy",
+    title: "OopBuy vs MuleBuy",
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-mulebuy",
+    summary: "High-fee risk, limited shipping choices, slower support, inconsistent QC photos, and outdated warehouse UX.",
+    sourceAngle: "The reference article compares MuleBuy against OopBuy on cost, support, QC, and platform usability.",
+  },
+  {
+    slug: "usfans",
+    name: "USFans",
+    title: "OopBuy vs USFans",
+    sourceHref: "https://oopbuy-spreadsheet.com/articles/oopbuy-vs-usfans",
+    summary: "New-agent risk, lack of public track record, limited carrier relationships, support capacity, and dispute processes.",
+    sourceAngle: "The reference article focuses on USFans being too new to judge against an agent with more operating history.",
+  },
 ];
 
 const siteHost = DOMAIN.replace(/^https?:\/\//, "");
 
 const faqs = [
-  { q: "What is Oopbuy?", a: "Oopbuy is a renowned Chinese shopping service known for its quality, affordability, and extensive selection. Connecting over 200,000 international customers with premium Chinese fashion, Oopbuy ensures a seamless and secure shopping experience. The Oopbuy spreadsheet further enhances this by organizing and simplifying the shopping process." },
+  { q: "What is Oopbuy?", a: "Oopbuy is a renowned Chinese shopping service known for its quality, affordability, and extensive selection. Connecting international customers with Chinese fashion sellers, Oopbuy aims to provide a seamless and secure shopping experience. The Oopbuy spreadsheet further enhances this by organizing and simplifying the shopping process." },
   { q: `What is ${siteHost}?`, a: `${siteHost} is a dedicated platform designed to make using the Oopbuy spreadsheet easy and efficient. It provides access to a vast selection of high-quality products, along with useful articles and the latest updates related to Oopbuy and its spreadsheets.` },
   { q: "Why should I opt for a website spreadsheet over a traditional one?", a: "Our OopBuy Spreadsheet website offers a streamlined, mobile-optimized experience for browsing Oopbuy spreadsheets. Unlike traditional spreadsheets, our platform pre-screens products to ensure quality and provides a more user-friendly interface. This makes finding the best items through the OopBuy spreadsheet quicker and easier." },
-  { q: "How can I get additional support?", a: "For extra help with the Oopbuy spreadsheet or other queries, join our Discord community. You can interact with our team and other Oopbuy users for support and tips on how to make the most out of the OopBuy spreadsheet." },
+  { q: "How can I get additional support?", a: `For extra help with the Oopbuy spreadsheet or other queries, contact us at ${EMAIL}. We can help with spreadsheet questions, seller checks, and product suggestions.` },
   { q: "How do I place an order with Oopbuy?", a: "Using the Oopbuy spreadsheet to place an order is simple. Browse the spreadsheet for products, click the image link to go directly to the product page on Oopbuy, select size and color options, add items to your cart, fill in the details, and complete payment. OopBuy supports PayPal and balance top-up. Track your order through stages like Process Pending, Purchased, and Seller Send. Once items arrive at the warehouse, review QC photos and choose your shipping method." },
-  { q: "Can you help me find a specific product?", a: "Absolutely! Share an image and the name of the product you're looking for in our Discord Channel, and we'll assist you in finding it quickly. We can also add it to the OopBuy spreadsheet for easy access." },
+  { q: "Can you help me find a specific product?", a: `Absolutely. Send the product name or reference image to ${EMAIL}, and we can review it for a future OopBuy spreadsheet update.` },
   { q: "Why should I use Oopbuy instead of other shipping agents?", a: "OopBuy stands out among shopping agents thanks to competitive shipping rates, a user-friendly interface, reliable quality check photos, and responsive customer service. Their platform supports multiple payment methods including PayPal, and they offer generous coupon bundles for new users. Combined with our OopBuy spreadsheet that pre-screens products for quality, you get a seamless and trustworthy shopping experience." },
-  { q: "What is an OopBuy spreadsheet?", a: `An OopBuy spreadsheet is a curated list of the best products available through the OopBuy shopping agent. Our OopBuy spreadsheet at ${siteHost} is the biggest and most up-to-date version, featuring over 30000 items from trusted sellers. We organize products by category and update the spreadsheet daily with new high quality finds.` },
+  { q: "What is an OopBuy spreadsheet?", a: `An OopBuy spreadsheet is a curated list of the best products available through the OopBuy shopping agent. Our OopBuy spreadsheet at ${siteHost} is a curated and regularly updated version, featuring over 100 featured items from trusted sellers. We organize products by category and update the spreadsheet daily with new high quality finds.` },
 ];
 
 function rel(prefix) {
@@ -404,8 +465,8 @@ function promoBar(prefix = "") {
   const p = rel(prefix);
   return `  <div class="promo-bar">
     <div class="container promo-inner">
-      <span>Special OopBuy Offer: <strong>¥3,000 Coupon Bundle</strong> + 15% Off Shipping</span>
-      <a href="${AFFILIATE}" class="promo-link"${newTabAttrs()}>Redeem Now →</a>
+      <span>Special OopBuy Offer: <strong>CNY 3,000 Coupon Bundle</strong> + 15% Off Shipping</span>
+      <a href="${AFFILIATE}" class="promo-link"${newTabAttrs()}>Redeem Now -&gt;</a>
     </div>
   </div>`;
 }
@@ -426,7 +487,9 @@ function siteLogo(prefix = "") {
 function nav(current, prefix = "") {
   const p = rel(prefix);
   const cp = `${p}categories/`;
-  const activeClass = (id) => (current === id ? ' class="active"' : "");
+  const activeSuffix = (id) => (current === id ? " active" : "");
+  const activeAttr = (id) => (current === id ? ' class="active"' : "");
+  const linkClass = (base, id) => ` class="${base}${activeSuffix(id)}"`;
 
   const spreadsheetLinks = mainCategories
     .map((c) => {
@@ -436,6 +499,7 @@ function nav(current, prefix = "") {
     .join("\n            ");
 
   const compareLinks = comparisons
+    .filter((c) => c.nav)
     .map((c) => `<a href="${p}compare/vs-${c.slug}.html">vs ${c.name}</a>`)
     .join("\n            ");
 
@@ -453,32 +517,33 @@ function nav(current, prefix = "") {
       </button>
 
       <nav class="site-nav" id="siteNav">
-        <a href="/" class="link-home" data-same-tab="true"${activeClass("home")}>Home</a>
+        <a href="/"${linkClass("link-home", "home")} data-same-tab="true">Home</a>
         <div class="nav-dropdown">
           ${dropdownBtn("Spreadsheet", spreadsheetActive)}
           <div class="nav-dropdown-menu nav-dropdown-menu--wide">
-            <a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}${activeClass("spreadsheet")}>All Products</a>
+            <a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}${activeAttr("spreadsheet")}>All Products</a>
             ${spreadsheetLinks}
           </div>
         </div>
         <div class="nav-dropdown">
           ${dropdownBtn("Guides", guidesActive)}
           <div class="nav-dropdown-menu">
-            ${guides.filter((g) => g.slug !== "what-is-oopbuy").map((g) => `<a href="${p}guides/${g.slug}.html"${activeClass(`guide-${g.slug}`)}>${g.navLabel}</a>`).join("\n            ")}
-            <a href="${p}guides.html"${activeClass("guides")}>View All Guides</a>
+            ${guides.filter((g) => g.slug !== "what-is-oopbuy").map((g) => `<a href="${p}guides/${g.slug}.html"${activeAttr(`guide-${g.slug}`)}>${g.navLabel}</a>`).join("\n            ")}
+            <a href="${p}guides.html"${activeAttr("guides")}>View All Guides</a>
           </div>
         </div>
         <div class="nav-dropdown">
           ${dropdownBtn("Compare", compareActive)}
           <div class="nav-dropdown-menu">
             ${compareLinks}
-            <a href="${p}compare.html"${activeClass("compare")}>View All Comparisons</a>
+            <a href="${p}compare.html"${activeAttr("compare")}>View All Comparisons</a>
           </div>
         </div>
-        <a href="${p}deals.html"${activeClass("deals")}>Deals</a>
-        <a href="${p}review.html"${activeClass("review")}>Review</a>
-        <a href="${p}blog.html"${activeClass("blog")}>Blog</a>
-        <a href="${p}about.html"${activeClass("about")}>About</a>
+        <a href="${p}qc.html"${activeAttr("qc")}>QC</a>
+        <a href="${p}deals.html"${activeAttr("deals")}>Deals</a>
+        <a href="${p}review.html"${activeAttr("review")}>Review</a>
+        <a href="${p}blog.html"${activeAttr("blog")}>Blog</a>
+        <a href="${p}about.html"${activeAttr("about")}>About</a>
         ${languageDropdown()}
         <a href="${AFFILIATE}" class="btn btn-nav-signup" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
       </nav>
@@ -488,6 +553,9 @@ function nav(current, prefix = "") {
 
 function footer(prefix = "") {
   const p = rel(prefix);
+  const discordLink = DISCORD
+    ? `          <li><a href="${DISCORD}" target="_blank" rel="noopener noreferrer">Discord</a></li>`
+    : "";
   return `  <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -513,6 +581,7 @@ function footer(prefix = "") {
           <li><a href="${p}review.html">OopBuy Review</a></li>
           <li><a href="${p}blog.html">Blog</a></li>
           <li><a href="${p}spreadsheet.html">Best Finds 2026</a></li>
+          <li><a href="${p}qc.html">QC Navigation</a></li>
           <li><a href="${p}deals.html">Deals &amp; Coupons</a></li>
           <li><a href="${p}compare.html">Compare Agents</a></li>
         </ul>
@@ -522,7 +591,7 @@ function footer(prefix = "") {
         <ul>
           <li><a href="${p}about.html">About Us</a></li>
           <li><a href="${p}contact.html">Contact</a></li>
-          <li><a href="${DISCORD}" target="_blank" rel="noopener noreferrer">Discord</a></li>
+${discordLink}
         </ul>
       </div>
     </div>
@@ -547,7 +616,7 @@ function head(title, description, urlPath, prefix = "", extraHead = "") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
   <meta name="description" content="${description}">
-  <meta name="keywords" content="oopbuy spreadsheet, oopbuy sheet, oopbuy finds, oopbuy guide, oopbuy trusted sellers, oopbuy 2026">
+  <meta name="keywords" content="oopbuy spreadsheet, oopbuy sheet, oopbuy finds, QC photos, source links, shipping checklist, oopbuy guide, oopbuy trusted sellers, oopbuy 2026">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${url}">
 
@@ -575,7 +644,7 @@ function pageEnd(prefix = "", extraScripts = "", beforeMainScripts = "") {
   return `
   <div id="google_translate_element" class="translate-mount notranslate" translate="no"></div>
   <script src="${p}config.js"></script>${beforeMainScripts}
-  <script src="${p}main.js"></script>${extraScripts}
+  <script src="${p}main.js?v=${ASSET_VERSION}"></script>${extraScripts}
 </body>
 </html>
 `;
@@ -585,7 +654,7 @@ function heroShell(content) {
   return `  <div class="hero-shell">\n${content}\n  </div>`;
 }
 
-function ctaBlock(text = "Browse Spreadsheet →", secondary = false) {
+function ctaBlock(text = "Browse Spreadsheet ->", secondary = false) {
   const cls = secondary ? "btn btn-secondary btn-lg" : "btn btn-primary btn-lg";
   const href = secondary ? AFFILIATE : "spreadsheet.html";
   return `<a href="${href}" class="${cls}"${newTabAttrs()}>${text}</a>`;
@@ -595,8 +664,8 @@ function signupCta() {
   return `    <section class="section signup-cta">
       <div class="container signup-grid">
         <div class="signup-content">
-          <h2>New to OopBuy?<br>Get started with ¥3,000 in coupons.</h2>
-          <p>Sign up and unlock your coupon bundle + 15% off shipping on your first order. Join 200,000+ happy shoppers.</p>
+          <h2>New to OopBuy?<br>Get started with CNY 3,000 in coupons.</h2>
+          <p>Sign up and unlock your coupon bundle + 15% off shipping on your first order. Use the coupon bundle before your first shipment.</p>
           <div class="signup-steps">
             <div class="signup-step"><span class="step-circle">1</span><span>Click Sign Up</span></div>
             <div class="signup-step"><span class="step-circle">2</span><span>Enter Your Email</span></div>
@@ -630,7 +699,7 @@ function aboutSeoBlock() {
         <p class="section-label">About Our Spreadsheet</p>
         <h2 class="section-title section-title-left">A Large OopBuy Spreadsheet Built to Help You Shop Smarter</h2>
         <div class="seo-content">
-          <p>Searching for a dependable <strong>OopBuy Spreadsheet</strong>? This site brings together a hand-picked <strong>OopBuy Spreadsheet 2026</strong> with 30,000+ quality listings from reliable sellers — grouped into clear sections for shoes, apparel, bags, accessories, and other popular picks.</p>
+          <p>Searching for a dependable <strong>OopBuy Spreadsheet</strong>? This site brings together a hand-picked <strong>OopBuy Spreadsheet 2026</strong> with ${productCountLabel} quality listings from MaisonLooks StreetStyle  - grouped into clear sections for shoes, apparel, bags, accessories, and other popular picks.</p>
           <p>We work to keep one of the most complete OopBuy lists available by refreshing entries every day and adding standout products as they appear. Before a link goes live, our team checks seller track record and listing quality so you see fewer risky options and more <strong>trusted OopBuy finds</strong>.</p>
           <p>Shop by category: <a href="${streetstyleCategoryUrl("shoes")}" class="text-link"${externalCategoryAttrs()}>Sneakers</a>, <a href="${streetstyleCategoryUrl("clothing")}" class="text-link"${externalCategoryAttrs()}>Clothing</a>, <a href="${streetstyleCategoryUrl("bags")}" class="text-link"${externalCategoryAttrs()}>Bags</a>, <a href="${streetstyleCategoryUrl("accessories")}" class="text-link"${externalCategoryAttrs()}>Accessories</a>, and <a href="${streetstyleCategoryUrl("electronics")}" class="text-link"${externalCategoryAttrs()}>Electronics</a>. New to the platform? Start with our guides on <a href="guides/what-is-oopbuy.html" class="text-link">What is OopBuy</a>, <a href="guides/shipping.html" class="text-link">Shipping</a>, and <a href="guides/coupons.html" class="text-link">Coupons</a>.</p>
           <p>Choosing between shopping agents? See side-by-side write-ups: <a href="compare/vs-litbuy.html" class="text-link">OopBuy vs LitBuy</a>, <a href="compare/vs-hipobuy.html" class="text-link">OopBuy vs Hipobuy</a>, and <a href="compare/vs-kakobuy.html" class="text-link">OopBuy vs KakoBuy</a>.</p>
@@ -654,9 +723,27 @@ const homeCategoryGridOrder = [
   ["other", "Other Stuff"],
 ];
 
+const categoryVectorIcons = {
+  shoes: '<svg viewBox="0 0 64 64" role="img"><path fill="#60a5fa" stroke="#1e3a8a" d="M10 42c8 3 15 2 22-2l7-4 9 6c4 3 8 4 13 4v6H11c-4 0-6-2-6-5 0-2 2-4 5-5Z"/><path fill="#bfdbfe" stroke="#1e3a8a" d="M21 31c5 2 10 1 15-2l6 5-9 5c-7 4-15 4-23 1l3-8c2-3 5-4 8-1Z"/><path fill="#f8fafc" stroke="#1e3a8a" d="M40 34l6-5 9 11-7 2-8-8Z"/></svg>',
+  "t-shirts": '<svg viewBox="0 0 64 64" role="img"><path fill="#34d399" stroke="#065f46" d="M23 10h18l5 6 10 4-6 13-7-3v24H21V30l-7 3-6-13 10-4 5-6Z"/><path fill="none" stroke="#065f46" d="M24 10c2 5 5 8 8 8s6-3 8-8"/></svg>',
+  hoodies: '<svg viewBox="0 0 64 64" role="img"><path fill="#818cf8" stroke="#312e81" d="M22 18c1-8 6-12 10-12s9 4 10 12l8 7v29H14V25l8-7Z"/><path fill="none" stroke="#312e81" d="M22 20c3 4 6 6 10 6s7-2 10-6"/><path fill="#c7d2fe" stroke="#312e81" d="M24 54V39h16v15"/><path fill="none" stroke="#312e81" d="M25 22v11M39 22v11"/></svg>',
+  jackets: '<svg viewBox="0 0 64 64" role="img"><path fill="#f97316" stroke="#7c2d12" d="M23 10h18l9 8 5 36H39l-7-17-7 17H9l5-36 9-8Z"/><path fill="none" stroke="#7c2d12" d="M23 10v44M41 10v44"/><path fill="none" stroke="#fff7ed" d="M28 16h8M19 35h8M37 35h8"/></svg>',
+  pants: '<svg viewBox="0 0 64 64" role="img"><path fill="#38bdf8" stroke="#075985" d="M20 8h24l4 48H35l-3-29-3 29H16l4-48Z"/><path fill="none" stroke="#075985" d="M20 18h24"/><path fill="none" stroke="#075985" d="M32 9v18"/></svg>',
+  bags: '<svg viewBox="0 0 64 64" role="img"><path fill="#a78bfa" stroke="#4c1d95" d="M13 24h38l4 30H9l4-30Z"/><path fill="none" stroke="#4c1d95" d="M23 24v-5c0-6 4-10 9-10s9 4 9 10v5"/><path fill="none" stroke="#ede9fe" d="M22 36h20"/></svg>',
+  jersey: '<svg viewBox="0 0 64 64" role="img"><path fill="#ef4444" stroke="#7f1d1d" d="M22 10h20l5 7 9 5-6 13-7-3v22H21V32l-7 3-6-13 9-5 5-7Z"/><path fill="none" stroke="#fee2e2" d="M27 24h10v20"/><path fill="none" stroke="#fee2e2" d="M27 44h18"/></svg>',
+  headwear: '<svg viewBox="0 0 64 64" role="img"><path fill="#facc15" stroke="#713f12" d="M12 39c2-12 10-20 22-20 10 0 17 6 18 18l7 3c-8 4-17 6-27 6-8 0-15-2-20-7Z"/><path fill="none" stroke="#713f12" d="M34 19V9"/><path fill="none" stroke="#713f12" d="M26 10h16"/><path fill="none" stroke="#fefce8" d="M16 39c11 3 23 3 36-2"/></svg>',
+  accessories: '<svg viewBox="0 0 64 64" role="img"><circle fill="#f9a8d4" stroke="#831843" cx="24" cy="32" r="12"/><circle fill="#f0abfc" stroke="#831843" cx="40" cy="32" r="12"/><path fill="none" stroke="#831843" d="M12 32H6M58 32h-6"/><path fill="none" stroke="#831843" d="M21 47l-5 8M43 47l5 8"/></svg>',
+  electronics: '<svg viewBox="0 0 64 64" role="img"><rect fill="#22d3ee" stroke="#164e63" x="18" y="6" width="28" height="52" rx="5"/><path fill="none" stroke="#164e63" d="M27 12h10"/><path fill="none" stroke="#164e63" d="M28 51h8"/><path fill="#cffafe" stroke="#164e63" d="M22 18h20v27H22z"/></svg>',
+  perfume: '<svg viewBox="0 0 64 64" role="img"><path fill="#fda4af" stroke="#881337" d="M25 8h14v10H25z"/><path fill="#fb7185" stroke="#881337" d="M22 18h20l6 9v27H16V27l6-9Z"/><path fill="none" stroke="#ffe4e6" d="M23 35h18"/><path fill="none" stroke="#ffe4e6" d="M25 44h14"/></svg>',
+  other: '<svg viewBox="0 0 64 64" role="img"><path fill="#c084fc" stroke="#581c87" d="M12 24h40v30H12z"/><path fill="none" stroke="#581c87" d="M32 24v30"/><path fill="#fde68a" stroke="#581c87" d="M10 17h44v8H10z"/><path fill="none" stroke="#581c87" d="M22 17c-4-7 7-11 10 0 3-11 14-7 10 0"/></svg>',
+};
+
 function renderCategoryIcon(cat, prefix = "", { wrapperClass = "category-icon", ariaHidden = false } = {}) {
   const p = rel(prefix);
   const aria = ariaHidden ? ' aria-hidden="true"' : "";
+  if (categoryVectorIcons[cat.slug]) {
+    return `<span class="${wrapperClass} category-vector-icon"${aria}>${categoryVectorIcons[cat.slug]}</span>`;
+  }
   if (cat.iconImg) {
     return `<span class="${wrapperClass} category-icon-img"${aria}><img src="${p}images/${cat.iconImg}" alt="" width="32" height="32"></span>`;
   }
@@ -670,7 +757,7 @@ function homeCategoryGrid(prefix = "") {
       const cat = allCategories.find((c) => c.slug === slug);
       const iconHtml = cat
         ? renderCategoryIcon(cat, prefix, { wrapperClass: "category-sheet-icon", ariaHidden: true })
-        : `<span class="category-sheet-icon" aria-hidden="true">✨</span>`;
+        : `<span class="category-sheet-icon" aria-hidden="true">OK</span>`;
       return `          <a href="${streetstyleCategoryUrl(slug)}" class="category-sheet-card"${externalCategoryAttrs()}>
             ${iconHtml}
             <span class="category-sheet-name">${label}</span>
@@ -709,7 +796,7 @@ function declarationGuideImage(prefix = "", imgClass = "guide-hero-img") {
   const p = rel(prefix);
   return `<figure class="guide-image-wrap">
     <div class="guide-image-photo">
-      <img src="${p}images/guides/declaration.png" alt="How to declare on OopBuy and avoid customs seizure — oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
+      <img src="${p}images/guides/declaration.png" alt="How to declare on OopBuy and avoid customs seizure  - oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
       <div class="guide-image-desk-label" aria-hidden="true">
         <span>How to Declare<br>on OopBuy</span>
         <span>Important: Avoid Seizure</span>
@@ -722,7 +809,7 @@ function shippingGuideImage(prefix = "", imgClass = "guide-hero-img") {
   const p = rel(prefix);
   return `<figure class="guide-image-wrap guide-image-wrap--shipping">
     <div class="guide-image-photo">
-      <img src="${p}images/guides/shipping.png" alt="Choose the correct shipping company and route on OopBuy — oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
+      <img src="${p}images/guides/shipping.png" alt="Choose the correct shipping company and route on OopBuy  - oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
       <div class="guide-image-shipping-label" aria-hidden="true">
         <span>Which Shipping Company<br>to Choose on OopBuy</span>
         <span>Choose the Correct Shipping Route</span>
@@ -735,7 +822,7 @@ function whatIsOopbuyGuideImage(prefix = "", imgClass = "guide-hero-img") {
   const p = rel(prefix);
   return `<figure class="guide-image-wrap guide-image-wrap--oopbuy">
     <div class="guide-image-photo">
-      <img src="${p}images/guides/what-is-oopbuy.png" alt="What is OopBuy shopping agent — oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
+      <img src="${p}images/guides/what-is-oopbuy.png" alt="What is OopBuy shopping agent  - oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
       <div class="guide-image-oopbuy-label" aria-hidden="true">
         <span>oop</span>
       </div>
@@ -747,7 +834,7 @@ function couponsGuideImage(prefix = "", imgClass = "guide-hero-img") {
   const p = rel(prefix);
   return `<figure class="guide-image-wrap guide-image-wrap--coupons">
     <div class="guide-image-photo">
-      <img src="${p}images/guides/coupons.png" alt="How to get coupons on OopBuy — oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
+      <img src="${p}images/guides/coupons.png" alt="How to get coupons on OopBuy  - oopbuy spreadsheet" class="${imgClass}" width="288" height="170" loading="lazy">
       <div class="guide-image-coupons-label" aria-hidden="true">
         <span>How to Get<br>Coupons</span>
       </div>
@@ -798,7 +885,7 @@ function guideCards(prefix = "", slugs = homeGuideSlugs) {
             ${homeGuideDetails[g.slug] ? `<span class="guide-card-kicker">${homeGuideDetails[g.slug].kicker}</span>` : ""}
             <h3>${g.title}</h3>
             <p>${homeGuideDetails[g.slug]?.excerpt || g.excerpt}</p>
-            <span class="text-link">Read more →</span>
+            <span class="text-link">Read more -&gt;</span>
           </a>`
     )
     .join("\n");
@@ -826,7 +913,7 @@ function siteJsonLd() {
         name: SITE_NAME,
         url: DOMAIN,
         description:
-          "Browse the biggest OopBuy Spreadsheet with curated finds from trusted sellers, updated daily.",
+          "Browse a curated OopBuy Spreadsheet with curated finds from trusted sellers, updated daily.",
       },
       {
         "@type": "Organization",
@@ -863,7 +950,7 @@ function itemListJsonLd(products) {
       "@type": "ListItem",
       position: index + 1,
       name: product.name,
-      url: `${DOMAIN}/spreadsheet.html?category=${product.category}`,
+      url: product.href || `${DOMAIN}/spreadsheet.html?category=${product.category}`,
     })),
   };
   return `  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
@@ -881,12 +968,15 @@ function renderProductCard(product) {
   const name = escapeHtml(product.name);
   const category = escapeHtml(product.category);
   const dataName = escapeHtml(product.name.toLowerCase());
-  return `          <a href="${AFFILIATE}" class="product-card" target="_blank" rel="noopener noreferrer" data-name="${dataName}" data-category="${category}">
-            <img src="${product.image}" alt="${name} — OopBuy Spreadsheet" class="product-image" loading="lazy" width="400" height="400">
+  const href = escapeHtml(product.href || AFFILIATE);
+  const meta = escapeHtml(product.meta || product.brand || "MaisonLooks product");
+  const usdPrice = Number(product.price) / CNY_PER_USD;
+  return `          <a href="${href}" class="product-card" target="_blank" rel="noopener noreferrer" data-name="${dataName}" data-category="${category}">
+            <img src="${product.image}" alt="${name} - OopBuy Spreadsheet" class="product-image" loading="lazy" width="400" height="400">
             <div class="product-body">
-              <div class="product-options">${product.options} OPTIONS</div>
+              <div class="product-options">${meta}</div>
               <h3 class="product-name">${name}</h3>
-              <div class="product-price">¥${product.price}</div>
+              <div class="product-price">$${usdPrice.toFixed(2)}</div>
             </div>
           </a>`;
 }
@@ -901,13 +991,50 @@ function writeFile(filePath, content) {
 }
 
 const root = __dirname;
+const productCountLabel = `${oopbuyProducts.length}+`;
+const priceValues = oopbuyProducts.map((p) => Number(p.price)).filter((price) => Number.isFinite(price) && price > 0);
+const productPriceMinUsd = Math.min(...priceValues) / CNY_PER_USD;
+const productPriceMaxUsd = Math.max(...priceValues) / CNY_PER_USD;
+const qcCategoryCounts = allCategories
+  .map((cat) => ({
+    ...cat,
+    count: oopbuyProducts.filter((product) => product.category === cat.slug).length,
+  }))
+  .filter((cat) => cat.count > 0)
+  .sort((a, b) => b.count - a.count);
+const qcSourceLinks = [
+  {
+    label: "OopBuy product detail page",
+    href: "https://oopbuy.com/pages/goods/details?channel=1688&id=812613580913",
+    note: "Used for the official OopBuy buying-flow and warehouse/QC context.",
+  },
+  {
+    label: "OopBuy homepage",
+    href: "https://oopbuy.com/",
+    note: "Used for public platform service positioning, support, and agent workflow context.",
+  },
+  {
+    label: "MaisonLooks StreetStyle products",
+    href: VIEW_PRODUCTS_URL,
+    note: `Used for this site's ${productCountLabel} product sample and category coverage.`,
+  },
+  {
+    label: "OopBuy QC photos guide",
+    href: "guides/qc-photos.html",
+    note: "Used as the existing site reference for shopper-side QC review steps.",
+  },
+];
+const oopbuyQcFacts = [
+  { value: "90 days", label: "Free warehouse storage advertised on OopBuy product pages" },
+  { value: "CNY 1", label: "Optional custom photo service price shown on OopBuy product pages" },
+];
 
 /* ========== INDEX ========== */
 writeFile(
   path.join(root, "index.html"),
   `${head(
-    "OopBuy Spreadsheet 2026 – Best Finds & Trusted Sellers",
-    "Browse the biggest OopBuy Spreadsheet with 30000+ high quality finds from trusted sellers. Updated daily with shoes, clothing, bags, accessories and more.",
+    "OopBuy Spreadsheet 2026  - Best Finds & Trusted Sellers",
+    `Browse a curated OopBuy Spreadsheet with ${productCountLabel} high quality finds from MaisonLooks StreetStyle. Updated daily with shoes, clothing, bags, accessories and more.`,
     "/",
     "",
     `${siteJsonLd()}\n${faqJsonLd()}`
@@ -915,26 +1042,26 @@ writeFile(
 ${heroShell(`${nav("home")}
     <section class="hero">
       <div class="container hero-inner">
-        <p class="hero-badge">Updated Daily · 2026</p>
+        <p class="hero-badge">Updated Daily - 2026</p>
         <h1>Best OopBuy<br><span class="hero-title-accent">Spreadsheet</span></h1>
         <p class="hero-desc">
-          Browse the biggest <strong>OopBuy Spreadsheet</strong> with 30,000+ high quality finds from trusted sellers.
-          Updated daily with the best OopBuy products — shoes, clothing, accessories and more.
+          Browse a curated <strong>OopBuy Spreadsheet</strong> with ${productCountLabel} high quality finds from MaisonLooks StreetStyle.
+          Updated daily with the best OopBuy products  - shoes, clothing, accessories and more.
         </p>
         <form class="hero-search-form" action="https://streetstyle.maisonlooks.com/en/search" method="get" target="_blank" rel="noopener noreferrer">
           <input type="search" name="q" class="hero-search-input" placeholder="Search products..." aria-label="Search products on StreetStyle">
           <button type="submit" class="btn btn-primary hero-search-btn">Search</button>
         </form>
         <div class="hero-stats">
-          <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="30000" data-format="number">0+</span><span class="hero-stat-label">Products</span></div>
+          <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="${oopbuyProducts.length}" data-format="number">0+</span><span class="hero-stat-label">Products</span></div>
           <div class="hero-stat"><span class="hero-stat-num">Daily</span><span class="hero-stat-label">Updated</span></div>
           <div class="hero-stat"><span class="hero-stat-num hero-stat-num--count" data-target="200" data-format="k">0k+</span><span class="hero-stat-label">Shoppers</span></div>
         </div>
         <div class="trust-badges">
-          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">✓</span>Verified sellers only</span>
-          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">✓</span>QC photos reviewed</span>
-          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">✓</span>Daily updates</span>
-          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">✓</span>Free to browse</span>
+          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">OK</span>Verified sellers only</span>
+          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">OK</span>QC photos reviewed</span>
+          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">OK</span>Daily updates</span>
+          <span class="trust-badge"><span class="trust-badge-icon" aria-hidden="true">OK</span>Free to browse</span>
         </div>
       </div>
     </section>`)}
@@ -943,6 +1070,17 @@ ${heroShell(`${nav("home")}
       <div class="container">
         <h2 class="section-title">Browse Categories</h2>
 ${homeCategoryGrid()}
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2>Ready to find the best deals?</h2>
+        <p>Browse ${productCountLabel} curated products from MaisonLooks StreetStyle. Free to use, updated daily.</p>
+        <div class="cta-actions">
+          <a href="spreadsheet.html" class="btn btn-primary btn-lg">Browse Spreadsheet</a>
+          <a href="${STREETSTYLE_HOME}" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">Browse StreetStyle</a>
+        </div>
       </div>
     </section>
 
@@ -956,7 +1094,7 @@ ${homeCategoryGrid()}
 ${guideCards()}
         </div>
         <div class="section-action">
-          <a href="guides.html" class="btn btn-secondary">View All Guides →</a>
+          <a href="guides.html" class="btn btn-secondary">View All Guides -&gt;</a>
         </div>
       </div>
     </section>
@@ -964,17 +1102,6 @@ ${guideCards()}
 ${signupCta()}
 ${aboutSeoBlock()}
 ${faqSection()}
-
-    <section class="section cta">
-      <div class="container cta-inner">
-        <h2>Ready to find the best deals?</h2>
-        <p>Browse 30,000+ curated products from trusted sellers. Free to use, updated daily.</p>
-        <div class="cta-actions">
-          <a href="spreadsheet.html" class="btn btn-primary btn-lg">Browse Spreadsheet</a>
-          <a href="${AFFILIATE}" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
-        </div>
-      </div>
-    </section>
   </main>
 ${footer()}${pageEnd()}`
 );
@@ -983,8 +1110,8 @@ ${footer()}${pageEnd()}`
 writeFile(
   path.join(root, "spreadsheet.html"),
   `${head(
-    "OopBuy Spreadsheet 2026 - Browse 30000+ Best Finds",
-    "Browse the biggest OopBuy Spreadsheet online. 30000+ curated products from trusted OopBuy sellers with search, filters, and direct purchase links.",
+    `OopBuy Spreadsheet 2026 - Browse ${productCountLabel} Best Finds`,
+    `Browse curated OopBuy finds online. ${productCountLabel} MaisonLooks StreetStyle products with search, filters, images, source links, QC photos, and shipping checklist notes.`,
     "/spreadsheet.html",
     "",
     `${siteJsonLd()}\n${itemListJsonLd(oopbuyProducts)}`
@@ -992,8 +1119,8 @@ writeFile(
 ${heroShell(`${nav("spreadsheet")}
     <section class="page-hero page-hero-compact">
       <div class="container">
-        <h1>Browse the Biggest OopBuy Spreadsheet 2026</h1>
-        <p class="page-hero-desc">Over 30,000 hand-picked products from trusted OopBuy sellers. Search, filter by category, and click through to purchase on OopBuy.</p>
+        <h1>Browse the Curated OopBuy Spreadsheet 2026</h1>
+        <p class="page-hero-desc">Over ${oopbuyProducts.length} featured MaisonLooks StreetStyle products with real images, prices, and source links. Search and filter OopBuy finds before checking QC photos and planning shipping.</p>
       </div>
     </section>`)}
   <main>
@@ -1025,8 +1152,13 @@ ${renderProductGrid(oopbuyProducts)}
     <section class="section cta">
       <div class="container cta-inner">
         <h2>Can't find what you need?</h2>
-        <p>Join our Discord — share a photo and we'll help you find it and add it to the OopBuy Spreadsheet.</p>
-        <a href="${DISCORD}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Join Discord</a>
+        <p>Send us the product name or reference image and we can review it for a future OopBuy Spreadsheet update.</p>
+        <a href="mailto:${EMAIL}" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-block">
+${seoClosingBlock("spreadsheet")}
       </div>
     </section>
   </main>
@@ -1038,7 +1170,7 @@ writeFile(
   path.join(root, "categories.html"),
   `${head(
     "All Categories | OopBuy Spreadsheet",
-    "Browse all OopBuy Spreadsheet categories — sneakers, clothing, bags, electronics, and more from trusted sellers.",
+    "Browse all OopBuy Spreadsheet categories  - sneakers, clothing, bags, electronics, and more from trusted sellers.",
     "/categories.html",
     "",
     breadcrumbJsonLd([
@@ -1080,8 +1212,8 @@ ${categoryCards()}
     <section class="section cta">
       <div class="container cta-inner">
         <h2>Browse the Full Spreadsheet</h2>
-        <p>Search and filter 30,000+ products from trusted OopBuy sellers.</p>
-        <a href="spreadsheet.html" class="btn btn-primary btn-lg">Open Spreadsheet →</a>
+        <p>Search and filter ${productCountLabel} products from MaisonLooks StreetStyle with real images, prices, and product links.</p>
+        <a href="spreadsheet.html" class="btn btn-primary btn-lg">Open Spreadsheet -&gt;</a>
       </div>
     </section>
   </main>
@@ -1093,7 +1225,7 @@ writeFile(
   path.join(root, "guides.html"),
   `${head(
     "OopBuy Guides | How to Buy, Ship & Save",
-    "Complete OopBuy guides — how to buy, shipping, customs declaration, QC photos, and coupons for the OopBuy Spreadsheet.",
+    "Complete OopBuy guides  - how to buy, shipping, customs declaration, QC photos, and coupons for the OopBuy Spreadsheet.",
     "/guides.html",
     "",
     breadcrumbJsonLd([
@@ -1106,7 +1238,7 @@ ${heroShell(`${nav("guides")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor()} / Guides</p>
         <h1>OopBuy Guides</h1>
-        <p class="page-hero-desc">Step-by-step tutorials to help you shop smarter on OopBuy using our spreadsheet.</p>
+        <p class="page-hero-desc">OopBuy Spreadsheet guides for finding OopBuy finds, checking source links, reviewing QC photos, and using a shipping checklist before delivery.</p>
       </div>
     </section>`)}
   <main>
@@ -1117,7 +1249,7 @@ ${guides.map((g) => `          <a href="guides/${g.slug}.html" class="guide-card
             ${guideCardVisual(g)}
             <h3>${g.title}</h3>
             <p>${g.excerpt}</p>
-            <span class="text-link">Read more →</span>
+            <span class="text-link">Read more -&gt;</span>
           </a>`).join("\n")}
         </div>
       </div>
@@ -1167,9 +1299,9 @@ const guideContent = {
   "qc-photos": {
     title: "QC Photos Guide",
     sections: [
-      { h: "What are QC Photos?", p: "Quality Control photos are taken at the OopBuy warehouse when your items arrive. They show the actual product you received — use them to verify quality before shipping." },
+      { h: "What are QC Photos?", p: "Quality Control photos are taken at the OopBuy warehouse when your items arrive. They show the actual product you received  - use them to verify quality before shipping." },
       { h: "How to Review QC", p: "Check stitching, logos, colors, and overall build quality against reference photos. Compare with QC photos in our OopBuy Spreadsheet listings." },
-      { h: "Exchange or Return", p: "If QC reveals issues, request an exchange or return through OopBuy before submitting your international shipment. Act quickly — warehouse storage has time limits." },
+      { h: "Exchange or Return", p: "If QC reveals issues, request an exchange or return through OopBuy before submitting your international shipment. Act quickly  - warehouse storage has time limits." },
     ],
   },
   coupons: {
@@ -1224,6 +1356,7 @@ ${heroShell(`${nav(`guide-${slug}`, "../")}
     <section class="section">
       <div class="container content-block">
 ${content.sections.map((s) => `        <h2>${s.h}</h2>\n        <p>${s.p}</p>`).join("\n\n")}
+${seoClosingBlock(slug, "../")}
         ${homeBtn("../")}
       </div>
     </section>
@@ -1238,7 +1371,7 @@ writeFile(
   path.join(root, "compare.html"),
   `${head(
     "Compare Shopping Agents | OopBuy Spreadsheet",
-    "Compare OopBuy vs LitBuy, Hipobuy, KakoBuy, and CNFans. Find the best shopping agent for your needs.",
+    "Compare OopBuy vs KakoBuy, LitBuy, Hipobuy, CNFans, AcBuy, Joyagoo, MuleBuy, and USFans with source links and practical buying notes.",
     "/compare.html"
   )}
 ${heroShell(`${nav("compare")}
@@ -1246,19 +1379,35 @@ ${heroShell(`${nav("compare")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor()} / Compare</p>
         <h1>Compare Shopping Agents</h1>
-        <p class="page-hero-desc">Detailed comparisons to help you choose the right agent. We recommend OopBuy for its shipping rates, QC quality, and user experience.</p>
+        <p class="page-hero-desc">A dedicated compare route modeled after the reference compare page, with each comparison module linked to its corresponding source article.</p>
       </div>
     </section>`)}
   <main>
     <section class="section">
       <div class="container">
+        <p class="section-label">Compare Route</p>
+        <h2 class="section-title section-title-left">OopBuy Agent Comparisons</h2>
         <div class="compare-grid">
-${comparisons.map((c) => `          <a href="compare/vs-${c.slug}.html" class="compare-card">
+${comparisons.map((c) => `          <article class="compare-card">
             <h3>${c.title}</h3>
-            <p>See how OopBuy compares to ${c.name} on shipping, fees, QC, and user experience.</p>
-            <span class="text-link">Read comparison →</span>
-          </a>`).join("\n")}
+            <p>${c.summary}</p>
+            <p>${c.sourceAngle}</p>
+            <div class="compare-card-actions">
+              <a href="compare/vs-${c.slug}.html" class="text-link">Read our comparison -&gt;</a>
+              <a href="${c.sourceHref}" class="text-link" target="_blank" rel="noopener noreferrer">Source article</a>
+            </div>
+          </article>`).join("\n")}
         </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-block">
+        <h2>Source Links Captured From the Reference Compare Page</h2>
+        <p>The reference route at <a href="https://oopbuy-spreadsheet.com/compare" class="text-link" target="_blank" rel="noopener noreferrer">oopbuy-spreadsheet.com/compare</a> exposes these comparison modules. The links below are retained for audit and future content refreshes.</p>
+        <ul class="check-list">
+          ${comparisons.map((c) => `<li><a href="${c.sourceHref}" class="text-link" target="_blank" rel="noopener noreferrer">${c.title}</a> - ${c.summary}</li>`).join("\n          ")}
+        </ul>
+${seoClosingBlock("compare")}
       </div>
     </section>
   </main>
@@ -1270,7 +1419,7 @@ for (const comp of comparisons) {
     path.join(root, "compare", `vs-${comp.slug}.html`),
     `${head(
       `${comp.title} | OopBuy Spreadsheet`,
-      `${comp.title} — detailed comparison of shipping rates, QC photos, fees, and user experience to help you choose the best shopping agent.`,
+      `${comp.title} - comparison of fees, shipping, QC photos, support, trust signals, source links, and platform workflow with the source article linked for reference.`,
       `/compare/vs-${comp.slug}.html`,
       "../"
     )}
@@ -1279,12 +1428,15 @@ ${heroShell(`${nav(`compare-${comp.slug}`, "../")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor("../")} / <a href="../compare.html">Compare</a> / ${comp.title}</p>
         <h1>${comp.title}</h1>
-        <p class="page-hero-desc">A detailed comparison to help you decide between OopBuy and ${comp.name}.</p>
+        <p class="page-hero-desc">A researched comparison module with source links, QC photos notes, shipping checklist context, and the corresponding reference article link captured from oopbuy-spreadsheet.com.</p>
       </div>
     </section>`)}
   <main>
     <section class="section">
       <div class="container content-block">
+        <h2>Reference Article</h2>
+        <p>Source captured from the reference compare page: <a href="${comp.sourceHref}" class="text-link" target="_blank" rel="noopener noreferrer">${comp.title}</a>.</p>
+        <p>${comp.sourceAngle}</p>
         <h2>Quick Comparison</h2>
         <div class="compare-table-wrap">
           <table class="compare-table">
@@ -1293,18 +1445,28 @@ ${heroShell(`${nav(`compare-${comp.slug}`, "../")}
               <tr><td>Shipping Rates</td><td>Competitive, multiple lines</td><td>Varies by region</td></tr>
               <tr><td>QC Photos</td><td>Free, detailed</td><td>Available</td></tr>
               <tr><td>PayPal Support</td><td>Yes</td><td>Varies</td></tr>
-              <tr><td>New User Coupons</td><td>¥3,000 bundle + 15% shipping</td><td>Varies</td></tr>
+              <tr><td>New User Coupons</td><td>CNY 3,000 bundle + 15% shipping</td><td>Varies</td></tr>
               <tr><td>Interface</td><td>Modern, mobile-friendly</td><td>Standard</td></tr>
               <tr><td>Customer Service</td><td>Responsive</td><td>Varies</td></tr>
             </tbody>
           </table>
         </div>
+        <h2>What to Check Before Choosing</h2>
+        <p>Use the source article and live source links as a topic map, then verify the platform details before placing an order. For ${comp.name}, the main areas to compare are: ${comp.summary.toLowerCase()}</p>
+        <ul class="check-list">
+          <li>Check current service fees and whether any coupon or shipping discount changes the total cost</li>
+          <li>Compare shipping-line availability for your destination, not just headline prices</li>
+          <li>Review QC photo detail, warehouse processing speed, and return or exchange rules before shipping</li>
+          <li>Confirm payment methods, support response channels, and dispute handling for expensive parcels</li>
+        </ul>
         <h2>Why We Recommend OopBuy</h2>
-        <p>For most international buyers using an <strong>OopBuy Spreadsheet</strong>, OopBuy offers the best balance of shipping cost, QC quality, and ease of use. Combined with our curated spreadsheet of 30,000+ verified finds, you get a seamless shopping experience from discovery to delivery.</p>
-        <p>That said, ${comp.name} may suit specific use cases. We encourage comparing both before committing — and browsing our OopBuy Spreadsheet regardless of which agent you choose.</p>
+        <p>For most international buyers using an <strong>OopBuy Spreadsheet</strong>, OopBuy offers the best balance of shipping cost, QC quality, and ease of use. Combined with our curated spreadsheet of ${productCountLabel} sourced finds, you get a smoother shopping experience from discovery to delivery.</p>
+        <p>That said, ${comp.name} may suit specific use cases. We encourage comparing both before committing  - and browsing our OopBuy Spreadsheet regardless of which agent you choose.</p>
+${seoClosingBlock("compare", "../")}
         <div class="hero-actions" style="margin-top:24px">
-          <a href="${AFFILIATE}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try OopBuy Free →</a>
+          <a href="${AFFILIATE}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try OopBuy Free -&gt;</a>
           <a href="../spreadsheet.html" class="btn btn-secondary">Browse Spreadsheet</a>
+          <a href="${comp.sourceHref}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open Source Article</a>
         </div>
       </div>
     </section>
@@ -1313,12 +1475,128 @@ ${footer("../")}${pageEnd("../")}`
   );
 }
 
+/* ========== QC ========== */
+writeFile(
+  path.join(root, "qc.html"),
+  `${head(
+    "OopBuy QC Navigation | QC Photos, Warehouse Checks & Product Review",
+    `Use this OopBuy QC navigation page to review warehouse QC photos, category checklists, and ${productCountLabel} StreetStyle product data before shipping.`,
+    "/qc.html",
+    "",
+    breadcrumbJsonLd([
+      { name: "Home", url: `${DOMAIN}/` },
+      { name: "QC", url: `${DOMAIN}/qc.html` },
+    ])
+  )}
+${heroShell(`${nav("qc")}
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">${homeAnchor()} / QC</p>
+        <h1>OopBuy QC Navigation</h1>
+        <p class="page-hero-desc">A practical route for checking OopBuy warehouse photos, product details, and StreetStyle spreadsheet finds before you ship a haul.</p>
+      </div>
+    </section>`)}
+  <main>
+    <section class="section blog-feature">
+      <div class="container blog-feature-grid">
+        <article class="blog-feature-card">
+          <span class="blog-tag">QC Workflow</span>
+          <h2>Check the product before international shipping.</h2>
+          <p>OopBuy works as a China shopping agent: the seller sends the item to the OopBuy warehouse first, then the buyer reviews warehouse QC photos before submitting an international parcel. This page turns that checkpoint into a route you can use while browsing the spreadsheet.</p>
+          <a href="guides/qc-photos.html" class="btn btn-primary">Read QC Photos Guide</a>
+        </article>
+        <aside class="blog-side-panel">
+          <h3>QC Data Snapshot</h3>
+          <a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}>${productCountLabel} StreetStyle products used on this site</a>
+          <a href="${streetstyleCategoryUrl(qcCategoryCounts[0].slug)}"${externalCategoryAttrs()}>Largest sampled category: ${qcCategoryCounts[0].name} (${qcCategoryCounts[0].count} products)</a>
+          <a href="${AFFILIATE}" target="_blank" rel="noopener noreferrer">OopBuy advertises warehouse QC as part of the agent workflow</a>
+          <a href="spreadsheet.html">Spreadsheet prices shown in USD from CNY source data</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">QC Numbers</p>
+        <h2 class="section-title section-title-left">Facts Used for This QC Route</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">${productCountLabel}</span>
+            <span class="stat-label">Products currently rendered from MaisonLooks StreetStyle data</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">${qcCategoryCounts.length}</span>
+            <span class="stat-label">Product categories with active sampled items</span>
+          </div>
+          ${oopbuyQcFacts.map((fact) => `<div class="stat-card">
+            <span class="stat-number">${fact.value}</span>
+            <span class="stat-label">${fact.label}</span>
+          </div>`).join("\n          ")}
+          <div class="stat-card">
+            <span class="stat-number">$${productPriceMinUsd.toFixed(2)}</span>
+            <span class="stat-label">Lowest sampled product price after USD conversion</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">$${productPriceMaxUsd.toFixed(2)}</span>
+            <span class="stat-label">Highest sampled product price after USD conversion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-block">
+        <h2>How to Use QC Before Shipping</h2>
+        <p>Start with the live product page, then compare it against warehouse photos after the item arrives. For apparel and footwear, the QC pass should focus on shape, color, labels, stitching, size tags, visible defects, and whether the item matches the option you selected.</p>
+        <p>OopBuy's agent model is useful because international shipping happens after the warehouse step. That gives you a checkpoint to reject a bad item, request a return or exchange where possible, or ask for clearer photos before building a parcel.</p>
+        <ul class="check-list">
+          <li>Confirm product name, color, size, material notes, seller source, and source price before purchase</li>
+          <li>After warehouse arrival, compare QC photos against the seller images and selected options</li>
+          <li>For expensive items, request clearer angle photos before submitting the parcel</li>
+          <li>Do not ship until the visible flaws, sizing risk, and parcel value declaration are acceptable</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Category QC</p>
+        <h2 class="section-title section-title-left">QC Focus by Spreadsheet Category</h2>
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead><tr><th>Category</th><th>Sample Count</th><th>QC Focus</th></tr></thead>
+            <tbody>
+              ${qcCategoryCounts.map((cat) => `<tr><td><a href="${streetstyleCategoryUrl(cat.slug)}" class="text-link" target="_blank" rel="noopener noreferrer">${cat.name}</a></td><td>${cat.count}</td><td>${cat.slug === "shoes" ? "Toe shape, sole texture, stitching, box label, color match, and size tag." : cat.slug === "bags" ? "Hardware color, zipper alignment, logo placement, strap stitching, and interior label." : cat.slug === "electronics" ? "Model number, accessory count, shell condition, ports, and package label." : cat.slug === "perfume" ? "Bottle shape, cap fit, label alignment, batch code visibility, and packaging condition." : cat.slug === "headwear" ? "Panel shape, embroidery, brim curve, inner tag, and color match." : cat.slug === "accessories" ? "Metal finish, engraving, clasp quality, length, and packaging details." : "Fabric color, print placement, tags, stitching, measurements, and visible defects."}</td></tr>`).join("\n              ")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-block">
+        <h2>Source Links and Audit Trail</h2>
+        <p>This QC route is based on live platform checks plus this site's local StreetStyle product dataset. Treat all numbers as a publishing snapshot and recheck the source pages before making dated claims.</p>
+        <ul class="check-list">
+          ${qcSourceLinks.map((source) => `<li><a href="${source.href}" class="text-link" target="_blank" rel="noopener noreferrer">${source.label}</a> - ${source.note}</li>`).join("\n          ")}
+        </ul>
+${seoClosingBlock("qc")}
+        <div class="hero-actions" style="margin-top:24px">
+          <a href="spreadsheet.html" class="btn btn-primary">Browse Spreadsheet</a>
+          <a href="${STREETSTYLE_HOME}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Browse StreetStyle</a>
+        </div>
+      </div>
+    </section>
+  </main>
+${footer()}${pageEnd()}`
+);
+
 /* ========== DEALS, REVIEW, ABOUT, CONTACT ========== */
 writeFile(
   path.join(root, "deals.html"),
   `${head(
     "OopBuy Deals & Coupons 2026 | OopBuy Spreadsheet",
-    "Latest OopBuy coupon codes, deals, and promotions. Get ¥3,000 coupon bundle + 15% off shipping for new users.",
+    "Latest OopBuy coupon codes, deals, and promotions. Get CNY 3,000 coupon bundle + 15% off shipping for new users.",
     "/deals.html"
   )}
 ${heroShell(`${nav("deals")}
@@ -1335,21 +1613,21 @@ ${heroShell(`${nav("deals")}
         <div class="deals-grid">
           <article class="deal-card deal-card-featured">
             <span class="deal-badge">New User</span>
-            <h3>¥3,000 Coupon Bundle</h3>
-            <p>Sign up through our link and receive ¥3,000 in coupons plus 15% off shipping on your first order.</p>
-            <a href="${AFFILIATE}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Claim Now →</a>
+            <h3>CNY 3,000 Coupon Bundle</h3>
+            <p>Sign up through our link and receive CNY 3,000 in coupons plus 15% off shipping on your first order.</p>
+            <a href="${AFFILIATE}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Claim Now -&gt;</a>
           </article>
           <article class="deal-card">
             <span class="deal-badge">Shipping</span>
             <h3>15% Off First Shipment</h3>
             <p>New OopBuy accounts get 15% off their first international shipping payment.</p>
-            <a href="${AFFILIATE}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Sign Up →</a>
+            <a href="${AFFILIATE}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Sign Up -&gt;</a>
           </article>
           <article class="deal-card">
             <span class="deal-badge">Daily</span>
             <h3>Spreadsheet Daily Updates</h3>
             <p>Our OopBuy Spreadsheet is updated daily with fresh finds and removed stale listings.</p>
-            <a href="spreadsheet.html" class="btn btn-secondary">Browse Finds →</a>
+            <a href="spreadsheet.html" class="btn btn-secondary">Browse Finds -&gt;</a>
           </article>
         </div>
       </div>
@@ -1362,8 +1640,8 @@ ${footer()}${pageEnd()}`
 writeFile(
   path.join(root, "blog.html"),
   `${head(
-    "OopBuy Blog | Spreadsheet Tips, Shipping & Coupons",
-    "Read OopBuy blog posts about the OopBuy Spreadsheet guide, jackets, sneaker finds, accessories, hoodies, sweaters, pants, and shorts.",
+    "OopBuy Blog | Spreadsheet Tips, OopBuy Finds & Shipping",
+    "Read researched OopBuy blog notes about OopBuy finds, source links, QC photos, shipping checklist steps, storage, categories, and shopping-agent workflow.",
     "/blog.html",
     "",
     breadcrumbJsonLd([
@@ -1376,7 +1654,7 @@ ${heroShell(`${nav("blog")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor()} / Blog</p>
         <h1>OopBuy Blog</h1>
-        <p class="page-hero-desc">Spreadsheet guides and product roundups for OopBuy shoppers: jackets, sneakers, accessories, hoodies, sweaters, pants, and shorts.</p>
+        <p class="page-hero-desc">Researched spreadsheet notes for OopBuy shoppers, using facts checked on OopBuy and MaisonLooks rather than generic product-roundup copy.</p>
       </div>
     </section>`)}
   <main>
@@ -1385,9 +1663,34 @@ ${heroShell(`${nav("blog")}
         <article class="blog-feature-card">
           <span class="blog-tag">Featured</span>
           <h2>Complete OOPBUY Spreadsheet Guide and Finds Roundups</h2>
-          <p>Use this blog as a compact hub for the main OopBuy spreadsheet topics: how the spreadsheet works, which product categories are worth browsing, and what to check before shipping a haul internationally.</p>
+          <p>Use this blog as a compact, source-checked hub for how OopBuy buying works, which MaisonLooks categories are worth browsing, and what facts to verify before shipping a haul internationally.</p>
           <a href="guides/how-to-buy.html" class="btn btn-primary">Read Buying Guide</a>
         </article>
+        <div class="blog-side-panel">
+          <h3>Platform Facts Checked</h3>
+          <a href="https://oopbuy.com" target="_blank" rel="noopener noreferrer">OopBuy lists QC, shipping estimate, 90-day storage, and 24/7 support</a>
+          <a href="${VIEW_PRODUCTS_URL}"${externalCategoryAttrs()}>MaisonLooks official shop: 67,127 product results checked</a>
+          <a href="${streetstyleCategoryUrl("accessories")}"${externalCategoryAttrs()}>Accessories category: 10,273 results checked</a>
+          <a href="${streetstyleCategoryUrl("shoes")}"${externalCategoryAttrs()}>Shoes category includes Jordan, Air Force, Air Max, and Shox listings</a>
+          <a href="https://oopbuy.com/product/1688/744161001154" target="_blank" rel="noopener noreferrer">OopBuy example links to a 1688 product source</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-block">
+        <h2>Research Notes Used for These Articles</h2>
+        <p>The blog copy is based on live platform checks. OopBuy presents itself as a proxy-shopping flow: buyers add a marketplace item, pay for the goods, wait for seller delivery to the OopBuy warehouse, review QC, and then submit the international shipment. Its product pages also advertise 90 days of free storage, international shipping estimates, and 24/7 customer support.</p>
+        <p>For product discovery, the linked MaisonLooks official shop showed 67,127 total results when checked. The accessories category alone showed 10,273 results, while the shoes and clothing paths exposed the main browse structure used by this site's spreadsheet links.</p>
+        <ul class="check-list">
+          <li>Source platforms checked: OopBuy, MaisonLooks official shop, and MaisonLooks category pages</li>
+          <li>Shopping sources referenced by OopBuy product pages include 1688, Taobao, and Weidian-style marketplace links</li>
+          <li>Key buying checkpoints: live listing price, seller source, warehouse QC photos, storage time, shipping route, and declared parcel value</li>
+          <li>Numbers are snapshots from the checked pages and should be rechecked before publishing dated claims</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section blog-feature">
+      <div class="container blog-feature-grid">
         <div class="blog-side-panel">
           <h3>Popular Topics</h3>
           <a href="${streetstyleCategoryUrl("jackets")}"${externalCategoryAttrs()}>Top jackets spreadsheet</a>
@@ -1410,6 +1713,7 @@ ${blogPosts.map((post) => `          <article class="blog-card">
             <div class="blog-card-footer">
               <span class="blog-meta">${post.readTime}</span>
               <a href="${post.href}" class="text-link"${post.external ? externalCategoryAttrs() : ""}>${post.cta}</a>
+              ${post.referenceHref ? `<a href="${post.referenceHref}" class="text-link" target="_blank" rel="noopener noreferrer">${post.referenceCta}</a>` : ""}
             </div>
           </article>`).join("\n")}
         </div>
@@ -1418,14 +1722,24 @@ ${blogPosts.map((post) => `          <article class="blog-card">
     <section class="section">
       <div class="container content-block">
         <h2>What This Blog Covers</h2>
-        <p>This blog is written for shoppers who use an <strong>OopBuy Spreadsheet</strong> as their starting point. It now mirrors the main reference topics: the complete spreadsheet guide, jacket finds, sneaker finds, accessories, hoodies and sweaters, plus pants and shorts.</p>
-        <p>Use these articles together with our product categories, guide pages, and comparison pages. When a product looks promising, still review the live listing, available options, size notes, seller history, and QC photos before shipping internationally.</p>
+        <p>This blog is written for shoppers who use an <strong>OopBuy Spreadsheet</strong> as their starting point. It now mirrors the main reference topics: the complete spreadsheet guide, OopBuy finds, jacket finds, sneaker finds, accessories, hoodies and sweaters, plus pants and shorts.</p>
+        <p>Use these articles together with our product categories, guide pages, and comparison pages. When a product looks promising, still review the source links, live options, size notes, seller history, QC photos, and shipping checklist before shipping internationally.</p>
         <ul class="check-list">
           <li>Spreadsheet browsing tips for jackets, sneakers, accessories, hoodies, sweaters, pants, and shorts</li>
           <li>Beginner-friendly explanations of OopBuy ordering and warehouse steps</li>
           <li>Shipping, declaration, and coupon notes for planning a full haul</li>
           <li>Independent advice for comparing OopBuy with other shopping agents</li>
         </ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-block">
+        <h2>Reference Blog Links Pulled From OopBuyList</h2>
+        <p>The modules above also map to the corresponding article URLs found on the reference blog page. These links are used for topic coverage and SERP comparison, while the factual claims in this page are still checked against OopBuy and MaisonLooks platform pages.</p>
+        <ul class="check-list">
+          ${oopbuyListReferences.map((ref) => `<li><a href="${ref.href}" class="text-link" target="_blank" rel="noopener noreferrer">${ref.title}</a> - published ${ref.date}</li>`).join("\n          ")}
+        </ul>
+${seoClosingBlock("blog")}
       </div>
     </section>
 ${signupCta()}
@@ -1445,7 +1759,7 @@ ${heroShell(`${nav("review")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor()} / Review</p>
         <h1>OopBuy Review 2026</h1>
-        <p class="page-hero-desc">An honest look at OopBuy — shipping, QC, fees, and overall experience.</p>
+        <p class="page-hero-desc">An honest look at OopBuy  - shipping, QC, fees, and overall experience.</p>
       </div>
     </section>`)}
   <main>
@@ -1458,7 +1772,7 @@ ${heroShell(`${nav("review")}
           <li>Competitive international shipping rates</li>
           <li>Free, detailed QC photos at warehouse</li>
           <li>PayPal and multiple payment methods</li>
-          <li>Generous new-user coupon bundle (¥3,000 + 15% shipping)</li>
+          <li>Generous new-user coupon bundle (CNY 3,000 + 15% shipping)</li>
           <li>Clean, mobile-friendly interface</li>
           <li>Responsive customer service</li>
         </ul>
@@ -1469,7 +1783,7 @@ ${heroShell(`${nav("review")}
           <li>Customs declaration requires user input</li>
         </ul>
         <h2>Verdict</h2>
-        <p>For buyers using an OopBuy Spreadsheet, OopBuy is our top recommendation. Pair our curated 30,000+ finds with OopBuy's reliable service for the best experience.</p>
+        <p>For buyers using an OopBuy Spreadsheet, OopBuy is our top recommendation. Pair our curated ${productCountLabel} finds with OopBuy's reliable service for the best experience.</p>
         ${homeBtn()}
       </div>
     </section>
@@ -1481,7 +1795,7 @@ writeFile(
   path.join(root, "about.html"),
   `${head(
     "About Us | OopBuy Spreadsheet",
-    "About our OopBuy Spreadsheet — the biggest curated product list for OopBuy shoppers, updated daily with trusted seller finds.",
+    "About our OopBuy Spreadsheet  - a curated product list for OopBuy shoppers, updated daily with trusted seller finds.",
     "/about.html"
   )}
 ${heroShell(`${nav("about")}
@@ -1489,14 +1803,14 @@ ${heroShell(`${nav("about")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor()} / About</p>
         <h1>About Us</h1>
-        <p class="page-hero-desc">We built the biggest OopBuy Spreadsheet to make smart shopping easy.</p>
+        <p class="page-hero-desc">We built this OopBuy Spreadsheet to make smart shopping easy.</p>
       </div>
     </section>`)}
   <main>
     <section class="section">
       <div class="container content-block">
         <p>We're an independent group of long-time OopBuy users who maintain a browsable <strong>OopBuy Spreadsheet</strong> of vetted seller links. The goal is simple: cut down search time and steer you away from questionable listings.</p>
-        <p>Each row is reviewed for seller history, price, and overall quality before it stays on the sheet. We refresh the list daily — new picks go in, and weaker entries come out when they no longer hold up.</p>
+        <p>Each row is reviewed for seller history, price, and overall quality before it stays on the sheet. We refresh the list daily  - new picks go in, and weaker entries come out when they no longer hold up.</p>
         <p>This project is not owned or operated by OopBuy. It exists as a free reference to help shoppers discover products and get more comfortable using the platform.</p>
       </div>
     </section>
@@ -1529,8 +1843,8 @@ ${heroShell(`${nav("contact")}
         </div>
         <div class="contact-card">
           <h3>Find a Product</h3>
-          <p>Share an image in our Discord and we'll help you find it and add it to the spreadsheet.</p>
-          <a href="${DISCORD}" class="text-link" target="_blank" rel="noopener noreferrer">Join Discord →</a>
+          <p>Send a product name or reference image and we can review it for a future spreadsheet update.</p>
+          <a href="mailto:${EMAIL}" class="text-link">Email Product Request</a>
         </div>
         <div class="contact-card">
           <h3>Partnerships</h3>
@@ -1568,20 +1882,20 @@ ${heroShell(`${nav(`cat-${cat.slug}`, "../")}
       <div class="container">
         <p class="breadcrumb">${homeAnchor("../")} / <a href="../categories.html">Categories</a> / ${cat.name}</p>
         <span class="page-hero-icon">${cat.icon}</span>
-        <h1>OopBuy Spreadsheet — ${cat.name}</h1>
+        <h1>OopBuy Spreadsheet  - ${cat.name}</h1>
         <p class="page-hero-desc">${cat.desc}</p>
-        <a href="../spreadsheet.html?category=${cat.slug}" class="btn btn-primary">Browse ${cat.name} →</a>
+        <a href="../spreadsheet.html?category=${cat.slug}" class="btn btn-primary">Browse ${cat.name} -&gt;</a>
       </div>
     </section>`)}
   <main>
     <section class="section">
       <div class="container content-block">
         <h2>Best ${cat.name} Finds on OopBuy</h2>
-        <p>The <strong>OopBuy Spreadsheet ${cat.name}</strong> section is curated by experienced buyers and updated daily. Every listing links to verified sellers on OopBuy with QC-reviewed quality.</p>
+        <p>The <strong>OopBuy Spreadsheet ${cat.name}</strong> section is curated by experienced buyers and updated daily. Use it to compare category-specific OopBuy finds, open source links, and shortlist items worth checking with QC photos and a shipping checklist before shipping.</p>
         <ul class="check-list">
-          <li>Verified product links from trusted OopBuy sellers</li>
+          <li>Verified product source links from trusted OopBuy sellers</li>
           <li>QC photos reviewed before listing</li>
-          <li>Updated daily with trending finds</li>
+          <li>Updated daily with trending OopBuy finds</li>
           <li>Direct links to purchase on OopBuy</li>
         </ul>
       </div>
@@ -1601,7 +1915,7 @@ ${related.map((c) => `          <a href="${streetstyleCategoryUrl(c.slug)}" clas
       <div class="container cta-inner">
         <h2>Ready to Shop ${cat.name}?</h2>
         <p>Browse verified ${cat.name.toLowerCase()} in the full OopBuy Spreadsheet.</p>
-        <a href="../spreadsheet.html?category=${cat.slug}" class="btn btn-primary btn-lg">Open Spreadsheet →</a>
+        <a href="../spreadsheet.html?category=${cat.slug}" class="btn btn-primary btn-lg">Open Spreadsheet -&gt;</a>
       </div>
     </section>
   </main>
@@ -1614,7 +1928,7 @@ writeFile(
   path.join(root, "categories", "clothing.html"),
   `${head(
     "Clothing | OopBuy Spreadsheet",
-    "Browse clothing finds in the OopBuy Spreadsheet — jackets, hoodies, t-shirts, pants from trusted OopBuy sellers.",
+    "Browse clothing finds in the OopBuy Spreadsheet  - jackets, hoodies, t-shirts, pants from trusted OopBuy sellers.",
     "/categories/clothing.html",
     "../",
     breadcrumbJsonLd([
@@ -1627,12 +1941,18 @@ ${heroShell(`${nav("cat-clothing", "../")}
     <section class="page-hero">
       <div class="container">
         <p class="breadcrumb">${homeAnchor("../")} / Clothing</p>
-        <span class="page-hero-icon">👕</span>
-        <h1>OopBuy Spreadsheet — Clothing</h1>
+        <span class="page-hero-icon">CL</span>
+        <h1>OopBuy Spreadsheet  - Clothing</h1>
         <p class="page-hero-desc">Jackets, hoodies, t-shirts, and pants from trusted OopBuy sellers.</p>
       </div>
     </section>`)}
   <main>
+    <section class="section">
+      <div class="container content-block">
+        <h2>Clothing OopBuy Finds</h2>
+        <p>Use this clothing hub to browse jackets, hoodies, t-shirts, and pants from the OopBuy spreadsheet. Open the source links, compare seller details, review QC photos after warehouse arrival, and add each item to your shipping checklist before submitting an international parcel.</p>
+      </div>
+    </section>
     <section class="section categories">
       <div class="container">
         <div class="category-grid">
@@ -1656,6 +1976,7 @@ const sitemapUrls = [
   "/categories.html",
   "/guides.html",
   "/compare.html",
+  "/qc.html",
   "/deals.html",
   "/review.html",
   "/blog.html",
@@ -1697,13 +2018,17 @@ writeFile(
 `
 );
 
-console.log("✓ Generated OopBuy Spreadsheet site:");
+console.log("Generated OopBuy Spreadsheet site:");
 console.log("  index.html, spreadsheet.html, categories.html");
 console.log("  guides.html + guides/*.html (6 pages)");
-console.log("  compare.html + compare/*.html (4 pages)");
-console.log("  deals.html, review.html, blog.html, about.html, contact.html");
+console.log(`  compare.html + compare/*.html (${comparisons.length} pages)`);
+console.log("  qc.html, deals.html, review.html, blog.html, about.html, contact.html");
 console.log(`  categories/*.html (${allCategories.length + 1} pages)`);
 console.log("  sitemap.xml, robots.txt, config.js, products.js");
-console.log("\n⚙ Edit CONFIG at top of generate.js before deploy:");
+console.log("\nEdit CONFIG at top of generate.js before deploy:");
 console.log(`  INVITE, DOMAIN, DISCORD, EMAIL`);
-console.log("\n▶ Preview: node serve.js  →  http://localhost:3000");
+console.log("\nPreview: node serve.js -> http://localhost:3000");
+
+
+
+

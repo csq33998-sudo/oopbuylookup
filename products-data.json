@@ -1,4 +1,4 @@
-window.OOPBUY_PRODUCTS = [
+[
   {
     "id": 1,
     "name": "Balenciaga Beige Hoodie with BALEN CIAGA Print",
@@ -2435,4 +2435,4 @@ window.OOPBUY_PRODUCTS = [
     "description": "Elegant and sophisticated, this Creed Love in Black perfume features a luxurious black bottle with a silver cap. Known for its rich, dark floral notes, it's perfect for evening wear.",
     "meta": "Creed / Perfume / Black / Glass"
   }
-];
+]
